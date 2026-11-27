@@ -1,0 +1,11 @@
+{
+  "schema_version": 1,
+  "notices": [
+    {
+      "announced_date": "2026-11-16",
+      "revised_date": "2026-11-30",
+      "route_codes": ["橋86", "田92", "浜95", "品99", "反96", "高71", "早77", "錦11"],
+      "notice_url": "https://www.kotsu.metro.tokyo.jp/pickup_information/news/bus/2026/bus_i_2026111612914_h.html"
+    }
+  ]
+}

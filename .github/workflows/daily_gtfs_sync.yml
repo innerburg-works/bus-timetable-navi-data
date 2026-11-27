@@ -1,0 +1,122 @@
+name: Daily GTFS sync
+
+on:
+  schedule:
+    # 日本時間の毎日 05:00
+    - cron: '0 20 * * *'
+  workflow_dispatch:
+  workflow_call:
+
+permissions:
+  contents: write
+  pages: write
+
+concurrency:
+  group: national-gtfs-pages
+  cancel-in-progress: false
+
+jobs:
+  sync:
+    if: github.ref_name == github.event.repository.default_branch
+    runs-on: ubuntu-latest
+    timeout-minutes: 45
+    env:
+      GTFS_STATE: .github/gtfs-sync-state.json
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+
+      - name: Check GTFS versions and patch definitions
+        id: versions
+        run: |
+          export GTFS_RAW_DIR="$RUNNER_TEMP/national_gtfs"
+          {
+            echo "GTFS_RAW_DIR=$GTFS_RAW_DIR"
+            echo "GTFS_SITE_DIR=$RUNNER_TEMP/gtfs_site"
+          } >> "$GITHUB_ENV"
+          args=()
+          if [[ "$GITHUB_EVENT_NAME" == workflow_dispatch ]]; then
+            args+=(--force)
+          fi
+          python3 scripts/prepare_gtfs_sync.py \
+            --raw-dir "$GTFS_RAW_DIR" --state "$GTFS_STATE" --published-data-dir data \
+            --github-output "$GITHUB_OUTPUT" --summary "$GITHUB_STEP_SUMMARY" "${args[@]}"
+
+      - name: Rebuild shards, merge public extra feeds, and reapply temporary timetable patches
+        if: steps.versions.outputs.changed == 'true'
+        run: |
+          python3 scripts/build_national_shards.py \
+            --raw-dir "$GTFS_RAW_DIR" --out-site-dir "$GTFS_SITE_DIR" \
+            --catalog-file "$GTFS_RAW_DIR/catalog.json" --download-toei --strict --workers 10
+          python3 scripts/build_national_routes.py \
+            --raw-dir "$GTFS_RAW_DIR" --toei-zip "$GTFS_RAW_DIR/ToeiBus-GTFS.zip" \
+            --catalog-file "$GTFS_RAW_DIR/catalog.json" \
+            --out-routes-dir "$GTFS_SITE_DIR/data/routes" --workers 10
+          python3 scripts/build_national_i18n.py \
+            --raw-dir "$GTFS_RAW_DIR" --toei-zip "$GTFS_RAW_DIR/ToeiBus-GTFS.zip" \
+            --out-i18n-dir "$GTFS_SITE_DIR/data/i18n" \
+            --bundle-tokyo-out "$RUNNER_TEMP/tokyo_i18n.json" --workers 10
+          python3 scripts/extra_feeds_sync.py \
+            --mode public \
+            --staging-data-dir "$GTFS_SITE_DIR/data" \
+            --published-data-dir data \
+            --raw-dir "$GTFS_RAW_DIR/extra_public" \
+            --cached-raw-dir "$GTFS_RAW_DIR/extra_public" \
+            --use-cached-raw \
+            --catalog-file "$GTFS_RAW_DIR/catalog.json" \
+            --report-json "$RUNNER_TEMP/extra_public_report.json"
+          python3 scripts/apply_patches.py --data-dir "$GTFS_SITE_DIR/data"
+          python3 scripts/extra_feeds_sync.py \
+            --mode verify-preservation \
+            --published-data-dir data \
+            --staging-data-dir "$GTFS_SITE_DIR/data"
+
+      - name: Commit and push generated data
+        if: steps.versions.outputs.changed == 'true'
+        run: |
+          for dir in index timetables routes i18n; do
+            rsync -a --delete "$GTFS_SITE_DIR/data/$dir/" "data/$dir/"
+          done
+          cp "$GTFS_SITE_DIR/data/manifest.json" data/manifest.json
+          cp "$GTFS_SITE_DIR/.nojekyll" "$GTFS_SITE_DIR/index.html" .
+          cp "$GTFS_RAW_DIR/state.json" "$GTFS_STATE"
+          git add -- data .nojekyll index.html "$GTFS_STATE"
+          if ! git diff --cached --quiet; then
+            git config user.name "github-actions[bot]"
+            git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+            git commit -m "Sync bus GTFS data ($(TZ=Asia/Tokyo date +%F))"
+            git fetch origin "$GITHUB_REF_NAME"
+            git rebase "origin/$GITHUB_REF_NAME"
+            git push origin "HEAD:refs/heads/$GITHUB_REF_NAME"
+          fi
+
+      - name: Publish updated data to GitHub Pages
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          sha=$(git rev-parse HEAD)
+          endpoint="repos/$GITHUB_REPOSITORY/pages/builds"
+          latest=$(gh api "$endpoint/latest" --jq '[.commit, .status] | @tsv')
+          if [[ "$latest" == "$sha"$'\t'built ]]; then
+            echo "- GitHub Pages: 現在のデータを公開済み" >> "$GITHUB_STEP_SUMMARY"
+            exit 0
+          fi
+          if [[ "$latest" != "$sha"$'\t'building && "$latest" != "$sha"$'\t'queued ]]; then
+            gh api -X POST "$endpoint" --silent
+          fi
+          for attempt in {1..24}; do
+            latest=$(gh api "$endpoint/latest" --jq '[.commit, .status] | @tsv')
+            if [[ "$latest" == "$sha"$'\t'built ]]; then
+              echo "- GitHub Pages: $sha の公開完了" >> "$GITHUB_STEP_SUMMARY"
+              exit 0
+            fi
+            if [[ "$latest" == "$sha"$'\t'errored ]]; then
+              gh api "$endpoint/latest" --jq '.error.message'
+              exit 1
+            fi
+            sleep 10
+          done
+          echo "::error::GitHub Pages did not publish $sha within four minutes."
+          exit 1

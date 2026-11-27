@@ -1,0 +1,12 @@
+name: Update Nationwide Bus GTFS Data
+
+on:
+  workflow_dispatch:
+
+permissions:
+  contents: write
+  pages: write
+
+jobs:
+  update-gtfs:
+    uses: ./.github/workflows/daily_gtfs_sync.yml

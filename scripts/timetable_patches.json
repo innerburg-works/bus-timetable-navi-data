@@ -1,0 +1,13 @@
+[
+  {
+    "pref": 13,
+    "pole_id": "0605-08",
+    "route_id": "173_0605-08_2a8b",
+    "destination": "東京出入国在留管理局前",
+    "day": "weekday",
+    "before": "08:59",
+    "after": "08:50",
+    "revised_date": "2026-11-30",
+    "revised_url": "https://tobus.jp/sp/blsys/stop/time?daydiv=11&dispdiv=0&ln=qjlhyckzaflwif&poleno=8&revised=20261130&routecode=173&stopid=605&ud=1"
+  }
+]
