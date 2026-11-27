@@ -11,7 +11,7 @@ import math
 import zipfile
 from collections import defaultdict
 from pathlib import Path
-from typing import Dict, List, Tuple
+from typing import Dict, Iterable, List, Optional, Set, Tuple
 
 
 def _perp_dist(pt: Tuple[float, float], a: Tuple[float, float], b: Tuple[float, float]) -> float:
@@ -68,9 +68,15 @@ def extract_routes_from_gtfs(
     op_name_default: str,
     id_prefix: str,
     eps: float = 0.00008,
+    allowed_route_types: Optional[Iterable[str]] = None,
 ) -> List[Dict]:
     if not zip_path.exists():
         return []
+    allowed_rt_set: Optional[Set[str]] = (
+        {str(x).strip() for x in allowed_route_types if str(x).strip() != ""}
+        if allowed_route_types is not None
+        else None
+    )
     with zipfile.ZipFile(zip_path, "r") as zf:
         routes_rows = read_csv_from_zip(zf, "routes.txt")
         trips_rows = read_csv_from_zip(zf, "trips.txt")
@@ -81,8 +87,12 @@ def extract_routes_from_gtfs(
             rid = r.get("route_id", "")
             if not rid:
                 continue
+            rtype = (r.get("route_type") or "3").strip()
+            if allowed_rt_set is not None:
+                if rtype not in allowed_rt_set:
+                    continue
             # GTFS route_type=4（高速船・フェリー）はバス路線図から除外
-            if (r.get("route_type") or "3").strip() == "4":
+            elif rtype == "4":
                 continue
             rname = (r.get("route_short_name") or r.get("route_long_name") or rid).strip()
             rlong = (r.get("route_long_name") or "").strip()

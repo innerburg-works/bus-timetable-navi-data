@@ -502,6 +502,8 @@ def write_pref_shards_z(pref_code: int, poles: List[Dict], out_dir: Path) -> Opt
                 entry["dests"] = dests[:12]
         if p.get("platform_code"):
             entry["pf"] = p["platform_code"]
+        if p.get("vehicle_type") in ("ferry", "tram", "subway", "rail"):
+            entry["vt"] = p["vehicle_type"]
         if p.get("booking_required"):
             btypes = p.get("booking_types") or [2]
             entry["bk"] = btypes[0] if len(btypes) == 1 else True
@@ -653,6 +655,7 @@ def run_public_sync(
                     supports_realtime=bool(feed.get("rt_feed")),
                     default_timetable_url=feed["default_url"],
                     badge_color=feed["badge_color"],
+                    allowed_route_types=feed.get("allowed_route_types"),
                 )
                 new_poles = conv.get("poles", [])
                 if new_poles:
@@ -663,6 +666,7 @@ def run_public_sync(
                         op_name_default=feed["label"],
                         id_prefix=effective_prefix,
                         eps=0.00010,
+                        allowed_route_types=feed.get("allowed_route_types"),
                     )
                     i18n_map = extract_i18n_from_zip(zip_path)
             except Exception as exc:
@@ -876,6 +880,7 @@ def run_bundled_odpt_build(
                     supports_realtime=bool(feed.get("rt_feed")),
                     default_timetable_url=feed["default_url"],
                     badge_color=feed["badge_color"],
+                    allowed_route_types=feed.get("allowed_route_types"),
                 )
                 new_poles = conv.get("poles", [])
                 if new_poles:
@@ -886,6 +891,7 @@ def run_bundled_odpt_build(
                         op_name_default=feed["label"],
                         id_prefix=prefix,
                         eps=0.00010,
+                        allowed_route_types=feed.get("allowed_route_types"),
                     )
                     i18n_map = extract_i18n_from_zip(zip_path)
             except Exception as exc:

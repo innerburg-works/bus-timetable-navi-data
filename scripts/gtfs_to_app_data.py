@@ -21,7 +21,7 @@ import zipfile
 from collections import defaultdict
 from datetime import datetime
 from pathlib import Path
-from typing import Dict, List, Optional, Set, Tuple
+from typing import Dict, Iterable, List, Optional, Set, Tuple
 
 
 ICON_RULES: List[Tuple[List[str], str]] = [
@@ -299,6 +299,7 @@ def convert_gtfs(
     supports_realtime: bool,
     default_timetable_url: str,
     badge_color: str,
+    allowed_route_types: Optional[Iterable[str]] = None,
 ) -> Dict:
     with zipfile.ZipFile(gtfs_zip_path, "r") as zf:
         agencies = read_csv_from_zip(zf, "agency.txt")
@@ -330,10 +331,15 @@ def convert_gtfs(
         }
 
     routes: Dict[str, Dict] = {}
+    allowed_rt_set: Optional[Set[str]] = (
+        {str(x).strip() for x in allowed_route_types if str(x).strip() != ""}
+        if allowed_route_types is not None
+        else None
+    )
     zip_stem_low = gtfs_zip_path.stem.lower()
     is_tram_feed_name = any(
         k in zip_stem_low or k in (agency_name or "")
-        for k in ("shinaidensha", "streetcar", "tram", "manyosen", "kumamotoshiden", "市内電車", "路面電車", "市電", "万葉線")
+        for k in ("shinaidensha", "streetcar", "tram", "manyosen", "kumamotoshiden", "hakodateshiden", "市内電車", "路面電車", "市電", "万葉線")
     )
     for r in routes_rows:
         rid = r.get("route_id", "")
@@ -343,6 +349,10 @@ def convert_gtfs(
         long_name = r.get("route_long_name") or ""
         color = r.get("route_color", "").strip()
         rtype = (r.get("route_type") or "3").strip()
+        if allowed_rt_set is not None and rtype not in allowed_rt_set:
+            continue
+        route_label_all = f"{short_name} {long_name}"
+        is_explicit_bus_name = ("バス" in route_label_all) or ("bus" in route_label_all.lower())
         if rtype == "4":
             vtype = "ferry"
         elif rtype == "0":
@@ -351,7 +361,10 @@ def convert_gtfs(
             vtype = "subway"
         elif rtype == "2":
             vtype = "rail"
-        elif is_tram_feed_name or any(k in f"{short_name} {long_name}" for k in ("市内軌道線", "市内電車", "路面電車", "富山港線")):
+        elif is_tram_feed_name or (
+            not is_explicit_bus_name
+            and any(k in route_label_all for k in ("市内軌道線", "市内電車", "路面電車", "富山港線"))
+        ):
             vtype = "tram"
         else:
             vtype = "bus"

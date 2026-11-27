@@ -1276,7 +1276,7 @@
     {
       "pref": 13,
       "name": "東京都",
-      "pole_count": 5572,
+      "pole_count": 5602,
       "index_url": "data/index/pref_13.json",
       "timetable_base": "data/timetables/pref_13",
       "bounds": {
@@ -1477,6 +1477,19 @@
           "rt": false,
           "valid_from": "20260301",
           "valid_to": "20270228"
+        },
+        {
+          "id": "toei_toden",
+          "name": "東京都交通局（東京さくらトラム・都電荒川線）",
+          "pole_count": 30,
+          "rt": true,
+          "valid_from": "20261121",
+          "valid_to": "20270312",
+          "area": "東京都（東京さくらトラム・都電荒川線）",
+          "area_en": "Tokyo (Toden Arakawa Line / Tokyo Sakura Tram)",
+          "license": "CC BY 4.0",
+          "attribution": "東京都交通局（ODPT / CC BY 4.0）",
+          "official_url": "https://ckan.odpt.org/dataset/train-toei"
         },
         {
           "id": "小笠原村（小笠原村営バス）",
@@ -4106,7 +4119,7 @@
     {
       "pref": 33,
       "name": "岡山県",
-      "pole_count": 2646,
+      "pole_count": 2663,
       "index_url": "data/index/pref_33.json",
       "timetable_base": "data/timetables/pref_33",
       "bounds": {
@@ -4211,6 +4224,19 @@
           "rt": false,
           "valid_from": "20260302",
           "valid_to": "20270301"
+        },
+        {
+          "id": "ext_okayama_tram",
+          "name": "岡山電気軌道（路面電車：東山線・清輝橋線）",
+          "pole_count": 17,
+          "rt": true,
+          "valid_from": "20261101",
+          "valid_to": "20271031",
+          "area": "岡山市（岡山電気軌道・路面電車）",
+          "area_en": "Okayama (Okaden Streetcar)",
+          "license": "CC BY 4.0",
+          "attribution": "岡山電気軌道（Bus-Vision / CC BY 4.0）",
+          "official_url": "https://www.okayama-kido.co.jp/tramway/"
         },
         {
           "id": "瀬戸内市（長船だがし線）",
@@ -5727,7 +5753,7 @@
       ]
     }
   ],
-  "generated_at": "2026-11-27T22:24:11+09:00",
+  "generated_at": "2026-11-27T23:06:30+09:00",
   "gtfs_sync": true,
   "public_license_only": true
 }
