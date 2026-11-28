@@ -16,6 +16,7 @@ from build_national_shards import (
     catalog_items,
     download_zip,
     fetch_json,
+    is_allowed_public_catalog_license,
     operator_label,
 )
 from extra_feeds_registry import EXTRA_PUBLIC_FEEDS
@@ -144,7 +145,22 @@ def write_summary(summary_path: Path, previous: dict, state: dict, catalog: list
 def prepare(raw_dir: Path, state_path: Path, data_dir: Path, force: bool,
             summary_path: Optional[Path] = None) -> bool:
     raw_dir.mkdir(parents=True, exist_ok=True)
-    items = catalog_items(fetch_json(API_URL))
+    raw_items = catalog_items(fetch_json(API_URL))
+    # 公開再配布可能なライセンスを確認できたフィードのみ取り込む（確認不能な新規・変更データの公開を防止）
+    items = []
+    blocked_unverified = []
+    for it in raw_items:
+        ok, lic, lic_url = is_allowed_public_catalog_license(it)
+        if ok:
+            items.append(it)
+        else:
+            blocked_unverified.append(
+                f"{it.get('organization_id')}/{it.get('feed_id')} (license={lic!r}, url={lic_url!r})"
+            )
+    if blocked_unverified:
+        print(f"[LICENSE-BLOCK] Excluded {len(blocked_unverified)} unverified-license feeds from sync:")
+        for b in blocked_unverified[:20]:
+            print(f"  - {b}")
     # UIDは /files のファイル版を識別する。一覧の並べ替えだけでは更新しない。
     items = sorted(items, key=lambda item: (
         str(item.get("feed_pref_id")), item["organization_id"], item["feed_id"]
@@ -153,6 +169,7 @@ def prepare(raw_dir: Path, state_path: Path, data_dir: Path, force: bool,
         "organization_id", "organization_name", "organization_web_url", "feed_id",
         "feed_name", "feed_pref_id", "feed_page_url", "feed_version", "file_uid",
         "file_url", "file_from_date", "file_to_date", "file_last_updated_at",
+        "feed_license_id", "feed_license_url",
     )
     catalog = [{field: item.get(field) for field in fields} for item in items]
     catalog_hash = hashlib.sha256(json.dumps(catalog, sort_keys=True).encode()).hexdigest()

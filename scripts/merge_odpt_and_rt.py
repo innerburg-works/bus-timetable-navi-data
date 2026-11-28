@@ -30,6 +30,7 @@ import urllib.error
 import urllib.parse
 import urllib.request
 import zipfile
+from datetime import datetime, timedelta, timezone
 from collections import defaultdict
 from pathlib import Path
 from typing import Dict, List, Optional, Set, Tuple
@@ -38,8 +39,28 @@ SCRIPT_DIR = Path(__file__).resolve().parent
 sys.path.insert(0, str(SCRIPT_DIR))
 from build_national_shards import API_URL, catalog_items, download_zip, fetch_json, write_pref_shards
 from build_tokyo_routes import extract_routes_from_gtfs
+from extra_feeds_registry import NON_PUBLIC_POLE_PREFIXES, SENDAI_ZIP, sendai_urls_on
 from gtfs_to_app_data import convert_gtfs
 from odpt_jsonld_to_app_data import convert_odpt_jsonld, fetch_odpt_jsonld
+
+
+def _is_public_data_dir(data_dir: Path) -> bool:
+    """公開 Pages 用 national-data-site/data（またはその配下）かを判定する。"""
+    resolved = data_dir.resolve()
+    public_root = (SCRIPT_DIR.parent / "data").resolve()
+    try:
+        resolved.relative_to(public_root)
+        return True
+    except ValueError:
+        return False
+
+
+def _guard_no_non_public_write(data_dir: Path, reason: str) -> None:
+    if _is_public_data_dir(data_dir):
+        raise SystemExit(
+            f"[BLOCKED] 公開データ先 ({data_dir.resolve()}) への非公開・認証付きデータの書き込みを中止しました: {reason}\n"
+            "  ODPT基本ライセンス対象は extra_feeds_sync.py --mode bundled-odpt を使用し、アプリ同梱先へ出力してください。"
+        )
 
 # gtfs-data.jp 公開静的GTFS のうち、公開GTFS-RT と突合可能な事業者
 PUBLIC_GTFS_RT_FEEDS = {
@@ -102,7 +123,7 @@ ODPT_PUBLIC_STATIC_TARGETS: List[Dict] = [
         "id": "sendai",
         "pref": 4,
         "label": "仙台市交通局（仙台市営バス）",
-        "urls": _odpt_urls("https://api-public.odpt.org/api/v4/files/odpt/SendaiMunicipal/bus_realtime_information.zip", "20261231"),
+        "urls": _odpt_urls(SENDAI_ZIP),
         "operator_type": "public",
         "operator_short": "市営",
         "badge_color": "#15803d",
@@ -1517,7 +1538,10 @@ def _ingest_gtfs_targets(
     for tgt in targets:
         pref = tgt["pref"]
         zip_path = raw_dir / f"{file_prefix}_{tgt['id']}.zip"
-        matched_url, err_detail = download_odpt_zip(tgt["urls"], api_key, zip_path)
+        urls = tgt["urls"]
+        if tgt["id"] == "sendai":
+            urls = sendai_urls_on(datetime.now(timezone(timedelta(hours=9))).strftime("%Y%m%d"))
+        matched_url, err_detail = download_odpt_zip(urls, api_key, zip_path)
         if not matched_url:
             print(f"[SKIP] pref_{pref:02d} {tgt['label']}: 取得失敗 ({err_detail})")
             continue
@@ -1776,6 +1800,7 @@ def main() -> None:
         if 13 in touched:
             touched_any_tokyo = True
     if args.rebuild_cached_jsonld:
+        _guard_no_non_public_write(args.data_dir, "--rebuild-cached-jsonld (ODPT JSON-LD)")
         print("=== Rebuilding cached ODPT JSON-LD datasets with strict operator filtering (TokyuBus, SotetsuBus) ===")
         touched = run_odpt_jsonld_merge(
             ODPT_JSONLD_STANDARD_TARGETS,
@@ -1788,8 +1813,12 @@ def main() -> None:
             touched_any_tokyo = True
     if args.public_odpt:
         print("=== Ingesting PUBLIC ODPT GTFS-JP datasets (no API key required) ===")
+        public_safe_targets = [
+            t for t in ODPT_PUBLIC_STATIC_TARGETS
+            if not f"odpt_{t['id']}_".startswith(NON_PUBLIC_POLE_PREFIXES)
+        ]
         touched = _ingest_gtfs_targets(
-            ODPT_PUBLIC_STATIC_TARGETS,
+            public_safe_targets,
             args.data_dir,
             args.raw_dir,
             api_key="",
@@ -1799,11 +1828,13 @@ def main() -> None:
         if 13 in touched:
             touched_any_tokyo = True
     if args.rebuild_existing_odpt_routes:
+        _guard_no_non_public_write(args.data_dir, "--rebuild-existing-odpt-routes (contains auth ODPT ZIPs)")
         print("=== Rebuilding route polylines from existing downloaded ODPT ZIPs ===")
         touched = rebuild_existing_odpt_routes(args.data_dir, args.raw_dir)
         if 13 in touched:
             touched_any_tokyo = True
     if args.odpt or args.odpt_jsonld:
+        _guard_no_non_public_write(args.data_dir, "--odpt / --odpt-jsonld (authenticated ODPT basic-license data)")
         api_key = os.environ.get("ODPT_API_KEY", "").strip()
         if not api_key or api_key == "あなたのODPTトークン":
             api_key = getpass.getpass("ODPT アクセストークンを貼り付けて Enter（画面には表示されません）: ").strip()
@@ -1825,6 +1856,7 @@ def main() -> None:
             if 13 in touched:
                 touched_any_tokyo = True
     if args.odpt_challenge:
+        _guard_no_non_public_write(args.data_dir, "--odpt-challenge (authenticated ODPT Challenge data)")
         ckey = os.environ.get("ODPT_CHALLENGE_KEY", "").strip()
         if not ckey:
             ckey = getpass.getpass("ODPT Challenge2026 アクセストークンを貼り付けて Enter: ").strip()

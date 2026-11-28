@@ -26,6 +26,19 @@ def _odpt_urls(base_no_query: str, fallback_date: Optional[str] = None) -> List[
     return urls
 
 
+SENDAI_ZIP = "https://api-public.odpt.org/api/v4/files/odpt/SendaiMunicipal/bus_realtime_information.zip"
+
+
+def sendai_urls_on(ref: str) -> List[str]:
+    """ODPTカタログで公表された期間ごとに、その版の開始日を指定する。"""
+    for start, end in (("20261026", "20261130"), ("20261201", "20261218"),
+                       ("20261219", "20261223"), ("20261224", "20261230"),
+                       ("20261231", "20261231")):
+        if start <= ref <= end:
+            return [f"{SENDAI_ZIP}?date={start}"]
+    return _odpt_urls(SENDAI_ZIP)
+
+
 # ==============================================================================
 # 1. 公開再配布可能 (CC BY 4.0 / CC0 / CC BY 2.1 JP) ・認証不要の公式追加フィード
 # ==============================================================================
@@ -657,7 +670,7 @@ EXTRA_PUBLIC_FEEDS: List[Dict] = [
         "label": "仙台市交通局（仙台市営バス）",
         "area": "仙台市",
         "pole_prefix": "odpt_sendai_",
-        "urls": _odpt_urls("https://api-public.odpt.org/api/v4/files/odpt/SendaiMunicipal/bus_realtime_information.zip", "20261231"),
+        "urls": _odpt_urls(SENDAI_ZIP),
         "official_url": "https://ckan.odpt.org/dataset/sendai_municipal_bus_realtime_information",
         "default_url": "https://www.kotsu.city.sendai.jp/",
         "license": "CC BY 4.0",
@@ -1336,6 +1349,7 @@ ODPT_BASIC_LICENSE_FEEDS: List[Dict] = [
         "label": "関東バス",
         "area": "東京（関東バス）",
         "pole_prefix": "odpt_kanto_",
+        "successor_date": "20261201",
         "urls": _odpt_urls("https://api.odpt.org/api/v4/files/odpt/KantoBus/AllLines.zip", "20261201"),
         "official_url": "https://ckan.odpt.org/dataset/kanto_bus_all_lines",
         "default_url": "https://www.kanto-bus.co.jp/",
@@ -1536,6 +1550,7 @@ ODPT_BASIC_LICENSE_FEEDS: List[Dict] = [
         "label": "伊豆箱根バス",
         "area": "三島・沼津・伊豆（伊豆箱根バス）",
         "pole_prefix": "odpt_izuhakone_",
+        "successor_date": "20261201",
         "urls": _odpt_urls("https://api.odpt.org/api/v4/files/odpt/IzuhakoneBus/IZHB.zip", "20261201"),
         "official_url": "https://ckan.odpt.org/dataset/izuhakone_bus_izhb",
         "default_url": "https://www.izuhakone.co.jp/bus/",

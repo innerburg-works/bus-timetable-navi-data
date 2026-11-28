@@ -24,6 +24,7 @@ sys.path.insert(0, str(Path(__file__).resolve().parent))
 from build_sharded_data import load_poles_from_js_or_json
 from fetch_pref_gtfs import infer_operator_meta
 from gtfs_to_app_data import convert_gtfs
+from toei_trip_calls import attach_community_calls
 
 API_URL = "https://api.gtfs-data.jp/v2/files"
 TOEI_URL = "https://api-public.odpt.org/api/v4/files/Toei/data/ToeiBus-GTFS.zip"
@@ -85,6 +86,29 @@ def bucket_for_pole(pole_id: str, num_buckets: int) -> str:
     return f"b{h % num_buckets:02d}"
 
 
+# 公開リポジトリ(GitHub Pages)へ再配布可能な標準オープンライセンスのホワイトリスト
+ALLOWED_PUBLIC_CATALOG_LICENSES = {
+    "CC BY 4.0",
+    "CC0 1.0",
+    "CC BY 2.1 JP",
+}
+# 自治体独自URLを伴う CC-BY 表記のうち、二次利用・再配布許諾を一次確認済みのURL
+VERIFIED_CC_BY_LICENSE_URLS = {
+    "https://www.city.kakegawa.shizuoka.jp/gyosei/docs/383694.html",
+}
+
+
+def is_allowed_public_catalog_license(item: Dict) -> Tuple[bool, str, str]:
+    """gtfs-data.jp カタログ項目のライセンスが公開再配布可能かを判定する。"""
+    lic = str(item.get("feed_license_id") or item.get("feed_license") or "").strip()
+    lic_url = str(item.get("feed_license_url") or "").strip()
+    if lic in ALLOWED_PUBLIC_CATALOG_LICENSES:
+        return True, lic, lic_url
+    if lic == "CC-BY" and lic_url in VERIFIED_CC_BY_LICENSE_URLS:
+        return True, "CC-BY (掛川市オープンデータ)", lic_url
+    return False, lic, lic_url
+
+
 def operator_label(org_name: str, feed_name: str) -> str:
     return f"{org_name}（{feed_name}）" if feed_name and feed_name not in org_name else org_name
 
@@ -138,10 +162,16 @@ def process_feed(task: Tuple[int, int, Dict, Path]) -> Tuple[int, str, List[Dict
         )
         prefix = f"nat_p{pref:02d}_{idx:03d}_"
         poles = converted.get("poles", [])
+        attach_community_calls(poles, zip_path, prefix)
         op_full = operator_label(org_name, feed_name)
+        _, lic_label, lic_url = is_allowed_public_catalog_license(item)
         for p in poles:
             p["pole_id"] = prefix + p["pole_id"]
             p["operator_name"] = op_full
+            if lic_label:
+                p["feed_license"] = lic_label
+            if lic_url:
+                p["feed_license_url"] = lic_url
             if rt_feed:
                 p["rt_feed"] = rt_feed
             for r in p.get("routes", []):
@@ -216,6 +246,9 @@ def write_pref_shards(pref_code: int, poles: List[Dict], out_data_dir: Path) -> 
             "rc": len(routes),
             "sub": sub_label,
         }
+        route_ids = sorted({str(r["gtfs_route_id"]) for r in routes if r.get("gtfs_route_id")})
+        if route_ids:
+            index_entry["rids"] = route_ids
         if len(route_names) >= 2:
             index_entry["rns"] = route_names
         if len(routes) >= 2:
@@ -297,14 +330,30 @@ def main() -> None:
     print(f"Total feeds in catalog: {len(items)}", flush=True)
 
     tasks = []
+    skipped_unverified_license = []
     for idx, it in enumerate(items):
         raw_pref = it.get("feed_pref_id")
         try:
             pref = int(raw_pref)
         except (TypeError, ValueError):
             continue
-        if 1 <= pref <= 47:
-            tasks.append((pref, it.get("_slot", idx), it, args.raw_dir))
+        if not (1 <= pref <= 47):
+            continue
+        lic_ok, lic_label, lic_url = is_allowed_public_catalog_license(it)
+        if not lic_ok:
+            skipped_unverified_license.append(
+                f"pref={pref:02d} {it.get('organization_id')}/{it.get('feed_id')} license={lic_label!r} url={lic_url!r}"
+            )
+            continue
+        tasks.append((pref, it.get("_slot", idx), it, args.raw_dir))
+
+    if skipped_unverified_license:
+        print(
+            f"[LICENSE-SKIP] Excluded {len(skipped_unverified_license)} feeds with unverified/non-public license:",
+            flush=True,
+        )
+        for row in skipped_unverified_license[:20]:
+            print(f"  - {row}", flush=True)
 
     if not tasks:
         raise RuntimeError("国内のGTFSフィードが一覧にありません")
@@ -343,8 +392,13 @@ def main() -> None:
             toei_poles = toei_conv.get("poles", [])
             if args.strict and not toei_poles:
                 raise RuntimeError("ODPTの都営バスGTFSから停留所を生成できませんでした")
+            from toei_trip_calls import build_trip_calls
+            onward = build_trip_calls(toei_zip)
             for p in toei_poles:
+                if p["pole_id"] in onward:
+                    p["onward"] = onward[p["pole_id"]]
                 p["operator_name"] = "東京都交通局（都営バス）"
+                p["feed_license"] = "CC BY 4.0"
                 poles_by_pref[13][p["pole_id"]] = p
             print(f"Downloaded & merged live Toei Bus poles into pref 13: {len(toei_poles)}", flush=True)
         elif args.strict:

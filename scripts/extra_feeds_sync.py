@@ -24,6 +24,7 @@ import os
 import re
 import shutil
 import sys
+import tempfile
 import urllib.error
 import urllib.parse
 import urllib.request
@@ -44,8 +45,10 @@ from extra_feeds_registry import (
     EXTRA_PUBLIC_FEEDS,
     NON_PUBLIC_POLE_PREFIXES,
     ODPT_BASIC_LICENSE_FEEDS,
+    sendai_urls_on,
 )
 from gtfs_to_app_data import convert_gtfs
+from toei_trip_calls import attach_community_calls
 
 JST = timezone(timedelta(hours=9))
 
@@ -247,7 +250,12 @@ def acquire_feed_zip(
     if simulate_fail_ids and fid in simulate_fail_ids:
         return None, "", {}, "simulated_download_failure"
 
+    urls = sendai_urls_on(ref) if fid == "sendai" else list(feed.get("urls", []))
     dest = raw_dir / f"extra_{fid}.zip"
+    if fid == "sendai":
+        # A ZIP calendar can overlap the next official edition. Key the cache by edition.
+        edition = urllib.parse.parse_qs(urllib.parse.urlsplit(urls[0]).query)["date"][0]
+        dest = raw_dir / f"extra_sendai_{ref if edition == 'current' else edition}.zip"
 
     # キャッシュ再利用モード（ローカル試験・オフライン構築用）
     if use_cached_raw and cached_raw_dir:
@@ -256,17 +264,20 @@ def acquire_feed_zip(
             cached_raw_dir / f"odpt_{fid}.zip",
             cached_raw_dir / f"odpt_pub_{fid}.zip",
         ]
+        if fid == "sendai":
+            candidates = [cached_raw_dir / dest.name]
         for cand in candidates:
             if cand.exists() and cand.stat().st_size > 500:
                 try:
                     val = inspect_gtfs_zip_validity(cand, ref_ymd=ref)
+                    if fid == "sendai" and not val["trip_count_on_ref"]:
+                        continue
                     if cand != dest:
                         shutil.copy2(cand, dest)
                     return dest, f"cache:{cand.name}", val, ""
                 except Exception:
                     pass
 
-    urls = list(feed.get("urls", []))
     if feed.get("bodik_package_id"):
         dynamic_url = resolve_bodik_zip_url(feed["bodik_package_id"])
         if dynamic_url and dynamic_url not in urls:
@@ -274,6 +285,9 @@ def acquire_feed_zip(
 
     matched_url, err = download_zip_with_auth(urls, dest, api_key=api_key)
     cur_val = inspect_gtfs_zip_validity(dest, ref_ymd=ref) if matched_url else {}
+
+    if fid == "sendai" and matched_url and not cur_val["trip_count_on_ref"]:
+        return None, matched_url, cur_val, f"仙台市営の{ref}有効便が0件"
 
     # 広島電鉄など「現在データ」と「未来データ」が分離されているフィードの改正日自動切替
     future_urls = feed.get("future_urls") or []
@@ -490,6 +504,9 @@ def write_pref_shards_z(pref_code: int, poles: List[Dict], out_dir: Path) -> Opt
             "rc": len(routes),
             "sub": sub_label,
         }
+        route_ids = sorted({str(r["gtfs_route_id"]) for r in routes if r.get("gtfs_route_id")})
+        if route_ids:
+            entry["rids"] = route_ids
         if len(route_names) >= 2:
             entry["rns"] = route_names
         if len(routes) >= 2:
@@ -658,6 +675,7 @@ def run_public_sync(
                     allowed_route_types=feed.get("allowed_route_types"),
                 )
                 new_poles = conv.get("poles", [])
+                attach_community_calls(new_poles, zip_path, effective_prefix)
                 if new_poles:
                     route_lines = extract_routes_from_gtfs(
                         zip_path=zip_path,
@@ -883,6 +901,7 @@ def run_bundled_odpt_build(
                     allowed_route_types=feed.get("allowed_route_types"),
                 )
                 new_poles = conv.get("poles", [])
+                attach_community_calls(new_poles, zip_path, prefix)
                 if new_poles:
                     route_lines = extract_routes_from_gtfs(
                         zip_path=zip_path,
@@ -1043,10 +1062,37 @@ def verify_preservation(published_data_dir: Path, staging_data_dir: Path) -> Tup
     return len(issues) == 0, issues
 
 
+def stage_bundled_successors(raw_dir: Path, ref: str, api_key: str) -> Path:
+    """Prepare dated ZIPs privately without replacing the installed, still-valid timetable."""
+    feeds = [feed for feed in ODPT_BASIC_LICENSE_FEEDS if feed.get("successor_date") == ref]
+    if not feeds or not api_key:
+        raise ValueError("対象の改正日と ODPT_API_KEY が必要です")
+    dest = raw_dir / f"successors-{ref}"
+    if dest.exists():
+        raise FileExistsError(dest)
+    raw_dir.mkdir(parents=True, exist_ok=True)
+    with tempfile.TemporaryDirectory(dir=raw_dir) as temp:
+        stage = Path(temp) / "verified"
+        stage.mkdir()
+        for feed in feeds:
+            urls = [url for url in feed["urls"] if urllib.parse.parse_qs(
+                urllib.parse.urlparse(url).query).get("date") == [ref]]
+            path = stage / f"extra_{feed['id']}.zip"
+            url, _ = download_zip_with_auth(urls, path, api_key=api_key)
+            if not url:
+                raise ValueError(f"{feed['label']}: 後継版の取得に失敗")
+            info = inspect_gtfs_zip_validity(path, ref_ymd=ref)
+            if not (info["valid_from"] <= ref <= info["valid_to"] and info["trip_count_on_ref"] > 0):
+                raise ValueError(f"{feed['label']}: 改正日の有効便を確認できません")
+            print(f"{feed['label']} {info['valid_from']}..{info['valid_to']} {info['trip_count_on_ref']}便")
+        stage.rename(dest)
+    return dest
+
+
 def main() -> None:
     root = SCRIPT_DIR.parent.parent
     parser = argparse.ArgumentParser(description=__doc__)
-    parser.add_argument("--mode", choices=["public", "bundled-odpt", "verify-preservation"], required=True)
+    parser.add_argument("--mode", choices=["public", "bundled-odpt", "stage-successors", "verify-preservation"], required=True)
     parser.add_argument("--staging-data-dir", type=Path, default=root / "national-data-site" / "data")
     parser.add_argument("--published-data-dir", type=Path, default=root / "national-data-site" / "data")
     parser.add_argument("--out-bundled-dir", type=Path, default=root / "ios-app" / "BusTimetableNavi" / "Web" / "data" / "bundled_odpt")
@@ -1062,7 +1108,9 @@ def main() -> None:
     sim_fail = {x.strip() for x in args.simulate_fail.split(",") if x.strip()}
     ref = args.ref_ymd.strip() or today_jst_ymd()
 
-    if args.mode == "public":
+    if args.mode == "stage-successors":
+        print(stage_bundled_successors(args.raw_dir, ref, os.environ.get("ODPT_API_KEY", "").strip()))
+    elif args.mode == "public":
         rep = run_public_sync(
             staging_data_dir=args.staging_data_dir,
             published_data_dir=args.published_data_dir,

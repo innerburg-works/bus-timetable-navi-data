@@ -155,15 +155,27 @@ def _process_one(task: Tuple[int, Path]) -> Tuple[int, Dict[str, str]]:
 
 
 def main() -> None:
-    root = Path(__file__).resolve().parent.parent
+    root = Path(__file__).resolve().parent.parent.parent
     parser = argparse.ArgumentParser(description="全国47都道府県 バス停・行き先英語/ローマ字辞書生成")
     parser.add_argument("--raw-dir", type=Path, default=root / "data-pipeline" / "raw" / "national_gtfs")
     parser.add_argument("--odpt-raw-dir", type=Path, default=root / "data-pipeline" / "raw" / "odpt_and_rt")
     parser.add_argument("--toei-zip", type=Path, default=root / "data-pipeline" / "raw" / "ToeiBus-GTFS.zip")
     parser.add_argument("--out-i18n-dir", type=Path, default=root / "national-data-site" / "data" / "i18n")
     parser.add_argument("--bundle-tokyo-out", type=Path, default=root / "ios-app" / "BusTimetableNavi" / "Web" / "data" / "i18n" / "pref_13.json")
+    parser.add_argument("--include-non-public-odpt", action="store_true", help="明示指定かつ非公開出力先の場合のみ同梱専用ODPT ZIPを含める")
     parser.add_argument("--workers", type=int, default=8)
     args = parser.parse_args()
+
+    public_data_root = (Path(__file__).resolve().parent.parent / "data").resolve()
+    try:
+        args.out_i18n_dir.resolve().relative_to(public_data_root)
+        is_public_out = True
+    except ValueError:
+        is_public_out = False
+    if args.include_non_public_odpt and is_public_out:
+        raise SystemExit(
+            f"[BLOCKED] 公開データ先 ({args.out_i18n_dir.resolve()}) に対して --include-non-public-odpt は使用できません。"
+        )
 
     args.out_i18n_dir.mkdir(parents=True, exist_ok=True)
     tasks: List[Tuple[int, Path]] = []
@@ -172,18 +184,29 @@ def main() -> None:
         if m:
             tasks.append((int(m.group(1)), zp))
 
-    # ODPT 追加取得済み ZIP (odpt_*.zip / odpt_pub_*.zip) も都道府県別に辞書抽出対象へ追加
+    # 公開向けには公開再配布可能 (EXTRA_PUBLIC_FEEDS / ODPT公開 odpt_pub_*.zip) のみを取り込み、
+    # 基本ライセンス (ODPT_BASIC_LICENSE_FEEDS / NON_PUBLIC_POLE_PREFIXES) の同梱専用ZIPは既定で除外する。
     if args.odpt_raw_dir and args.odpt_raw_dir.exists():
         import sys as _sys
         _sys.path.insert(0, str(Path(__file__).resolve().parent))
         try:
-            from merge_odpt_and_rt import ODPT_PUBLIC_STATIC_TARGETS, ODPT_STATIC_TARGETS
-            pref_by_odpt_id = {t["id"]: t["pref"] for t in ODPT_PUBLIC_STATIC_TARGETS + ODPT_STATIC_TARGETS}
+            from extra_feeds_registry import EXTRA_PUBLIC_FEEDS, NON_PUBLIC_POLE_PREFIXES, ODPT_BASIC_LICENSE_FEEDS
+            public_pref_by_id = {
+                f["id"]: f["pref"]
+                for f in EXTRA_PUBLIC_FEEDS
+                if not f["pole_prefix"].startswith(NON_PUBLIC_POLE_PREFIXES)
+            }
+            non_public_pref_by_id = {f["id"]: f["pref"] for f in ODPT_BASIC_LICENSE_FEEDS}
             for zp in sorted(args.odpt_raw_dir.glob("odpt_*.zip")):
                 stem = zp.stem
-                oid = stem[len("odpt_pub_") :] if stem.startswith("odpt_pub_") else stem[len("odpt_") :]
-                if oid in pref_by_odpt_id:
-                    tasks.append((pref_by_odpt_id[oid], zp))
+                if stem.startswith("odpt_pub_"):
+                    oid = stem[len("odpt_pub_") :]
+                    if oid in public_pref_by_id:
+                        tasks.append((public_pref_by_id[oid], zp))
+                elif args.include_non_public_odpt:
+                    oid = stem[len("odpt_") :]
+                    if oid in non_public_pref_by_id:
+                        tasks.append((non_public_pref_by_id[oid], zp))
         except Exception as e:
             print(f"[WARN] ODPT i18n target scan skipped: {e}")
 

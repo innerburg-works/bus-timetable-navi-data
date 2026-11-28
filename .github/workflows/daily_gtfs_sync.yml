@@ -72,6 +72,7 @@ jobs:
             --mode verify-preservation \
             --published-data-dir data \
             --staging-data-dir "$GTFS_SITE_DIR/data"
+          python3 scripts/audit_public_data.py --generated-only --data-dir "$GTFS_SITE_DIR/data"
 
       - name: Commit and push generated data
         if: steps.versions.outputs.changed == 'true'
@@ -80,6 +81,7 @@ jobs:
             rsync -a --delete "$GTFS_SITE_DIR/data/$dir/" "data/$dir/"
           done
           cp "$GTFS_SITE_DIR/data/manifest.json" data/manifest.json
+          python3 scripts/audit_public_data.py --data-dir data
           cp "$GTFS_SITE_DIR/.nojekyll" "$GTFS_SITE_DIR/index.html" .
           cp "$GTFS_RAW_DIR/state.json" "$GTFS_STATE"
           git add -- data .nojekyll index.html "$GTFS_STATE"
