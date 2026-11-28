@@ -3031,7 +3031,7 @@
     {
       "pref": 23,
       "name": "愛知県",
-      "pole_count": 5724,
+      "pole_count": 9485,
       "index_url": "data/index/pref_23.json",
       "timetable_base": "data/timetables/pref_23",
       "bounds": {
@@ -3041,6 +3041,18 @@
         "max_lng": 137.81827
       },
       "operators": [
+        {
+          "id": "nagoya_city",
+          "name": "名古屋市バス",
+          "pole_count": 3761,
+          "rt": false,
+          "valid_from": "20260328",
+          "valid_to": "20270430",
+          "area": "名古屋市・周辺",
+          "license": "CC BY 4.0",
+          "attribution": "名古屋市交通局のGTFSを時刻表・路線図用に加工（CC BY 4.0）",
+          "official_url": "https://data.bodik.jp/dataset/231002_7109030000_bus-gtfs-jp"
+        },
         {
           "id": "豊田市（豊田市　地域バス）",
           "name": "豊田市（豊田市　地域バス）",
@@ -6107,16 +6119,52 @@
     {
       "pref": 44,
       "name": "大分県",
-      "pole_count": 585,
+      "pole_count": 2794,
       "index_url": "data/index/pref_44.json",
       "timetable_base": "data/timetables/pref_44",
       "bounds": {
-        "min_lat": 33.21778,
+        "min_lat": 32.9535,
         "max_lat": 33.6211,
         "min_lng": 131.02762,
-        "max_lng": 131.29261
+        "max_lng": 131.90307
       },
       "operators": [
+        {
+          "id": "oita_bus",
+          "name": "大分バス",
+          "pole_count": 1307,
+          "rt": false,
+          "valid_from": "20261001",
+          "valid_to": "20271001",
+          "area": "大分県",
+          "license": "CC BY 4.0",
+          "attribution": "大分県・大分バスのGTFSを時刻表・路線図用に加工（CC BY 4.0）",
+          "official_url": "https://data.bodik.jp/dataset/440001_gtfs01_oitabus"
+        },
+        {
+          "id": "kamenoi",
+          "name": "亀の井バス",
+          "pole_count": 493,
+          "rt": false,
+          "valid_from": "20261001",
+          "valid_to": "20271001",
+          "area": "別府・由布院など",
+          "license": "CC BY 4.0",
+          "attribution": "大分県・亀の井バスのGTFSを時刻表・路線図用に加工（CC BY 4.0）",
+          "official_url": "https://data.bodik.jp/dataset/440001_gtfs08_kamenoibus"
+        },
+        {
+          "id": "oita_kotsu",
+          "name": "大分交通",
+          "pole_count": 409,
+          "rt": false,
+          "valid_from": "20261025",
+          "valid_to": "20271025",
+          "area": "大分県",
+          "license": "CC BY 4.0",
+          "attribution": "大分県・大分交通のGTFSを時刻表・路線図用に加工（CC BY 4.0）",
+          "official_url": "https://data.bodik.jp/dataset/440001_gtfs04_oitakotsu"
+        },
         {
           "id": "玖珠町（玖珠町コミュニティバス）",
           "name": "玖珠町（玖珠町コミュニティバス）",
@@ -6295,7 +6343,7 @@
       ]
     }
   ],
-  "generated_at": "2026-11-28T11:40:44+09:00",
+  "generated_at": "2026-11-28T17:42:30+09:00",
   "gtfs_sync": true,
   "public_license_only": true
 }

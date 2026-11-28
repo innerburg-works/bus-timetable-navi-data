@@ -300,6 +300,9 @@ def convert_gtfs(
     default_timetable_url: str,
     badge_color: str,
     allowed_route_types: Optional[Iterable[str]] = None,
+    agency_id: Optional[str] = None,
+    feed_period: Optional[Tuple[str, str]] = None,
+    include_fares: bool = True,
 ) -> Dict:
     with zipfile.ZipFile(gtfs_zip_path, "r") as zf:
         agencies = read_csv_from_zip(zf, "agency.txt")
@@ -312,9 +315,20 @@ def convert_gtfs(
         fare_attr_rows = read_csv_from_zip(zf, "fare_attributes.txt")
         fare_rule_rows = read_csv_from_zip(zf, "fare_rules.txt")
 
+    if agency_id:
+        agencies = [a for a in agencies if a.get("agency_id") == agency_id]
+        routes_rows = [r for r in routes_rows if r.get("agency_id") == agency_id]
+    if feed_period:
+        start, end = feed_period
+        calendar_dates_rows = [r for r in calendar_dates_rows if start <= r["date"] <= end]
+        calendar_rows = [dict(r, start_date=max(start, r["start_date"]), end_date=min(end, r["end_date"]))
+                         for r in calendar_rows if r["start_date"] <= end and r["end_date"] >= start]
+
     agency_name = agencies[0].get("agency_name", operator_short) if agencies else operator_short
     agency_url = agencies[0].get("agency_url", default_timetable_url) if agencies else default_timetable_url
-    route_fares, default_fare = extract_route_fares(fare_attr_rows, fare_rule_rows, agency_name, operator_short)
+    route_fares, default_fare = {}, None
+    if include_fares:
+        route_fares, default_fare = extract_route_fares(fare_attr_rows, fare_rule_rows, agency_name, operator_short)
 
     stops: Dict[str, Dict] = {}
     for s in stops_rows:

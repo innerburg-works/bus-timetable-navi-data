@@ -2,7 +2,7 @@
   "catalog_sha256": "02ecb6952e2bca376f3f25d6401abfb6b20c99acc00d20866d6e51d601411772",
   "toei_sha256": "4de4c910b40a28e089cdb14eec1924c6e1ec1d13ad3da33394e66c589d08fa60",
   "patches_sha256": "62f8c3c32c405a805e26f989108eeb7a1641b14bcf2199b80dfb1e76ac9eef3c",
-  "extra_feeds_sha256": "35119de5a35000f94f4f42daf2a9586b44841163e97a93ebb78aabe0ef2f0dee",
+  "extra_feeds_sha256": "b38a5d919c1c3b1ed89c22e42da7d999b9b08310ec91f3621068f4e4568d3551",
   "feed_versions": {
     "gan-wu/shiokazeline": "3b922768ddde04303b3b6eb8f0dead77e3878fd257ed3eff8ead3825396c2814",
     "ishikariwanshinko/on-demandtransit_itsumo": "6346709b2876db789958cb116699af7e5d674ea7bf934d4bd02d44120b496a44",
@@ -616,7 +616,11 @@
     "shodoshima_olive": "09e620ccd55e00f7:20250901-20270930",
     "shodoshima_town": "1831f4f65af24bf5:20210920-20250331",
     "toei_toden": "5edcd252f2380c68:20261121-20270312",
-    "ext_okayama_tram": "e66778c231733fa7:20261101-20271031"
+    "ext_okayama_tram": "e66778c231733fa7:20261101-20271031",
+    "nagoya_city": "4684cfddf1272817:20260328-20270430",
+    "oita_kotsu": "8acc272368e31f05:20261025-20271025",
+    "oita_bus": "b4cd3030e3323f5e:20261001-20271001",
+    "kamenoi": "4a666380b31525fe:20261001-20271001"
   },
   "feed_slots": {
     "1": {
@@ -1309,7 +1313,8 @@
         295,
         296,
         297,
-        298
+        298,
+        901
       ],
       "feeds": {
         "aichi-miyoshicity/sansanbus": 267,
@@ -1911,7 +1916,10 @@
         537,
         538,
         539,
-        540
+        540,
+        901,
+        902,
+        903
       ],
       "feeds": {
         "kusutown/kusucommunity-bus": 532,

@@ -74,7 +74,7 @@ def write_json_z(path: Path, obj: object) -> Tuple[int, int]:
     return len(raw), len(comp)
 
 
-def inspect_gtfs_zip_validity(zip_path: Path, ref_ymd: Optional[str] = None) -> Dict:
+def inspect_gtfs_zip_validity(zip_path: Path, ref_ymd: Optional[str] = None, agency_id: Optional[str] = None) -> Dict:
     """ZIP内の feed_info.txt / calendar.txt / calendar_dates.txt から有効期間と運行日数を直接読む。"""
     ref = ref_ymd or today_jst_ymd()
     info = {
@@ -111,6 +111,11 @@ def inspect_gtfs_zip_validity(zip_path: Path, ref_ymd: Optional[str] = None) -> 
         cal_rows = read_csv("calendar.txt")
         cal_date_rows = read_csv("calendar_dates.txt")
         trips_rows = read_csv("trips.txt")
+
+        if agency_id:
+            routes = {r["route_id"] for r in read_csv("routes.txt")
+                      if r.get("agency_id") == agency_id and r.get("route_type") == "3"}
+            trips_rows = [t for t in trips_rows if t["route_id"] in routes]
 
         starts: List[str] = []
         ends: List[str] = []
@@ -154,6 +159,11 @@ def inspect_gtfs_zip_validity(zip_path: Path, ref_ymd: Optional[str] = None) -> 
 
         info["valid_from"] = min(starts) if starts else ""
         info["valid_to"] = max(ends) if ends else ""
+
+        if agency_id:
+            # 県公開ZIPには feed_end_date より後の祝日例外もある。
+            info["valid_from"] = fi_rows[0].get("feed_start_date", "") if fi_rows else ""
+            info["valid_to"] = fi_rows[0].get("feed_end_date", "") if fi_rows else ""
 
         # 指定日 ref の有効 service_id と便数を計算
         try:
@@ -200,6 +210,60 @@ def resolve_bodik_zip_url(package_id: str) -> Optional[str]:
     except Exception:
         return None
     return None
+
+
+def acquire_bodik_city_feed(feed, raw_dir, ref, cached_dir):
+    dest = raw_dir / f"extra_{feed['id']}.zip"
+
+    def valid(path):
+        info = inspect_gtfs_zip_validity(path, ref, agency_id=feed["agency_id"])
+        if not (info["valid_from"] <= ref <= info["valid_to"] and info["valid_from"]
+                and info["trip_count_on_ref"] > 0):
+            return None
+        return info
+
+    if cached_dir and (cached_dir / dest.name).is_file():
+        cached = cached_dir / dest.name
+        try:
+            info = valid(cached)
+        except (OSError, KeyError, ValueError, zipfile.BadZipFile):
+            info = None
+        if info:
+            if cached != dest:
+                shutil.copy2(cached, dest)
+            return dest, f"cache:{cached.name}", info, ""
+
+    package = feed["bodik_package_id"]
+    url = "https://data.bodik.jp/api/3/action/package_show?" + urllib.parse.urlencode({"id": package})
+    try:
+        with urllib.request.urlopen(url, timeout=20) as response:
+            doc = json.load(response)["result"]
+        if doc["name"] != package or doc["license_id"] != feed["bodik_license_id"]:
+            raise ValueError("配布元またはライセンスが登録内容と一致しません")
+        resources = sorted(doc["resources"], key=lambda r: r.get("last_modified") or "", reverse=True)
+        if feed["id"] == "nagoya_city":
+            # 名古屋市は改正版を併載する。再アップロード日時よりファイル名の改正日を優先する。
+            editions = [(m[1], r) for r in resources if (m := re.search(
+                r"/(\d{8})_bus-gtfs-jp\.zip$", urllib.parse.urlsplit(r["url"]).path, re.I))]
+            resources = [r for date, r in sorted(editions, key=lambda item: item[0], reverse=True)
+                         if date <= ref][:1]
+        with tempfile.TemporaryDirectory(dir=raw_dir) as tmp:
+            candidate = Path(tmp) / dest.name
+            for resource in resources:
+                url = resource["url"]
+                parsed = urllib.parse.urlsplit(url)
+                if (parsed.scheme, parsed.netloc) != ("https", "data.bodik.jp") or not parsed.path.lower().endswith(".zip"):
+                    continue
+                matched, err = download_zip_with_auth([url], candidate)
+                if not matched:
+                    return None, "", {}, err
+                info = valid(candidate)
+                if info:
+                    candidate.replace(dest)
+                    return dest, url, info, ""
+    except (OSError, ValueError, KeyError, zipfile.BadZipFile) as exc:
+        return None, "", {}, str(exc)
+    return None, "", {}, f"{ref}に対象事業者の便がある版を確認できません"
 
 
 def download_zip_with_auth(urls: List[str], dest: Path, api_key: str = "", timeout: int = 35) -> Tuple[Optional[str], str]:
@@ -249,6 +313,9 @@ def acquire_feed_zip(
     ref = ref_ymd or today_jst_ymd()
     if simulate_fail_ids and fid in simulate_fail_ids:
         return None, "", {}, "simulated_download_failure"
+
+    if feed.get("bodik_license_id"):
+        return acquire_bodik_city_feed(feed, raw_dir, ref, cached_raw_dir if use_cached_raw else None)
 
     urls = sendai_urls_on(ref) if fid == "sendai" else list(feed.get("urls", []))
     dest = raw_dir / f"extra_{fid}.zip"
@@ -568,6 +635,7 @@ def run_public_sync(
     cached_raw_dir: Optional[Path] = None,
     simulate_fail_ids: Optional[Set[str]] = None,
     strip_non_public: bool = True,
+    feeds: Optional[List[Dict]] = None,
 ) -> Dict:
     """公開再配布可能 (CC BY / CC0) な追加フィードを staging_data_dir へ安全マージする。"""
     ref = ref_ymd or today_jst_ymd()
@@ -616,7 +684,7 @@ def run_public_sync(
                 report["stripped_non_public"][f"pref_{pcode:02d}"] = len(bad_ids)
 
     # 2. 各公開追加フィードを取得・変換・安全マージ
-    for feed in EXTRA_PUBLIC_FEEDS:
+    for feed in (EXTRA_PUBLIC_FEEDS if feeds is None else feeds):
         fid = feed["id"]
         pref = int(feed["pref"])
         prefix = feed["pole_prefix"]
@@ -673,6 +741,9 @@ def run_public_sync(
                     default_timetable_url=feed["default_url"],
                     badge_color=feed["badge_color"],
                     allowed_route_types=feed.get("allowed_route_types"),
+                    agency_id=feed.get("agency_id"),
+                    feed_period=(validity["valid_from"], validity["valid_to"]) if feed.get("bodik_license_id") else None,
+                    include_fares=fid != "nagoya_city",  # 市営のゾーンから乗降時の支払い方法は判定できない。
                 )
                 new_poles = conv.get("poles", [])
                 attach_community_calls(new_poles, zip_path, effective_prefix)
@@ -685,6 +756,7 @@ def run_public_sync(
                         id_prefix=effective_prefix,
                         eps=0.00010,
                         allowed_route_types=feed.get("allowed_route_types"),
+                        agency_id=feed.get("agency_id"),
                     )
                     i18n_map = extract_i18n_from_zip(zip_path)
             except Exception as exc:

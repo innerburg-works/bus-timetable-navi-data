@@ -426,7 +426,7 @@ def main() -> None:
     # GitHub Pages 高速配信用 .nojekyll & 簡易トップ
     (args.out_site_dir / ".nojekyll").write_text("", encoding="utf-8")
     (args.out_site_dir / "index.html").write_text(
-        "<!doctype html><meta charset='utf-8'><title>BusTimetableNavi Data CDN</title><p>BusTimetableNavi sharded open transit data.</p>",
+        (Path(__file__).resolve().parents[1] / "index.html").read_text(encoding="utf-8"),
         encoding="utf-8",
     )
 

@@ -69,6 +69,7 @@ def extract_routes_from_gtfs(
     id_prefix: str,
     eps: float = 0.00008,
     allowed_route_types: Optional[Iterable[str]] = None,
+    agency_id: Optional[str] = None,
 ) -> List[Dict]:
     if not zip_path.exists():
         return []
@@ -84,6 +85,8 @@ def extract_routes_from_gtfs(
 
         route_info: Dict[str, Dict[str, str]] = {}
         for r in routes_rows:
+            if agency_id and r.get("agency_id") != agency_id:
+                continue
             rid = r.get("route_id", "")
             if not rid:
                 continue

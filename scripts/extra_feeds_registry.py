@@ -42,7 +42,30 @@ def sendai_urls_on(ref: str) -> List[str]:
 # ==============================================================================
 # 1. 公開再配布可能 (CC BY 4.0 / CC0 / CC BY 2.1 JP) ・認証不要の公式追加フィード
 # ==============================================================================
+def city_bus_feed(fid, pref, slot, name, area, package, agency_id, website, municipal=False):
+    publisher = "名古屋市交通局" if municipal else f"大分県・{name}"
+    return {
+        "id": fid, "pref": pref, "label": name, "area": area,
+        "pole_prefix": f"nat_p{pref:02d}_{slot}_",
+        "bodik_package_id": package, "bodik_license_id": "cc-by-40-intl",
+        "agency_id": agency_id, "allowed_route_types": ["3"],
+        "official_url": f"https://data.bodik.jp/dataset/{package}", "default_url": website,
+        "license": "CC BY 4.0",
+        "attribution": f"{publisher}のGTFSを時刻表・路線図用に加工（CC BY 4.0）",
+        "operator_type": "public" if municipal else "private",
+        "operator_short": "市営" if municipal else "私営", "badge_color": "#1d4ed8",
+    }
+
+
 EXTRA_PUBLIC_FEEDS: List[Dict] = [
+    city_bus_feed("nagoya_city", 23, 901, "名古屋市バス", "名古屋市・周辺",
+                  "231002_7109030000_bus-gtfs-jp", "3000020231002", "https://www.kotsu.city.nagoya.jp/", municipal=True),
+    city_bus_feed("oita_kotsu", 44, 901, "大分交通", "大分県",
+                  "440001_gtfs04_oitakotsu", "4320001000062", "https://www.oitakotsu.co.jp/"),
+    city_bus_feed("oita_bus", 44, 902, "大分バス", "大分県",
+                  "440001_gtfs01_oitabus", "3320001000286", "https://www.oitabus.co.jp/"),
+    city_bus_feed("kamenoi", 44, 903, "亀の井バス", "別府・由布院など",
+                  "440001_gtfs08_kamenoibus", "4320001006282", "https://kamenoibus.com/"),
     # --- 東京都 自治体独自ポータル (pref_13) ---
     {
         "id": "tokyo_chiibus",

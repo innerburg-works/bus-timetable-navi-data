@@ -62,6 +62,16 @@ def assign_feed_slots(items: list, previous: dict, data_dir: Path) -> dict:
         slots[pref] = {"reserved": sorted(slot for values in by_name.values() for slot in values),
                        "feeds": {}}
 
+    for feed in EXTRA_PUBLIC_FEEDS:
+        match = re.fullmatch(r"nat_p(\d{2})_(\d{3})_", feed["pole_prefix"])
+        if match and feed.get("bodik_license_id"):
+            group = slots.setdefault(str(int(match[1])), {"reserved": [], "feeds": {}})
+            slot = int(match[2])
+            if slot in group["feeds"].values():
+                raise ValueError(f"追加フィードのIDが全国カタログと衝突: {feed['id']}")
+            if slot not in group["reserved"]:
+                group["reserved"].append(slot)
+
     for item in items:
         pref = str(item.get("feed_pref_id"))
         if not pref.isdecimal() or not 1 <= int(pref) <= 47:
