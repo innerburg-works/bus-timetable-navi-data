@@ -6279,7 +6279,7 @@
     {
       "pref": 46,
       "name": "鹿児島県",
-      "pole_count": 1319,
+      "pole_count": 1811,
       "index_url": "data/index/pref_46.json",
       "timetable_base": "data/timetables/pref_46",
       "bounds": {
@@ -6297,6 +6297,18 @@
           "valid_from": "20260401",
           "valid_to": "20270331",
           "license": "CC BY 4.0"
+        },
+        {
+          "id": "kagoshima_city",
+          "name": "鹿児島市営バス",
+          "pole_count": 492,
+          "rt": false,
+          "valid_from": "20261001",
+          "valid_to": "20270331",
+          "area": "鹿児島市",
+          "license": "CC BY 4.0",
+          "attribution": "鹿児島市交通局のGTFSを時刻表・路線図用に加工（CC BY 4.0）",
+          "official_url": "https://data.bodik.jp/dataset/462012_bus-kagoshimacity-kagoshima-jp"
         },
         {
           "id": "曽於市（曽於市思いやりバス・思いやりタクシー）",
@@ -6343,7 +6355,7 @@
       ]
     }
   ],
-  "generated_at": "2026-11-28T17:42:30+09:00",
+  "generated_at": "2026-11-28T18:13:15+09:00",
   "gtfs_sync": true,
   "public_license_only": true
 }

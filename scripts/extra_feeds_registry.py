@@ -42,8 +42,8 @@ def sendai_urls_on(ref: str) -> List[str]:
 # ==============================================================================
 # 1. 公開再配布可能 (CC BY 4.0 / CC0 / CC BY 2.1 JP) ・認証不要の公式追加フィード
 # ==============================================================================
-def city_bus_feed(fid, pref, slot, name, area, package, agency_id, website, municipal=False):
-    publisher = "名古屋市交通局" if municipal else f"大分県・{name}"
+def city_bus_feed(fid, pref, slot, name, area, package, agency_id, website, municipal=False, publisher=None):
+    publisher = publisher or ("名古屋市交通局" if municipal else f"大分県・{name}")
     return {
         "id": fid, "pref": pref, "label": name, "area": area,
         "pole_prefix": f"nat_p{pref:02d}_{slot}_",
@@ -60,6 +60,9 @@ def city_bus_feed(fid, pref, slot, name, area, package, agency_id, website, muni
 EXTRA_PUBLIC_FEEDS: List[Dict] = [
     city_bus_feed("nagoya_city", 23, 901, "名古屋市バス", "名古屋市・周辺",
                   "231002_7109030000_bus-gtfs-jp", "3000020231002", "https://www.kotsu.city.nagoya.jp/", municipal=True),
+    city_bus_feed("kagoshima_city", 46, 901, "鹿児島市営バス", "鹿児島市",
+                  "462012_bus-kagoshimacity-kagoshima-jp", "1000020462012_1",
+                  "https://www.kotsu-city-kagoshima.jp/kensaku/", municipal=True, publisher="鹿児島市交通局"),
     city_bus_feed("oita_kotsu", 44, 901, "大分交通", "大分県",
                   "440001_gtfs04_oitakotsu", "4320001000062", "https://www.oitakotsu.co.jp/"),
     city_bus_feed("oita_bus", 44, 902, "大分バス", "大分県",
