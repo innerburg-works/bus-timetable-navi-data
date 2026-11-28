@@ -20,7 +20,8 @@
           "pole_count": 309,
           "rt": false,
           "valid_from": "20260526",
-          "valid_to": "20270525"
+          "valid_to": "20270525",
+          "license": "CC0 1.0"
         },
         {
           "id": "石狩湾新港地域公共交通サービス推進協議会（石狩市AIデマンド交通「いつモ」）",
@@ -28,7 +29,8 @@
           "pole_count": 129,
           "rt": false,
           "valid_from": "20260623",
-          "valid_to": "20270331"
+          "valid_to": "20270331",
+          "license": "CC0 1.0"
         },
         {
           "id": "岩宇地域公共交通活性化協議会（しおかぜライン）",
@@ -36,7 +38,8 @@
           "pole_count": 104,
           "rt": false,
           "valid_from": "20261001",
-          "valid_to": "20270930"
+          "valid_to": "20270930",
+          "license": "CC BY 4.0"
         },
         {
           "id": "上士幌町（上士幌町コミュニティバス）",
@@ -44,7 +47,8 @@
           "pole_count": 30,
           "rt": false,
           "valid_from": "20251201",
-          "valid_to": "20270331"
+          "valid_to": "20270331",
+          "license": "CC BY 4.0"
         }
       ]
     },
@@ -67,7 +71,8 @@
           "pole_count": 919,
           "rt": false,
           "valid_from": "20261001",
-          "valid_to": "20270331"
+          "valid_to": "20270331",
+          "license": "CC BY 4.0"
         },
         {
           "id": "aomori_city",
@@ -87,7 +92,8 @@
           "pole_count": 688,
           "rt": false,
           "valid_from": "20261001",
-          "valid_to": "20270331"
+          "valid_to": "20270331",
+          "license": "CC BY 4.0"
         },
         {
           "id": "八戸市交通部（八戸市営バス）",
@@ -95,7 +101,8 @@
           "pole_count": 680,
           "rt": false,
           "valid_from": "20260612",
-          "valid_to": "20270331"
+          "valid_to": "20270331",
+          "license": "CC BY 4.0"
         },
         {
           "id": "aomori_comm",
@@ -115,7 +122,8 @@
           "pole_count": 312,
           "rt": false,
           "valid_from": "20260331",
-          "valid_to": "20270331"
+          "valid_to": "20270331",
+          "license": "CC0 1.0"
         },
         {
           "id": "弘前市（弘前市乗合タクシー（北星交通））",
@@ -123,7 +131,8 @@
           "pole_count": 248,
           "rt": false,
           "valid_from": "20260401",
-          "valid_to": "20270331"
+          "valid_to": "20270331",
+          "license": "CC BY 4.0"
         },
         {
           "id": "三沢市（三沢市コミュニティバス「みーばす」）",
@@ -131,7 +140,8 @@
           "pole_count": 235,
           "rt": false,
           "valid_from": "20260401",
-          "valid_to": "20270331"
+          "valid_to": "20270331",
+          "license": "CC BY 4.0"
         },
         {
           "id": "平内町（平内町民バス）",
@@ -139,7 +149,8 @@
           "pole_count": 177,
           "rt": false,
           "valid_from": "20260314",
-          "valid_to": "20270331"
+          "valid_to": "20270331",
+          "license": "CC BY 4.0"
         },
         {
           "id": "八戸市（八戸市南郷コミュニティバス）",
@@ -147,7 +158,8 @@
           "pole_count": 171,
           "rt": false,
           "valid_from": "20260310",
-          "valid_to": "20270331"
+          "valid_to": "20270331",
+          "license": "CC BY 4.0"
         },
         {
           "id": "七戸町（七戸町コミュニティバス・シャトルバス）",
@@ -155,7 +167,8 @@
           "pole_count": 155,
           "rt": false,
           "valid_from": "20260401",
-          "valid_to": "20280331"
+          "valid_to": "20280331",
+          "license": "CC BY 4.0"
         },
         {
           "id": "十和田市（十和田市コミュニティバス）",
@@ -163,7 +176,8 @@
           "pole_count": 134,
           "rt": false,
           "valid_from": "20251106",
-          "valid_to": "20261231"
+          "valid_to": "20261231",
+          "license": "CC BY 4.0"
         },
         {
           "id": "外ヶ浜町（外ヶ浜町営バス）",
@@ -171,7 +185,8 @@
           "pole_count": 132,
           "rt": false,
           "valid_from": "20260401",
-          "valid_to": "20261231"
+          "valid_to": "20261231",
+          "license": "CC BY 4.0"
         },
         {
           "id": "深浦町（深浦町コミュニティバス）",
@@ -179,7 +194,8 @@
           "pole_count": 131,
           "rt": false,
           "valid_from": "20260401",
-          "valid_to": "20270331"
+          "valid_to": "20270331",
+          "license": "CC BY 4.0"
         },
         {
           "id": "五所川原市（五所川原市コミュニティバス）",
@@ -187,7 +203,8 @@
           "pole_count": 123,
           "rt": false,
           "valid_from": "20260701",
-          "valid_to": "20270331"
+          "valid_to": "20270331",
+          "license": "CC BY 4.0"
         },
         {
           "id": "中泊町（中泊町コミュニティバス）",
@@ -195,7 +212,8 @@
           "pole_count": 117,
           "rt": false,
           "valid_from": "20260108",
-          "valid_to": "20261231"
+          "valid_to": "20261231",
+          "license": "CC BY 4.0"
         },
         {
           "id": "つがる市（つがる市地域内交通）",
@@ -203,7 +221,8 @@
           "pole_count": 116,
           "rt": false,
           "valid_from": "20251025",
-          "valid_to": "20261231"
+          "valid_to": "20261231",
+          "license": "CC BY 4.0"
         },
         {
           "id": "大鰐町（大鰐町スネカラバス）",
@@ -211,7 +230,8 @@
           "pole_count": 105,
           "rt": false,
           "valid_from": "20251120",
-          "valid_to": "20261231"
+          "valid_to": "20261231",
+          "license": "CC BY 4.0"
         },
         {
           "id": "階上町（階上町コミュニティバス）",
@@ -219,7 +239,8 @@
           "pole_count": 97,
           "rt": false,
           "valid_from": "20260401",
-          "valid_to": "20270331"
+          "valid_to": "20270331",
+          "license": "CC0 1.0"
         },
         {
           "id": "新郷村（新郷村営バス）",
@@ -227,7 +248,8 @@
           "pole_count": 88,
           "rt": false,
           "valid_from": "20251208",
-          "valid_to": "20261231"
+          "valid_to": "20261231",
+          "license": "CC BY 4.0"
         },
         {
           "id": "蓬田村（蓬田村コミュニティバス）",
@@ -235,7 +257,8 @@
           "pole_count": 78,
           "rt": false,
           "valid_from": "20260317",
-          "valid_to": "20270331"
+          "valid_to": "20270331",
+          "license": "CC BY 4.0"
         },
         {
           "id": "黒石市（ぷらっと号）",
@@ -243,7 +266,8 @@
           "pole_count": 71,
           "rt": false,
           "valid_from": "20260613",
-          "valid_to": "20270331"
+          "valid_to": "20270331",
+          "license": "CC BY 4.0"
         },
         {
           "id": "鶴田町（鶴田町地域巡回バス）",
@@ -251,7 +275,8 @@
           "pole_count": 57,
           "rt": false,
           "valid_from": "20261126",
-          "valid_to": "20270331"
+          "valid_to": "20270331",
+          "license": "CC BY 4.0"
         },
         {
           "id": "JR東日本盛岡支社（わんタク定時便）",
@@ -259,7 +284,8 @@
           "pole_count": 44,
           "rt": false,
           "valid_from": "20260501",
-          "valid_to": "20261231"
+          "valid_to": "20261231",
+          "license": "CC BY 4.0"
         },
         {
           "id": "弘前市（弘南鉄道）",
@@ -267,7 +293,8 @@
           "pole_count": 27,
           "rt": false,
           "valid_from": "20260401",
-          "valid_to": "20270331"
+          "valid_to": "20270331",
+          "license": "CC BY 4.0"
         },
         {
           "id": "JR東日本盛岡支社（JR津軽線代行バス（蟹田駅～三厩体育館））",
@@ -275,7 +302,8 @@
           "pole_count": 19,
           "rt": false,
           "valid_from": "20260501",
-          "valid_to": "20270430"
+          "valid_to": "20270430",
+          "license": "CC BY 4.0"
         },
         {
           "id": "平川市（予約型乗り合いタクシー東部・平賀線）",
@@ -283,7 +311,8 @@
           "pole_count": 18,
           "rt": false,
           "valid_from": "20261022",
-          "valid_to": "20270331"
+          "valid_to": "20270331",
+          "license": "CC BY 4.0"
         },
         {
           "id": "平川市（平川市碇ヶ関・平賀線バス）",
@@ -291,7 +320,8 @@
           "pole_count": 18,
           "rt": false,
           "valid_from": "20260309",
-          "valid_to": "20270331"
+          "valid_to": "20270331",
+          "license": "CC BY 4.0"
         },
         {
           "id": "十和田観光電鉄株式会社（十和田観光電鉄（八戸～三沢空港線））",
@@ -299,7 +329,8 @@
           "pole_count": 7,
           "rt": false,
           "valid_from": "20261025",
-          "valid_to": "20261130"
+          "valid_to": "20261130",
+          "license": "CC BY 4.0"
         }
       ]
     },
@@ -322,7 +353,8 @@
           "pole_count": 516,
           "rt": false,
           "valid_from": "20260401",
-          "valid_to": "20270331"
+          "valid_to": "20270331",
+          "license": "CC BY 4.0"
         },
         {
           "id": "奥州市（奥州市コミュニティバス）",
@@ -330,7 +362,8 @@
           "pole_count": 364,
           "rt": false,
           "valid_from": "20261001",
-          "valid_to": "20270331"
+          "valid_to": "20270331",
+          "license": "CC BY 4.0"
         },
         {
           "id": "花巻市（花巻市コミュニティバス）",
@@ -338,7 +371,8 @@
           "pole_count": 197,
           "rt": false,
           "valid_from": "20261001",
-          "valid_to": "20270331"
+          "valid_to": "20270331",
+          "license": "CC BY 4.0"
         }
       ]
     },
@@ -373,7 +407,8 @@
           "pole_count": 154,
           "rt": false,
           "valid_from": "20260819",
-          "valid_to": "20270331"
+          "valid_to": "20270331",
+          "license": "CC BY 4.0"
         },
         {
           "id": "株式会社タケヤ交通",
@@ -381,7 +416,8 @@
           "pole_count": 73,
           "rt": false,
           "valid_from": "20260901",
-          "valid_to": "20270331"
+          "valid_to": "20270331",
+          "license": "CC BY 4.0"
         }
       ]
     },
@@ -404,7 +440,8 @@
           "pole_count": 571,
           "rt": false,
           "valid_from": "20260901",
-          "valid_to": "20261130"
+          "valid_to": "20261130",
+          "license": "CC BY 4.0"
         },
         {
           "id": "仙北市（仙北市民バス（たっこちゃんバス・スマイルバス））",
@@ -412,7 +449,8 @@
           "pole_count": 106,
           "rt": false,
           "valid_from": "20260401",
-          "valid_to": "20270331"
+          "valid_to": "20270331",
+          "license": "CC BY 4.0"
         },
         {
           "id": "羽後交通株式会社（羽後交通（田沢湖地区））",
@@ -420,7 +458,8 @@
           "pole_count": 77,
           "rt": false,
           "valid_from": "20261019",
-          "valid_to": "20261130"
+          "valid_to": "20261130",
+          "license": "CC BY 4.0"
         }
       ]
     },
@@ -443,7 +482,8 @@
           "pole_count": 1425,
           "rt": false,
           "valid_from": "20261031",
-          "valid_to": "20270430"
+          "valid_to": "20270430",
+          "license": "CC BY 4.0"
         },
         {
           "id": "庄内交通",
@@ -451,7 +491,8 @@
           "pole_count": 561,
           "rt": false,
           "valid_from": "20260331",
-          "valid_to": "20270331"
+          "valid_to": "20270331",
+          "license": "CC BY 4.0"
         },
         {
           "id": "長井市（長井市営バス）",
@@ -459,7 +500,8 @@
           "pole_count": 298,
           "rt": false,
           "valid_from": "20261001",
-          "valid_to": "20270930"
+          "valid_to": "20270930",
+          "license": "CC BY 4.0"
         },
         {
           "id": "鶴岡市（鶴岡市営バス）",
@@ -467,7 +509,8 @@
           "pole_count": 291,
           "rt": false,
           "valid_from": "20261001",
-          "valid_to": "20270930"
+          "valid_to": "20270930",
+          "license": "CC BY 4.0"
         },
         {
           "id": "尾花沢市（尾花沢市営バス）",
@@ -475,7 +518,8 @@
           "pole_count": 258,
           "rt": false,
           "valid_from": "20261001",
-          "valid_to": "20270930"
+          "valid_to": "20270930",
+          "license": "CC BY 4.0"
         },
         {
           "id": "酒田市（酒田市営バス）",
@@ -483,7 +527,8 @@
           "pole_count": 251,
           "rt": false,
           "valid_from": "20260409",
-          "valid_to": "20270331"
+          "valid_to": "20270331",
+          "license": "CC BY 4.0"
         },
         {
           "id": "山形市（山形市営バス）",
@@ -491,7 +536,8 @@
           "pole_count": 224,
           "rt": false,
           "valid_from": "20260902",
-          "valid_to": "20270331"
+          "valid_to": "20270331",
+          "license": "CC BY 4.0"
         },
         {
           "id": "西川町（西川町営バス）",
@@ -499,7 +545,8 @@
           "pole_count": 213,
           "rt": false,
           "valid_from": "20260401",
-          "valid_to": "20270331"
+          "valid_to": "20270331",
+          "license": "CC BY 4.0"
         },
         {
           "id": "真室川町（真室川町営バス）",
@@ -507,7 +554,8 @@
           "pole_count": 188,
           "rt": false,
           "valid_from": "20260314",
-          "valid_to": "20270331"
+          "valid_to": "20270331",
+          "license": "CC BY 4.0"
         },
         {
           "id": "東根市（東根市営バス）",
@@ -515,7 +563,8 @@
           "pole_count": 175,
           "rt": false,
           "valid_from": "20260401",
-          "valid_to": "20270331"
+          "valid_to": "20270331",
+          "license": "CC BY 4.0"
         },
         {
           "id": "村山市（村山市営バス）",
@@ -523,7 +572,8 @@
           "pole_count": 158,
           "rt": false,
           "valid_from": "20260401",
-          "valid_to": "20270331"
+          "valid_to": "20270331",
+          "license": "CC BY 4.0"
         },
         {
           "id": "米沢市（米沢市営バス）",
@@ -531,7 +581,8 @@
           "pole_count": 145,
           "rt": false,
           "valid_from": "20260416",
-          "valid_to": "20261130"
+          "valid_to": "20261130",
+          "license": "CC BY 4.0"
         },
         {
           "id": "新庄市（新庄市営バス）",
@@ -539,7 +590,8 @@
           "pole_count": 137,
           "rt": false,
           "valid_from": "20260401",
-          "valid_to": "20270331"
+          "valid_to": "20270331",
+          "license": "CC BY 4.0"
         },
         {
           "id": "山形県小国町（小国町営バス）",
@@ -547,7 +599,8 @@
           "pole_count": 133,
           "rt": false,
           "valid_from": "20260701",
-          "valid_to": "20270630"
+          "valid_to": "20270630",
+          "license": "CC BY 4.0"
         },
         {
           "id": "庄内町（庄内町営バス）",
@@ -555,7 +608,8 @@
           "pole_count": 130,
           "rt": false,
           "valid_from": "20260413",
-          "valid_to": "20270331"
+          "valid_to": "20270331",
+          "license": "CC BY 4.0"
         },
         {
           "id": "鮭川村（鮭川村営バス）",
@@ -563,7 +617,8 @@
           "pole_count": 129,
           "rt": false,
           "valid_from": "20261001",
-          "valid_to": "20270930"
+          "valid_to": "20270930",
+          "license": "CC BY 4.0"
         },
         {
           "id": "山形県金山町（金山町営バス）",
@@ -571,7 +626,8 @@
           "pole_count": 128,
           "rt": false,
           "valid_from": "20260401",
-          "valid_to": "20270331"
+          "valid_to": "20270331",
+          "license": "CC BY 4.0"
         },
         {
           "id": "南陽市（南陽市営バス）",
@@ -579,7 +635,8 @@
           "pole_count": 112,
           "rt": false,
           "valid_from": "20261001",
-          "valid_to": "20270930"
+          "valid_to": "20270930",
+          "license": "CC BY 4.0"
         },
         {
           "id": "戸沢村（戸沢村営バス）",
@@ -587,7 +644,8 @@
           "pole_count": 97,
           "rt": false,
           "valid_from": "20261001",
-          "valid_to": "20270930"
+          "valid_to": "20270930",
+          "license": "CC BY 4.0"
         },
         {
           "id": "大蔵村（大蔵村営バス）",
@@ -595,7 +653,8 @@
           "pole_count": 95,
           "rt": false,
           "valid_from": "20261001",
-          "valid_to": "20280101"
+          "valid_to": "20280101",
+          "license": "CC BY 4.0"
         },
         {
           "id": "河北町（河北町営バス）",
@@ -603,7 +662,8 @@
           "pole_count": 74,
           "rt": false,
           "valid_from": "20260401",
-          "valid_to": "20261231"
+          "valid_to": "20261231",
+          "license": "CC BY 4.0"
         },
         {
           "id": "白鷹町（白鷹町営バス）",
@@ -611,7 +671,8 @@
           "pole_count": 69,
           "rt": false,
           "valid_from": "20260401",
-          "valid_to": "20270331"
+          "valid_to": "20270331",
+          "license": "CC BY 4.0"
         },
         {
           "id": "大江町（大江町営バス）",
@@ -619,7 +680,8 @@
           "pole_count": 68,
           "rt": false,
           "valid_from": "20260401",
-          "valid_to": "20270331"
+          "valid_to": "20270331",
+          "license": "CC BY 4.0"
         },
         {
           "id": "天童市（天童市営バス）",
@@ -627,7 +689,8 @@
           "pole_count": 66,
           "rt": false,
           "valid_from": "20260401",
-          "valid_to": "20270331"
+          "valid_to": "20270331",
+          "license": "CC BY 4.0"
         },
         {
           "id": "中山町（中山町営バス）",
@@ -635,7 +698,8 @@
           "pole_count": 63,
           "rt": false,
           "valid_from": "20260401",
-          "valid_to": "20270331"
+          "valid_to": "20270331",
+          "license": "CC BY 4.0"
         },
         {
           "id": "寒河江市（寒河江市営バス）",
@@ -643,7 +707,8 @@
           "pole_count": 62,
           "rt": false,
           "valid_from": "20261014",
-          "valid_to": "20271031"
+          "valid_to": "20271031",
+          "license": "CC BY 4.0"
         },
         {
           "id": "上山市（上山市営バス）",
@@ -651,7 +716,8 @@
           "pole_count": 58,
           "rt": false,
           "valid_from": "20261001",
-          "valid_to": "20270930"
+          "valid_to": "20270930",
+          "license": "CC BY 4.0"
         },
         {
           "id": "朝日町（朝日町営バス）",
@@ -659,7 +725,8 @@
           "pole_count": 55,
           "rt": false,
           "valid_from": "20260401",
-          "valid_to": "20270331"
+          "valid_to": "20270331",
+          "license": "CC BY 4.0"
         },
         {
           "id": "山辺町（山辺町営バス）",
@@ -667,7 +734,8 @@
           "pole_count": 34,
           "rt": false,
           "valid_from": "20260318",
-          "valid_to": "20270317"
+          "valid_to": "20270317",
+          "license": "CC BY 4.0"
         },
         {
           "id": "山形鉄道株式会社",
@@ -675,7 +743,8 @@
           "pole_count": 17,
           "rt": false,
           "valid_from": "20260314",
-          "valid_to": "20270313"
+          "valid_to": "20270313",
+          "license": "CC BY 4.0"
         },
         {
           "id": "最上川交通",
@@ -683,7 +752,8 @@
           "pole_count": 5,
           "rt": false,
           "valid_from": "20260401",
-          "valid_to": "20270331"
+          "valid_to": "20270331",
+          "license": "CC BY 4.0"
         }
       ]
     },
@@ -706,7 +776,8 @@
           "pole_count": 1400,
           "rt": false,
           "valid_from": "20260401",
-          "valid_to": "20270430"
+          "valid_to": "20270430",
+          "license": "CC BY 4.0"
         },
         {
           "id": "本宮市（本宮市コミュニティバス）",
@@ -714,7 +785,8 @@
           "pole_count": 106,
           "rt": false,
           "valid_from": "20260317",
-          "valid_to": "20270331"
+          "valid_to": "20270331",
+          "license": "CC BY 4.0"
         },
         {
           "id": "柳津町（柳津町町民バス”ふれあい号”）",
@@ -722,7 +794,8 @@
           "pole_count": 31,
           "rt": false,
           "valid_from": "20261019",
-          "valid_to": "20261228"
+          "valid_to": "20261228",
+          "license": "CC BY 4.0"
         },
         {
           "id": "大玉村（大玉村通勤通学バス）",
@@ -730,7 +803,8 @@
           "pole_count": 21,
           "rt": false,
           "valid_from": "20260304",
-          "valid_to": "20270331"
+          "valid_to": "20270331",
+          "license": "CC BY 4.0"
         }
       ]
     },
@@ -753,7 +827,8 @@
           "pole_count": 539,
           "rt": false,
           "valid_from": "20261105",
-          "valid_to": "20270331"
+          "valid_to": "20270331",
+          "license": "CC BY 4.0"
         },
         {
           "id": "龍ケ崎市（龍ケ崎市コミュニティバス）",
@@ -761,7 +836,8 @@
           "pole_count": 196,
           "rt": false,
           "valid_from": "20250901",
-          "valid_to": "20261231"
+          "valid_to": "20261231",
+          "license": "CC BY 4.0"
         },
         {
           "id": "結城市（結城市巡回バス）",
@@ -769,7 +845,8 @@
           "pole_count": 127,
           "rt": false,
           "valid_from": "20260803",
-          "valid_to": "20280731"
+          "valid_to": "20280731",
+          "license": "CC0 1.0"
         },
         {
           "id": "行方市（行方市営路線バス）",
@@ -777,7 +854,8 @@
           "pole_count": 126,
           "rt": false,
           "valid_from": "20260226",
-          "valid_to": "20270225"
+          "valid_to": "20270225",
+          "license": "CC BY 4.0"
         },
         {
           "id": "大利根交通自動車株式会社（大利根交通バス）",
@@ -785,7 +863,8 @@
           "pole_count": 108,
           "rt": false,
           "valid_from": "20260409",
-          "valid_to": "20270408"
+          "valid_to": "20270408",
+          "license": "CC BY 4.0"
         },
         {
           "id": "土浦市（つちまるバス）",
@@ -793,7 +872,8 @@
           "pole_count": 91,
           "rt": false,
           "valid_from": "20260304",
-          "valid_to": "20270331"
+          "valid_to": "20270331",
+          "license": "CC BY 4.0"
         }
       ]
     },
@@ -816,7 +896,8 @@
           "pole_count": 506,
           "rt": false,
           "valid_from": "20260327",
-          "valid_to": "20270331"
+          "valid_to": "20270331",
+          "license": "CC BY 4.0"
         },
         {
           "id": "足利市（足利市路線バス）",
@@ -824,7 +905,8 @@
           "pole_count": 398,
           "rt": false,
           "valid_from": "20260511",
-          "valid_to": "20270731"
+          "valid_to": "20270731",
+          "license": "CC BY 4.0"
         },
         {
           "id": "日光市（日光市営バス）",
@@ -832,7 +914,8 @@
           "pole_count": 369,
           "rt": false,
           "valid_from": "20260401",
-          "valid_to": "20270331"
+          "valid_to": "20270331",
+          "license": "CC BY 4.0"
         },
         {
           "id": "那須塩原市（那須塩原市地域バス）",
@@ -840,7 +923,8 @@
           "pole_count": 219,
           "rt": false,
           "valid_from": "20260401",
-          "valid_to": "20270331"
+          "valid_to": "20270331",
+          "license": "CC BY 4.0"
         },
         {
           "id": "那須町（那須町町民バス）",
@@ -848,7 +932,8 @@
           "pole_count": 116,
           "rt": false,
           "valid_from": "20260401",
-          "valid_to": "20270331"
+          "valid_to": "20270331",
+          "license": "CC BY 4.0"
         },
         {
           "id": "壬生町（壬生町コミュニティバス「みぶーぶ」）",
@@ -856,7 +941,8 @@
           "pole_count": 30,
           "rt": false,
           "valid_from": "20260323",
-          "valid_to": "20270331"
+          "valid_to": "20270331",
+          "license": "CC BY 4.0"
         },
         {
           "id": "矢板市（中央部循環路線）",
@@ -864,7 +950,8 @@
           "pole_count": 16,
           "rt": false,
           "valid_from": "20261001",
-          "valid_to": "20270331"
+          "valid_to": "20270331",
+          "license": "CC BY 4.0"
         }
       ]
     },
@@ -923,7 +1010,8 @@
           "pole_count": 399,
           "rt": true,
           "valid_from": "20261001",
-          "valid_to": "20270930"
+          "valid_to": "20270930",
+          "license": "CC BY 4.0"
         },
         {
           "id": "gunma_chuo",
@@ -955,7 +1043,8 @@
           "pole_count": 206,
           "rt": false,
           "valid_from": "20260605",
-          "valid_to": "20270604"
+          "valid_to": "20270604",
+          "license": "CC BY 4.0"
         },
         {
           "id": "安中市（安中市路線バス（あんバス））",
@@ -963,7 +1052,8 @@
           "pole_count": 167,
           "rt": false,
           "valid_from": "20260515",
-          "valid_to": "20270331"
+          "valid_to": "20270331",
+          "license": "CC BY 4.0"
         },
         {
           "id": "takasaki_yosii",
@@ -995,7 +1085,8 @@
           "pole_count": 61,
           "rt": false,
           "valid_from": "20260507",
-          "valid_to": "20270331"
+          "valid_to": "20270331",
+          "license": "CC BY 4.0"
         },
         {
           "id": "joshin_hire",
@@ -1030,7 +1121,8 @@
           "pole_count": 397,
           "rt": false,
           "valid_from": "20260401",
-          "valid_to": "20271231"
+          "valid_to": "20271231",
+          "license": "CC BY 4.0"
         },
         {
           "id": "和光市（和光市内循環バス（わこば））",
@@ -1038,7 +1130,8 @@
           "pole_count": 88,
           "rt": false,
           "valid_from": "20260104",
-          "valid_to": "20261231"
+          "valid_to": "20261231",
+          "license": "CC BY 4.0"
         },
         {
           "id": "さいたま市（岩槻区コミュニティバス）",
@@ -1046,7 +1139,8 @@
           "pole_count": 77,
           "rt": false,
           "valid_from": "20250401",
-          "valid_to": "20270331"
+          "valid_to": "20270331",
+          "license": "CC BY 4.0"
         },
         {
           "id": "さいたま市（見沼区コミュニティバス）",
@@ -1054,7 +1148,8 @@
           "pole_count": 76,
           "rt": false,
           "valid_from": "20220401",
-          "valid_to": "20270331"
+          "valid_to": "20270331",
+          "license": "CC BY 4.0"
         },
         {
           "id": "さいたま市（西区コミュニティバス）",
@@ -1062,7 +1157,8 @@
           "pole_count": 66,
           "rt": false,
           "valid_from": "20220401",
-          "valid_to": "20270331"
+          "valid_to": "20270331",
+          "license": "CC BY 4.0"
         },
         {
           "id": "さいたま市（北区コミュニティバス）",
@@ -1070,7 +1166,8 @@
           "pole_count": 64,
           "rt": false,
           "valid_from": "20220401",
-          "valid_to": "20270331"
+          "valid_to": "20270331",
+          "license": "CC BY 4.0"
         },
         {
           "id": "さいたま市（桜区コミュニティバス）",
@@ -1078,7 +1175,8 @@
           "pole_count": 62,
           "rt": false,
           "valid_from": "20220401",
-          "valid_to": "20270331"
+          "valid_to": "20270331",
+          "license": "CC BY 4.0"
         },
         {
           "id": "さいたま市（西区指扇地区乗合タクシーあじさい号）",
@@ -1086,7 +1184,8 @@
           "pole_count": 57,
           "rt": false,
           "valid_from": "20230401",
-          "valid_to": "20270331"
+          "valid_to": "20270331",
+          "license": "CC BY 4.0"
         },
         {
           "id": "飯能市（飯能市乗合ワゴン　精明・加治）",
@@ -1094,7 +1193,8 @@
           "pole_count": 57,
           "rt": false,
           "valid_from": "20250401",
-          "valid_to": "20270331"
+          "valid_to": "20270331",
+          "license": "CC0 1.0"
         },
         {
           "id": "さいたま市（南区コミュニティバス）",
@@ -1102,7 +1202,8 @@
           "pole_count": 55,
           "rt": false,
           "valid_from": "20220401",
-          "valid_to": "20270331"
+          "valid_to": "20270331",
+          "license": "CC BY 4.0"
         },
         {
           "id": "飯能市（飯能市乗合ワゴン　原市場）",
@@ -1110,7 +1211,8 @@
           "pole_count": 54,
           "rt": false,
           "valid_from": "20250101",
-          "valid_to": "20261231"
+          "valid_to": "20261231",
+          "license": "CC0 1.0"
         },
         {
           "id": "さいたま市（桜区大久保・中央区西与野地区乗合タクシーむさし号）",
@@ -1118,7 +1220,8 @@
           "pole_count": 51,
           "rt": false,
           "valid_from": "20251201",
-          "valid_to": "20270331"
+          "valid_to": "20270331",
+          "license": "CC BY 4.0"
         },
         {
           "id": "さいたま市（岩槻区和土地区乗合タクシーレインボー号）",
@@ -1126,7 +1229,8 @@
           "pole_count": 41,
           "rt": false,
           "valid_from": "20251201",
-          "valid_to": "20270331"
+          "valid_to": "20270331",
+          "license": "CC BY 4.0"
         },
         {
           "id": "さいたま市（北区吉野町乗合タクシー宮原なかよし号）",
@@ -1134,7 +1238,8 @@
           "pole_count": 40,
           "rt": false,
           "valid_from": "20251201",
-          "valid_to": "20270331"
+          "valid_to": "20270331",
+          "license": "CC BY 4.0"
         },
         {
           "id": "飯能市（飯能市乗合ワゴン　南高麗）",
@@ -1142,7 +1247,8 @@
           "pole_count": 40,
           "rt": false,
           "valid_from": "20250101",
-          "valid_to": "20261231"
+          "valid_to": "20261231",
+          "license": "CC0 1.0"
         },
         {
           "id": "さいたま市（見沼区片柳西地区乗合タクシーカワセミ号）",
@@ -1150,7 +1256,8 @@
           "pole_count": 32,
           "rt": false,
           "valid_from": "20260401",
-          "valid_to": "20270331"
+          "valid_to": "20270331",
+          "license": "CC BY 4.0"
         },
         {
           "id": "さいたま市（岩槻区河合地区乗合タクシーおりづる号）",
@@ -1158,7 +1265,8 @@
           "pole_count": 28,
           "rt": false,
           "valid_from": "20251201",
-          "valid_to": "20270331"
+          "valid_to": "20270331",
+          "license": "CC BY 4.0"
         },
         {
           "id": "さいたま市（見沼区大砂土東地区乗合タクシーみぬま号）",
@@ -1166,7 +1274,8 @@
           "pole_count": 18,
           "rt": false,
           "valid_from": "20230401",
-          "valid_to": "20270331"
+          "valid_to": "20270331",
+          "license": "CC BY 4.0"
         },
         {
           "id": "さいたま市（岩槻区並木・加倉地区乗合タクシーらくらく号）",
@@ -1174,7 +1283,8 @@
           "pole_count": 14,
           "rt": false,
           "valid_from": "20230401",
-          "valid_to": "20270331"
+          "valid_to": "20270331",
+          "license": "CC BY 4.0"
         }
       ]
     },
@@ -1197,7 +1307,8 @@
           "pole_count": 495,
           "rt": false,
           "valid_from": "20260401",
-          "valid_to": "20261230"
+          "valid_to": "20261230",
+          "license": "CC BY 4.0"
         },
         {
           "id": "君津市（君津市経由路線バス）",
@@ -1205,7 +1316,8 @@
           "pole_count": 485,
           "rt": false,
           "valid_from": "20260401",
-          "valid_to": "20270331"
+          "valid_to": "20270331",
+          "license": "CC0 1.0"
         },
         {
           "id": "京成バス千葉ウエスト株式会社（京成バス千葉ウエスト　塩浜営業所（市川市コミュニティバス　南部ルート　わくわくバス含む））",
@@ -1213,7 +1325,8 @@
           "pole_count": 229,
           "rt": true,
           "valid_from": "20260401",
-          "valid_to": "20270401"
+          "valid_to": "20270401",
+          "license": "CC BY 4.0"
         },
         {
           "id": "流山市（流山ぐりーんバス）",
@@ -1221,7 +1334,8 @@
           "pole_count": 180,
           "rt": false,
           "valid_from": "20251001",
-          "valid_to": "20270110"
+          "valid_to": "20270110",
+          "license": "CC BY 4.0"
         },
         {
           "id": "君津市（君津市コミュニティバス）",
@@ -1229,7 +1343,8 @@
           "pole_count": 165,
           "rt": false,
           "valid_from": "20260301",
-          "valid_to": "20270331"
+          "valid_to": "20270331",
+          "license": "CC0 1.0"
         },
         {
           "id": "香取市（香取市循環バス）",
@@ -1237,7 +1352,8 @@
           "pole_count": 135,
           "rt": false,
           "valid_from": "20261101",
-          "valid_to": "20270430"
+          "valid_to": "20270430",
+          "license": "CC0 1.0"
         },
         {
           "id": "印西市（宗像路線、六合路線）",
@@ -1245,7 +1361,8 @@
           "pole_count": 97,
           "rt": false,
           "valid_from": "20260701",
-          "valid_to": "20280331"
+          "valid_to": "20280331",
+          "license": "CC BY 4.0"
         },
         {
           "id": "四街道市（市内循環バス「ヨッピィ」）",
@@ -1253,7 +1370,8 @@
           "pole_count": 62,
           "rt": false,
           "valid_from": "20260401",
-          "valid_to": "20270331"
+          "valid_to": "20270331",
+          "license": "CC0 1.0"
         },
         {
           "id": "松戸市（松戸市ゆめいろバス）",
@@ -1261,7 +1379,8 @@
           "pole_count": 32,
           "rt": false,
           "valid_from": "20260803",
-          "valid_to": "20270331"
+          "valid_to": "20270331",
+          "license": "CC BY 4.0"
         },
         {
           "id": "松戸市（松戸市ゆめいろワゴンバス）",
@@ -1269,7 +1388,8 @@
           "pole_count": 20,
           "rt": false,
           "valid_from": "20260803",
-          "valid_to": "20270331"
+          "valid_to": "20270331",
+          "license": "CC BY 4.0"
         }
       ]
     },
@@ -1291,8 +1411,9 @@
           "name": "東京都交通局（都営バス）",
           "pole_count": 3593,
           "rt": true,
-          "valid_from": "20261127",
-          "valid_to": "20291126"
+          "valid_from": "20261128",
+          "valid_to": "20291127",
+          "license": "CC BY 4.0"
         },
         {
           "id": "hitachi",
@@ -1384,7 +1505,8 @@
           "pole_count": 114,
           "rt": false,
           "valid_from": "20260828",
-          "valid_to": "20270827"
+          "valid_to": "20270827",
+          "license": "CC0 1.0"
         },
         {
           "id": "kokubunji",
@@ -1428,7 +1550,8 @@
           "pole_count": 89,
           "rt": false,
           "valid_from": "20260401",
-          "valid_to": "20270331"
+          "valid_to": "20270331",
+          "license": "CC BY 4.0"
         },
         {
           "id": "瑞穂町（瑞穂町コミュニティバス）",
@@ -1436,7 +1559,8 @@
           "pole_count": 61,
           "rt": false,
           "valid_from": "20260301",
-          "valid_to": "20270331"
+          "valid_to": "20270331",
+          "license": "CC BY 4.0"
         },
         {
           "id": "inagi",
@@ -1468,7 +1592,8 @@
           "pole_count": 51,
           "rt": false,
           "valid_from": "20260901",
-          "valid_to": "20270831"
+          "valid_to": "20270831",
+          "license": "CC0 1.0"
         },
         {
           "id": "荒川区（コミュニティバスさくら）",
@@ -1476,7 +1601,8 @@
           "pole_count": 32,
           "rt": false,
           "valid_from": "20260301",
-          "valid_to": "20270228"
+          "valid_to": "20270228",
+          "license": "CC BY 4.0"
         },
         {
           "id": "toei_toden",
@@ -1497,7 +1623,8 @@
           "pole_count": 28,
           "rt": false,
           "valid_from": "20260210",
-          "valid_to": "20270210"
+          "valid_to": "20270210",
+          "license": "CC BY 4.0"
         },
         {
           "id": "国立市（国立市コミュニティワゴン「あおやぎっこ」）",
@@ -1505,7 +1632,8 @@
           "pole_count": 21,
           "rt": false,
           "valid_from": "20260113",
-          "valid_to": "20270112"
+          "valid_to": "20270112",
+          "license": "CC BY 4.0"
         },
         {
           "id": "神津島村（神津島村営バス）",
@@ -1513,7 +1641,8 @@
           "pole_count": 17,
           "rt": false,
           "valid_from": "20260924",
-          "valid_to": "20270128"
+          "valid_to": "20270128",
+          "license": "CC BY 4.0"
         },
         {
           "id": "葛飾区（さくら）",
@@ -1521,7 +1650,8 @@
           "pole_count": 11,
           "rt": false,
           "valid_from": "20260104",
-          "valid_to": "20261229"
+          "valid_to": "20261229",
+          "license": "CC BY 4.0"
         },
         {
           "id": "suginami_gsm",
@@ -1556,7 +1686,8 @@
           "pole_count": 222,
           "rt": false,
           "valid_from": "20241001",
-          "valid_to": "20270331"
+          "valid_to": "20270331",
+          "license": "CC BY 4.0"
         },
         {
           "id": "二宮町（二宮町コミュニティバス）",
@@ -1564,7 +1695,8 @@
           "pole_count": 61,
           "rt": false,
           "valid_from": "20221001",
-          "valid_to": "20261231"
+          "valid_to": "20261231",
+          "license": "CC BY 4.0"
         },
         {
           "id": "寒川町（寒川町コミュニティバス「もくせい号」東ルート）",
@@ -1572,7 +1704,8 @@
           "pole_count": 26,
           "rt": false,
           "valid_from": "20251201",
-          "valid_to": "20261231"
+          "valid_to": "20261231",
+          "license": "CC BY 4.0"
         },
         {
           "id": "寒川町（寒川町コミュニティバス「もくせい号」倉見大村ルート）",
@@ -1580,7 +1713,8 @@
           "pole_count": 23,
           "rt": false,
           "valid_from": "20251201",
-          "valid_to": "20261231"
+          "valid_to": "20261231",
+          "license": "CC BY 4.0"
         },
         {
           "id": "横須賀市（ハマちゃんバス）",
@@ -1588,7 +1722,8 @@
           "pole_count": 18,
           "rt": false,
           "valid_from": "20230601",
-          "valid_to": "20280331"
+          "valid_to": "20280331",
+          "license": "CC BY 4.0"
         },
         {
           "id": "寒川町（寒川町コミュニティバス「もくせい号」南ルート）",
@@ -1596,7 +1731,8 @@
           "pole_count": 15,
           "rt": false,
           "valid_from": "20251201",
-          "valid_to": "20261231"
+          "valid_to": "20261231",
+          "license": "CC BY 4.0"
         },
         {
           "id": "大新東株式会社（レイディアントシティ横濱）",
@@ -1604,7 +1740,8 @@
           "pole_count": 8,
           "rt": false,
           "valid_from": "20260301",
-          "valid_to": "20270228"
+          "valid_to": "20270228",
+          "license": "CC0 1.0"
         }
       ]
     },
@@ -1627,7 +1764,8 @@
           "pole_count": 585,
           "rt": false,
           "valid_from": "20260731",
-          "valid_to": "20270331"
+          "valid_to": "20270331",
+          "license": "CC BY 4.0"
         },
         {
           "id": "村上市（村上市コミュニティバス）",
@@ -1635,7 +1773,8 @@
           "pole_count": 314,
           "rt": false,
           "valid_from": "20260730",
-          "valid_to": "20270729"
+          "valid_to": "20270729",
+          "license": "CC BY 4.0"
         },
         {
           "id": "上越市（上越市市営バス）",
@@ -1643,7 +1782,8 @@
           "pole_count": 136,
           "rt": false,
           "valid_from": "20260401",
-          "valid_to": "20270331"
+          "valid_to": "20270331",
+          "license": "CC BY 2.1 JP"
         },
         {
           "id": "加茂市（加茂市営バス かもんバス）",
@@ -1651,7 +1791,8 @@
           "pole_count": 127,
           "rt": false,
           "valid_from": "20260601",
-          "valid_to": "20270531"
+          "valid_to": "20270531",
+          "license": "CC BY 4.0"
         },
         {
           "id": "燕市（燕市コミュニティバス）",
@@ -1659,7 +1800,8 @@
           "pole_count": 90,
           "rt": false,
           "valid_from": "20261006",
-          "valid_to": "20271005"
+          "valid_to": "20271005",
+          "license": "CC BY 4.0"
         }
       ]
     },
@@ -1682,7 +1824,8 @@
           "pole_count": 1041,
           "rt": false,
           "valid_from": "20261022",
-          "valid_to": "20271021"
+          "valid_to": "20271021",
+          "license": "CC0 1.0"
         },
         {
           "id": "加越能バス（加越能バス（一般路線））",
@@ -1690,7 +1833,8 @@
           "pole_count": 688,
           "rt": false,
           "valid_from": "20260716",
-          "valid_to": "20270331"
+          "valid_to": "20270331",
+          "license": "CC0 1.0"
         },
         {
           "id": "射水市（きときとバス）",
@@ -1698,7 +1842,8 @@
           "pole_count": 376,
           "rt": false,
           "valid_from": "20260401",
-          "valid_to": "20270331"
+          "valid_to": "20270331",
+          "license": "CC0 1.0"
         },
         {
           "id": "魚津市（魚津市民バス）",
@@ -1706,7 +1851,8 @@
           "pole_count": 314,
           "rt": false,
           "valid_from": "20260402",
-          "valid_to": "20270331"
+          "valid_to": "20270331",
+          "license": "CC0 1.0"
         },
         {
           "id": "南砺市（南砺市営バス）",
@@ -1714,7 +1860,8 @@
           "pole_count": 301,
           "rt": false,
           "valid_from": "20261001",
-          "valid_to": "20270331"
+          "valid_to": "20270331",
+          "license": "CC0 1.0"
         },
         {
           "id": "滑川市（コミュニティバス「のるmycar」）",
@@ -1722,7 +1869,8 @@
           "pole_count": 167,
           "rt": false,
           "valid_from": "20261001",
-          "valid_to": "20270930"
+          "valid_to": "20270930",
+          "license": "CC0 1.0"
         },
         {
           "id": "富山市（八尾コミュニティバス）",
@@ -1730,7 +1878,8 @@
           "pole_count": 152,
           "rt": false,
           "valid_from": "20260420",
-          "valid_to": "20270331"
+          "valid_to": "20270331",
+          "license": "CC0 1.0"
         },
         {
           "id": "砺波市（砺波市営バス）",
@@ -1738,7 +1887,8 @@
           "pole_count": 135,
           "rt": false,
           "valid_from": "20260326",
-          "valid_to": "20270331"
+          "valid_to": "20270331",
+          "license": "CC0 1.0"
         },
         {
           "id": "富山市（婦中コミュニティバス）",
@@ -1746,7 +1896,8 @@
           "pole_count": 118,
           "rt": false,
           "valid_from": "20260401",
-          "valid_to": "20270331"
+          "valid_to": "20270331",
+          "license": "CC0 1.0"
         },
         {
           "id": "黒部市（新幹線生地、石田三日市、愛本、電動ミニバス）",
@@ -1754,7 +1905,8 @@
           "pole_count": 112,
           "rt": false,
           "valid_from": "20260401",
-          "valid_to": "20270331"
+          "valid_to": "20270331",
+          "license": "CC0 1.0"
         },
         {
           "id": "小矢部市（小矢部市営バス）",
@@ -1762,7 +1914,8 @@
           "pole_count": 105,
           "rt": false,
           "valid_from": "20260401",
-          "valid_to": "20270331"
+          "valid_to": "20270331",
+          "license": "CC0 1.0"
         },
         {
           "id": "富山県朝日町（あさひまちバス）",
@@ -1770,7 +1923,8 @@
           "pole_count": 102,
           "rt": false,
           "valid_from": "20260316",
-          "valid_to": "20270331"
+          "valid_to": "20270331",
+          "license": "CC0 1.0"
         },
         {
           "id": "高岡市（高岡市公営バス）",
@@ -1778,7 +1932,8 @@
           "pole_count": 96,
           "rt": false,
           "valid_from": "20260401",
-          "valid_to": "20270331"
+          "valid_to": "20270331",
+          "license": "CC0 1.0"
         },
         {
           "id": "富山市（呉羽いきいきバス）",
@@ -1786,7 +1941,8 @@
           "pole_count": 83,
           "rt": false,
           "valid_from": "20260401",
-          "valid_to": "20270331"
+          "valid_to": "20270331",
+          "license": "CC0 1.0"
         },
         {
           "id": "上市町（上市町営バス）",
@@ -1794,7 +1950,8 @@
           "pole_count": 75,
           "rt": false,
           "valid_from": "20260401",
-          "valid_to": "20270331"
+          "valid_to": "20270331",
+          "license": "CC0 1.0"
         },
         {
           "id": "富山市（まいどはやバス）",
@@ -1802,7 +1959,8 @@
           "pole_count": 70,
           "rt": false,
           "valid_from": "20260401",
-          "valid_to": "20270331"
+          "valid_to": "20270331",
+          "license": "CC0 1.0"
         },
         {
           "id": "富山市（大山コミュニティバス）",
@@ -1810,7 +1968,8 @@
           "pole_count": 67,
           "rt": false,
           "valid_from": "20260401",
-          "valid_to": "20270331"
+          "valid_to": "20270331",
+          "license": "CC0 1.0"
         },
         {
           "id": "立山町（立山町営バス）",
@@ -1818,7 +1977,8 @@
           "pole_count": 51,
           "rt": false,
           "valid_from": "20261013",
-          "valid_to": "20270331"
+          "valid_to": "20270331",
+          "license": "CC0 1.0"
         },
         {
           "id": "加越能バス（加越能バス（世界遺産バス））",
@@ -1826,7 +1986,8 @@
           "pole_count": 49,
           "rt": false,
           "valid_from": "20260401",
-          "valid_to": "20270331"
+          "valid_to": "20270331",
+          "license": "CC0 1.0"
         },
         {
           "id": "万葉線",
@@ -1834,7 +1995,8 @@
           "pole_count": 47,
           "rt": false,
           "valid_from": "20260901",
-          "valid_to": "20270831"
+          "valid_to": "20270831",
+          "license": "CC0 1.0"
         },
         {
           "id": "入善町（のらんマイ・カー）",
@@ -1842,7 +2004,8 @@
           "pole_count": 44,
           "rt": false,
           "valid_from": "20260225",
-          "valid_to": "20270331"
+          "valid_to": "20270331",
+          "license": "CC0 1.0"
         },
         {
           "id": "富山市（山田コミュニティバス）",
@@ -1850,7 +2013,8 @@
           "pole_count": 44,
           "rt": false,
           "valid_from": "20260401",
-          "valid_to": "20270331"
+          "valid_to": "20270331",
+          "license": "CC0 1.0"
         },
         {
           "id": "富山地方鉄道（富山地方鉄道市内電車）",
@@ -1858,7 +2022,8 @@
           "pole_count": 39,
           "rt": false,
           "valid_from": "20260314",
-          "valid_to": "20270313"
+          "valid_to": "20270313",
+          "license": "CC0 1.0"
         },
         {
           "id": "富山市（堀川南地域コミュニティバス）",
@@ -1866,7 +2031,8 @@
           "pole_count": 30,
           "rt": false,
           "valid_from": "20260401",
-          "valid_to": "20270331"
+          "valid_to": "20270331",
+          "license": "CC0 1.0"
         },
         {
           "id": "加越能バス（加越能バス（氷見市街地周遊バス））",
@@ -1874,7 +2040,8 @@
           "pole_count": 28,
           "rt": false,
           "valid_from": "20260401",
-          "valid_to": "20270331"
+          "valid_to": "20270331",
+          "license": "CC0 1.0"
         }
       ]
     },
@@ -1897,7 +2064,8 @@
           "pole_count": 335,
           "rt": false,
           "valid_from": "20260316",
-          "valid_to": "20270315"
+          "valid_to": "20270315",
+          "license": "CC BY 4.0"
         },
         {
           "id": "野々市市（コミュニティバス）",
@@ -1905,7 +2073,8 @@
           "pole_count": 147,
           "rt": false,
           "valid_from": "20260205",
-          "valid_to": "20270331"
+          "valid_to": "20270331",
+          "license": "CC BY 4.0"
         },
         {
           "id": "内灘町（コミュニティバス）",
@@ -1913,7 +2082,8 @@
           "pole_count": 125,
           "rt": false,
           "valid_from": "20251117",
-          "valid_to": "20261231"
+          "valid_to": "20261231",
+          "license": "CC BY 4.0"
         },
         {
           "id": "小松市（市内循環線南コース）",
@@ -1921,7 +2091,8 @@
           "pole_count": 51,
           "rt": false,
           "valid_from": "20260401",
-          "valid_to": "20270331"
+          "valid_to": "20270331",
+          "license": "CC0 1.0"
         },
         {
           "id": "小松市（市内循環線北コース）",
@@ -1929,7 +2100,8 @@
           "pole_count": 47,
           "rt": false,
           "valid_from": "20260401",
-          "valid_to": "20270331"
+          "valid_to": "20270331",
+          "license": "CC0 1.0"
         },
         {
           "id": "小松市（木場潟線）",
@@ -1937,7 +2109,8 @@
           "pole_count": 27,
           "rt": false,
           "valid_from": "20261001",
-          "valid_to": "20270930"
+          "valid_to": "20270930",
+          "license": "CC0 1.0"
         }
       ]
     },
@@ -1988,7 +2161,8 @@
           "pole_count": 205,
           "rt": false,
           "valid_from": "20260401",
-          "valid_to": "20270331"
+          "valid_to": "20270331",
+          "license": "CC BY 4.0"
         },
         {
           "id": "甲斐市（甲斐市民バス）",
@@ -1996,7 +2170,8 @@
           "pole_count": 164,
           "rt": false,
           "valid_from": "20250401",
-          "valid_to": "20270331"
+          "valid_to": "20270331",
+          "license": "CC0 1.0"
         },
         {
           "id": "南部町（南部町営バス）",
@@ -2004,7 +2179,8 @@
           "pole_count": 117,
           "rt": false,
           "valid_from": "20250401",
-          "valid_to": "20260331"
+          "valid_to": "20260331",
+          "license": "CC BY 4.0"
         },
         {
           "id": "市川三郷町（市川三郷町コミュニティバス）",
@@ -2012,7 +2188,8 @@
           "pole_count": 31,
           "rt": false,
           "valid_from": "20260401",
-          "valid_to": "20270331"
+          "valid_to": "20270331",
+          "license": "CC BY 4.0"
         },
         {
           "id": "小菅村（小菅村営バス）",
@@ -2020,7 +2197,8 @@
           "pole_count": 26,
           "rt": false,
           "valid_from": "20260401",
-          "valid_to": "20270331"
+          "valid_to": "20270331",
+          "license": "CC0 1.0"
         }
       ]
     },
@@ -2043,7 +2221,8 @@
           "pole_count": 703,
           "rt": false,
           "valid_from": "20260930",
-          "valid_to": "20270331"
+          "valid_to": "20270331",
+          "license": "CC BY 4.0"
         },
         {
           "id": "松本市（地域連携バス）",
@@ -2051,7 +2230,8 @@
           "pole_count": 559,
           "rt": false,
           "valid_from": "20260801",
-          "valid_to": "20280331"
+          "valid_to": "20280331",
+          "license": "CC BY 4.0"
         },
         {
           "id": "大町市（大町市民バス）",
@@ -2059,7 +2239,8 @@
           "pole_count": 464,
           "rt": false,
           "valid_from": "20260401",
-          "valid_to": "20270331"
+          "valid_to": "20270331",
+          "license": "CC BY 4.0"
         },
         {
           "id": "松本市（松本駅・バスターミナル発着バス）",
@@ -2067,7 +2248,8 @@
           "pole_count": 456,
           "rt": false,
           "valid_from": "20260801",
-          "valid_to": "20280331"
+          "valid_to": "20280331",
+          "license": "CC BY 4.0"
         },
         {
           "id": "長電バス株式会社（長電バス長野営業所管内）",
@@ -2075,7 +2257,8 @@
           "pole_count": 419,
           "rt": false,
           "valid_from": "20260330",
-          "valid_to": "20270329"
+          "valid_to": "20270329",
+          "license": "CC BY 4.0"
         },
         {
           "id": "千曲バス株式会社（路線バス）",
@@ -2083,7 +2266,8 @@
           "pole_count": 385,
           "rt": false,
           "valid_from": "20261101",
-          "valid_to": "20271031"
+          "valid_to": "20271031",
+          "license": "CC BY 4.0"
         },
         {
           "id": "塩尻市（塩尻市地域振興バス「すてっぷくん」）",
@@ -2091,7 +2275,8 @@
           "pole_count": 361,
           "rt": false,
           "valid_from": "20260401",
-          "valid_to": "20280401"
+          "valid_to": "20280401",
+          "license": "CC BY 4.0"
         },
         {
           "id": "上田バス株式会社（路線バス）",
@@ -2099,7 +2284,8 @@
           "pole_count": 358,
           "rt": false,
           "valid_from": "20261001",
-          "valid_to": "20270930"
+          "valid_to": "20270930",
+          "license": "CC BY 4.0"
         },
         {
           "id": "上田市（上田市街地循環バス・オレンジバス）",
@@ -2107,7 +2293,8 @@
           "pole_count": 323,
           "rt": false,
           "valid_from": "20260706",
-          "valid_to": "20270331"
+          "valid_to": "20270331",
+          "license": "CC BY 4.0"
         },
         {
           "id": "木曽広域連合（きそバス）",
@@ -2115,7 +2302,8 @@
           "pole_count": 303,
           "rt": false,
           "valid_from": "20261001",
-          "valid_to": "20270930"
+          "valid_to": "20270930",
+          "license": "CC BY 2.1 JP"
         },
         {
           "id": "南信州地域交通問題協議会（南信州広域連合）（【信南交通㈱】W0駒場線/E0 阿島線/E1遠山郷線）",
@@ -2123,7 +2311,8 @@
           "pole_count": 288,
           "rt": false,
           "valid_from": "20260401",
-          "valid_to": "20270331"
+          "valid_to": "20270331",
+          "license": "CC BY 4.0"
         },
         {
           "id": "南信州地域交通問題協議会（南信州広域連合）（【飯田市】L1市民バス循環線/C2市民バス久堅線/C3市民バス千代線/C4市民バス三穂線/C5市民バス大休線/E2平岡線）",
@@ -2131,7 +2320,8 @@
           "pole_count": 283,
           "rt": false,
           "valid_from": "20260823",
-          "valid_to": "20270331"
+          "valid_to": "20270331",
+          "license": "CC BY 4.0"
         },
         {
           "id": "千曲市（千曲市循環バス）",
@@ -2139,7 +2329,8 @@
           "pole_count": 269,
           "rt": false,
           "valid_from": "20260825",
-          "valid_to": "20270331"
+          "valid_to": "20270331",
+          "license": "CC BY 4.0"
         },
         {
           "id": "長野市（長野市営バス・循環バス（RT対応））",
@@ -2147,7 +2338,8 @@
           "pole_count": 243,
           "rt": false,
           "valid_from": "20260930",
-          "valid_to": "20270331"
+          "valid_to": "20270331",
+          "license": "CC BY 4.0"
         },
         {
           "id": "東信観光バス株式会社（路線バス）",
@@ -2155,7 +2347,8 @@
           "pole_count": 189,
           "rt": false,
           "valid_from": "20261101",
-          "valid_to": "20271031"
+          "valid_to": "20271031",
+          "license": "CC0 1.0"
         },
         {
           "id": "木曽町（木曽町公共交通）",
@@ -2163,7 +2356,8 @@
           "pole_count": 171,
           "rt": false,
           "valid_from": "20261001",
-          "valid_to": "20270930"
+          "valid_to": "20270930",
+          "license": "CC BY 2.1 JP"
         },
         {
           "id": "諏訪市（かりんちゃんバス）",
@@ -2171,7 +2365,8 @@
           "pole_count": 168,
           "rt": false,
           "valid_from": "20260401",
-          "valid_to": "20270331"
+          "valid_to": "20270331",
+          "license": "CC BY 4.0"
         },
         {
           "id": "須坂市（すざか市民バス）",
@@ -2179,7 +2374,8 @@
           "pole_count": 166,
           "rt": false,
           "valid_from": "20261109",
-          "valid_to": "20270430"
+          "valid_to": "20270430",
+          "license": "CC BY 2.1 JP"
         },
         {
           "id": "南信州地域交通問題協議会（南信州広域連合）（【阿智村】W2巡回バス伍和線/W3巡回バス春日・智里線/W4巡回バス浪合線/W5巡回バス清内路線/W6巡回バス智里東線）",
@@ -2187,7 +2383,8 @@
           "pole_count": 156,
           "rt": false,
           "valid_from": "20260401",
-          "valid_to": "20270331"
+          "valid_to": "20270331",
+          "license": "CC BY 4.0"
         },
         {
           "id": "南信州地域交通問題協議会（南信州広域連合）（【喬木村】E3喬木大島線せせらぎ/E4氏乗線そよかぜ/E5 たかぎコミュニティバス阿島線/E6 たかぎコミュニティバス伊久間線/E7たかぎコミュニティバス厚生病院線/E8上平線/E9富田線）",
@@ -2195,7 +2392,8 @@
           "pole_count": 152,
           "rt": false,
           "valid_from": "20261106",
-          "valid_to": "20270129"
+          "valid_to": "20270129",
+          "license": "CC BY 4.0"
         },
         {
           "id": "南信州地域交通問題協議会（南信州広域連合）（S0南部公共バス阿南線/S1南部公共バス温田線）",
@@ -2203,7 +2401,8 @@
           "pole_count": 144,
           "rt": false,
           "valid_from": "20260401",
-          "valid_to": "20270331"
+          "valid_to": "20270331",
+          "license": "CC BY 4.0"
         },
         {
           "id": "軽井沢町（軽井沢町町内循環バス）",
@@ -2211,7 +2410,8 @@
           "pole_count": 133,
           "rt": false,
           "valid_from": "20260805",
-          "valid_to": "20270331"
+          "valid_to": "20270331",
+          "license": "CC BY 4.0"
         },
         {
           "id": "長電バス株式会社（長電バス急行）",
@@ -2219,7 +2419,8 @@
           "pole_count": 121,
           "rt": false,
           "valid_from": "20260407",
-          "valid_to": "20261204"
+          "valid_to": "20261204",
+          "license": "CC BY 4.0"
         },
         {
           "id": "池田町（池田町営バス）",
@@ -2227,7 +2428,8 @@
           "pole_count": 118,
           "rt": false,
           "valid_from": "20260314",
-          "valid_to": "20270317"
+          "valid_to": "20270317",
+          "license": "CC BY 4.0"
         },
         {
           "id": "南信州地域交通問題協議会（南信州広域連合）（【豊丘村】T3豊丘村村営バス堀越線/T4豊丘村村営バス佐原線/T5豊丘村村営バス福島線/T6豊丘村村営バス壬生沢福島線/T7豊丘村村営バス壬生沢線/T2豊丘村村営バス滝川阿島北県道線）",
@@ -2235,7 +2437,8 @@
           "pole_count": 114,
           "rt": false,
           "valid_from": "20260401",
-          "valid_to": "20270331"
+          "valid_to": "20270331",
+          "license": "CC BY 4.0"
         },
         {
           "id": "草軽交通株式会社（軽井沢草津長野原草津口バス）",
@@ -2243,7 +2446,8 @@
           "pole_count": 108,
           "rt": false,
           "valid_from": "20261101",
-          "valid_to": "20271031"
+          "valid_to": "20271031",
+          "license": "CC BY 4.0"
         },
         {
           "id": "青木村（青木村営バス）",
@@ -2251,7 +2455,8 @@
           "pole_count": 92,
           "rt": false,
           "valid_from": "20261001",
-          "valid_to": "20270930"
+          "valid_to": "20270930",
+          "license": "CC BY 4.0"
         },
         {
           "id": "長電バス株式会社（長電バス中野３路線）",
@@ -2259,7 +2464,8 @@
           "pole_count": 90,
           "rt": false,
           "valid_from": "20260415",
-          "valid_to": "20270414"
+          "valid_to": "20270414",
+          "license": "CC BY 4.0"
         },
         {
           "id": "南信州地域交通問題協議会（南信州広域連合）（【阿智村・根羽村・平谷村】W1　西部コミュニティバス）",
@@ -2267,7 +2473,8 @@
           "pole_count": 87,
           "rt": false,
           "valid_from": "20260715",
-          "valid_to": "20270402"
+          "valid_to": "20270402",
+          "license": "CC BY 4.0"
         },
         {
           "id": "南信州地域交通問題協議会（南信州広域連合）（【高森町】K1 柿丸あったかバス山吹エリア/K2柿丸あったかバス市田エリア/K3おはようバス山吹回り/K4おはようバス市田回り）",
@@ -2275,7 +2482,8 @@
           "pole_count": 71,
           "rt": false,
           "valid_from": "20260408",
-          "valid_to": "20270331"
+          "valid_to": "20270331",
+          "license": "CC BY 4.0"
         },
         {
           "id": "長電バス株式会社（長電バス飯綱営業所管内）",
@@ -2283,7 +2491,8 @@
           "pole_count": 64,
           "rt": false,
           "valid_from": "20260415",
-          "valid_to": "20270414"
+          "valid_to": "20270414",
+          "license": "CC BY 4.0"
         },
         {
           "id": "南木曽町（南木曽町地域バス）",
@@ -2291,7 +2500,8 @@
           "pole_count": 58,
           "rt": false,
           "valid_from": "20260401",
-          "valid_to": "20270331"
+          "valid_to": "20270331",
+          "license": "CC BY 4.0"
         },
         {
           "id": "南信州地域交通問題協議会（南信州広域連合）（【松川町】M3まつかわフルーツバス部奈線/M6 まつかわフルーツバス 上片桐・大島通学便/M7 まつかわフルーツバス 生田線）",
@@ -2299,7 +2509,8 @@
           "pole_count": 53,
           "rt": false,
           "valid_from": "20260316",
-          "valid_to": "20270331"
+          "valid_to": "20270331",
+          "license": "CC BY 4.0"
         },
         {
           "id": "川上村（川上村営バス）",
@@ -2307,7 +2518,8 @@
           "pole_count": 44,
           "rt": false,
           "valid_from": "20260324",
-          "valid_to": "20270331"
+          "valid_to": "20270331",
+          "license": "CC BY 4.0"
         },
         {
           "id": "木祖村（木祖村公共交通）",
@@ -2315,7 +2527,8 @@
           "pole_count": 42,
           "rt": false,
           "valid_from": "20260825",
-          "valid_to": "20270930"
+          "valid_to": "20270930",
+          "license": "CC BY 2.1 JP"
         },
         {
           "id": "上松町（上松町公共交通）",
@@ -2323,7 +2536,8 @@
           "pole_count": 39,
           "rt": false,
           "valid_from": "20261001",
-          "valid_to": "20270930"
+          "valid_to": "20270930",
+          "license": "CC0 1.0"
         },
         {
           "id": "飯山市（菜の花バス市街地循環線）",
@@ -2331,7 +2545,8 @@
           "pole_count": 39,
           "rt": false,
           "valid_from": "20260422",
-          "valid_to": "20270331"
+          "valid_to": "20270331",
+          "license": "CC BY 4.0"
         },
         {
           "id": "南信州地域交通問題協議会（南信州広域連合）（【大鹿村】M1　大鹿線）",
@@ -2339,7 +2554,8 @@
           "pole_count": 33,
           "rt": false,
           "valid_from": "20261001",
-          "valid_to": "20270930"
+          "valid_to": "20270930",
+          "license": "CC BY 4.0"
         },
         {
           "id": "大桑村（くわちゃんバス）",
@@ -2347,7 +2563,8 @@
           "pole_count": 29,
           "rt": false,
           "valid_from": "20261001",
-          "valid_to": "20270930"
+          "valid_to": "20270930",
+          "license": "CC0 1.0"
         },
         {
           "id": "王滝村",
@@ -2355,7 +2572,8 @@
           "pole_count": 29,
           "rt": false,
           "valid_from": "20260526",
-          "valid_to": "20270331"
+          "valid_to": "20270331",
+          "license": "CC0 1.0"
         },
         {
           "id": "大町市（特急バス「雷鳥ライナー」）",
@@ -2363,7 +2581,8 @@
           "pole_count": 15,
           "rt": false,
           "valid_from": "20260323",
-          "valid_to": "20261130"
+          "valid_to": "20261130",
+          "license": "CC BY 4.0"
         },
         {
           "id": "南信州地域交通問題協議会（南信州広域連合）（電気小型バス「プッチー」（飯田市内））",
@@ -2371,7 +2590,8 @@
           "pole_count": 9,
           "rt": false,
           "valid_from": "20260321",
-          "valid_to": "20270331"
+          "valid_to": "20270331",
+          "license": "CC BY 4.0"
         },
         {
           "id": "南信州地域交通問題協議会（南信州広域連合）（【飯田市】飯田☆中津川線）",
@@ -2379,7 +2599,8 @@
           "pole_count": 7,
           "rt": false,
           "valid_from": "20260901",
-          "valid_to": "20270331"
+          "valid_to": "20270331",
+          "license": "CC BY 4.0"
         }
       ]
     },
@@ -2402,7 +2623,8 @@
           "pole_count": 1031,
           "rt": false,
           "valid_from": "20260901",
-          "valid_to": "20270831"
+          "valid_to": "20270831",
+          "license": "CC BY 4.0"
         },
         {
           "id": "濃飛乗合自動車（濃飛バス）（濃飛バス（一般路線））",
@@ -2410,7 +2632,8 @@
           "pole_count": 853,
           "rt": false,
           "valid_from": "20260401",
-          "valid_to": "20270331"
+          "valid_to": "20270331",
+          "license": "CC BY 4.0"
         },
         {
           "id": "高山市（のらマイカー）",
@@ -2418,7 +2641,8 @@
           "pole_count": 653,
           "rt": false,
           "valid_from": "20261102",
-          "valid_to": "20271031"
+          "valid_to": "20271031",
+          "license": "CC BY 4.0"
         },
         {
           "id": "郡上市（郡上市自主運行バス）",
@@ -2426,7 +2650,8 @@
           "pole_count": 495,
           "rt": false,
           "valid_from": "20261001",
-          "valid_to": "20270331"
+          "valid_to": "20270331",
+          "license": "CC BY 4.0"
         },
         {
           "id": "大垣市（名阪近鉄バス）",
@@ -2434,7 +2659,8 @@
           "pole_count": 452,
           "rt": false,
           "valid_from": "20261019",
-          "valid_to": "20270331"
+          "valid_to": "20270331",
+          "license": "CC BY 4.0"
         },
         {
           "id": "恵那市（恵那市自主運行バス（コミュニティバス））",
@@ -2442,7 +2668,8 @@
           "pole_count": 364,
           "rt": false,
           "valid_from": "20261001",
-          "valid_to": "20270331"
+          "valid_to": "20270331",
+          "license": "CC BY 4.0"
         },
         {
           "id": "北恵那交通",
@@ -2450,7 +2677,8 @@
           "pole_count": 316,
           "rt": false,
           "valid_from": "20261023",
-          "valid_to": "20271008"
+          "valid_to": "20271008",
+          "license": "CC BY 4.0"
         },
         {
           "id": "東濃鉄道（東濃鉄道（東鉄バス）多治見営業所管内）",
@@ -2458,7 +2686,8 @@
           "pole_count": 271,
           "rt": false,
           "valid_from": "20261001",
-          "valid_to": "20270331"
+          "valid_to": "20270331",
+          "license": "CC BY 4.0"
         },
         {
           "id": "美濃加茂市（美濃加茂市コミュニティバス「あい愛バス」）",
@@ -2466,7 +2695,8 @@
           "pole_count": 241,
           "rt": false,
           "valid_from": "20261001",
-          "valid_to": "20270930"
+          "valid_to": "20270930",
+          "license": "CC BY 4.0"
         },
         {
           "id": "瑞浪市（瑞浪市コミュニティバス）",
@@ -2474,7 +2704,8 @@
           "pole_count": 201,
           "rt": false,
           "valid_from": "20260713",
-          "valid_to": "20270331"
+          "valid_to": "20270331",
+          "license": "CC BY 4.0"
         },
         {
           "id": "中津川市（中津川市コミュニティバス）",
@@ -2482,7 +2713,8 @@
           "pole_count": 191,
           "rt": false,
           "valid_from": "20260611",
-          "valid_to": "20270930"
+          "valid_to": "20270930",
+          "license": "CC BY 4.0"
         },
         {
           "id": "飛騨市（飛騨市営バス「ひだまる」）",
@@ -2490,7 +2722,8 @@
           "pole_count": 191,
           "rt": false,
           "valid_from": "20261001",
-          "valid_to": "20270930"
+          "valid_to": "20270930",
+          "license": "CC BY 4.0"
         },
         {
           "id": "下呂市（下呂市　げろバス）",
@@ -2498,7 +2731,8 @@
           "pole_count": 186,
           "rt": false,
           "valid_from": "20260807",
-          "valid_to": "20270331"
+          "valid_to": "20270331",
+          "license": "CC BY 4.0"
         },
         {
           "id": "東濃鉄道（東濃鉄道（東鉄バス）可児営業所管内）",
@@ -2506,7 +2740,8 @@
           "pole_count": 179,
           "rt": false,
           "valid_from": "20260501",
-          "valid_to": "20270331"
+          "valid_to": "20270331",
+          "license": "CC BY 4.0"
         },
         {
           "id": "揖斐川町（揖斐川町ふれあいバス）",
@@ -2514,7 +2749,8 @@
           "pole_count": 174,
           "rt": false,
           "valid_from": "20260721",
-          "valid_to": "20270930"
+          "valid_to": "20270930",
+          "license": "CC BY 4.0"
         },
         {
           "id": "土岐市（土岐市民バス）",
@@ -2522,7 +2758,8 @@
           "pole_count": 172,
           "rt": false,
           "valid_from": "20260201",
-          "valid_to": "20261231"
+          "valid_to": "20261231",
+          "license": "CC BY 4.0"
         },
         {
           "id": "白鳥交通",
@@ -2530,7 +2767,8 @@
           "pole_count": 165,
           "rt": false,
           "valid_from": "20260401",
-          "valid_to": "20270331"
+          "valid_to": "20270331",
+          "license": "CC BY 4.0"
         },
         {
           "id": "本巣市（本巣市営バス）",
@@ -2538,7 +2776,8 @@
           "pole_count": 161,
           "rt": false,
           "valid_from": "20261015",
-          "valid_to": "20270630"
+          "valid_to": "20270630",
+          "license": "CC BY 4.0"
         },
         {
           "id": "山県市（山県市自主運行バス）",
@@ -2546,7 +2785,8 @@
           "pole_count": 136,
           "rt": false,
           "valid_from": "20260401",
-          "valid_to": "20270331"
+          "valid_to": "20270331",
+          "license": "CC BY 4.0"
         },
         {
           "id": "八幡観光バス（八幡バス）",
@@ -2554,7 +2794,8 @@
           "pole_count": 131,
           "rt": false,
           "valid_from": "20260721",
-          "valid_to": "20270331"
+          "valid_to": "20270331",
+          "license": "CC BY 4.0"
         },
         {
           "id": "可児市（さつきバス）",
@@ -2562,7 +2803,8 @@
           "pole_count": 114,
           "rt": false,
           "valid_from": "20260219",
-          "valid_to": "20270331"
+          "valid_to": "20270331",
+          "license": "CC BY 4.0"
         },
         {
           "id": "羽島市（羽島市コミュニティバス）",
@@ -2570,7 +2812,8 @@
           "pole_count": 105,
           "rt": false,
           "valid_from": "20261001",
-          "valid_to": "20270331"
+          "valid_to": "20270331",
+          "license": "CC BY 4.0"
         },
         {
           "id": "笠松町（笠松町公共施設巡回町民バス）",
@@ -2578,7 +2821,8 @@
           "pole_count": 70,
           "rt": false,
           "valid_from": "20260924",
-          "valid_to": "20270930"
+          "valid_to": "20270930",
+          "license": "CC BY 4.0"
         },
         {
           "id": "濃飛乗合自動車（濃飛バス）（飛騨高山周遊バス）",
@@ -2586,7 +2830,8 @@
           "pole_count": 67,
           "rt": false,
           "valid_from": "20261102",
-          "valid_to": "20270420"
+          "valid_to": "20270420",
+          "license": "CC BY 4.0"
         },
         {
           "id": "七宗町（七宗町営バス）",
@@ -2594,7 +2839,8 @@
           "pole_count": 62,
           "rt": false,
           "valid_from": "20260401",
-          "valid_to": "20270331"
+          "valid_to": "20270331",
+          "license": "CC BY 4.0"
         },
         {
           "id": "多治見市（ききょうバス）",
@@ -2602,7 +2848,8 @@
           "pole_count": 61,
           "rt": false,
           "valid_from": "20261105",
-          "valid_to": "20270930"
+          "valid_to": "20270930",
+          "license": "CC BY 4.0"
         },
         {
           "id": "八百津町（八百津町コミュニティバス）",
@@ -2610,7 +2857,8 @@
           "pole_count": 58,
           "rt": false,
           "valid_from": "20260401",
-          "valid_to": "20270331"
+          "valid_to": "20270331",
+          "license": "CC BY 4.0"
         },
         {
           "id": "海津市（海津市コミュニティバス）",
@@ -2618,7 +2866,8 @@
           "pole_count": 55,
           "rt": false,
           "valid_from": "20261118",
-          "valid_to": "20271117"
+          "valid_to": "20271117",
+          "license": "CC BY 4.0"
         },
         {
           "id": "関市（板取ふれあいバス）",
@@ -2626,7 +2875,8 @@
           "pole_count": 49,
           "rt": false,
           "valid_from": "20260401",
-          "valid_to": "20270331"
+          "valid_to": "20270331",
+          "license": "CC BY 4.0"
         },
         {
           "id": "八百津町（YAOバス）",
@@ -2634,7 +2884,8 @@
           "pole_count": 37,
           "rt": false,
           "valid_from": "20260722",
-          "valid_to": "20270721"
+          "valid_to": "20270721",
+          "license": "CC BY 4.0"
         },
         {
           "id": "東濃鉄道（東濃鉄道（東鉄バス）恵那営業所管内）",
@@ -2642,7 +2893,8 @@
           "pole_count": 31,
           "rt": false,
           "valid_from": "20260905",
-          "valid_to": "20270904"
+          "valid_to": "20270904",
+          "license": "CC BY 4.0"
         },
         {
           "id": "御嵩町（御嵩町コミュニティバス「ふれあいバス」）",
@@ -2650,7 +2902,8 @@
           "pole_count": 29,
           "rt": false,
           "valid_from": "20261001",
-          "valid_to": "20271001"
+          "valid_to": "20271001",
+          "license": "CC BY 4.0"
         },
         {
           "id": "高山市（たかね号）",
@@ -2658,13 +2911,15 @@
           "pole_count": 23,
           "rt": false,
           "valid_from": "20261101",
-          "valid_to": "20271031"
+          "valid_to": "20271031",
+          "license": "CC BY 4.0"
         },
         {
           "id": "濃飛乗合自動車（濃飛バス）（濃飛バス（観光路線））",
           "name": "濃飛乗合自動車（濃飛バス）（濃飛バス（観光路線））",
           "pole_count": 16,
-          "rt": false
+          "rt": false,
+          "license": "CC BY 4.0"
         },
         {
           "id": "明知鉄道",
@@ -2672,7 +2927,8 @@
           "pole_count": 11,
           "rt": false,
           "valid_from": "20260314",
-          "valid_to": "20270331"
+          "valid_to": "20270331",
+          "license": "CC BY 4.0"
         }
       ]
     },
@@ -2695,7 +2951,8 @@
           "pole_count": 455,
           "rt": false,
           "valid_from": "20260401",
-          "valid_to": "20270331"
+          "valid_to": "20270331",
+          "license": "CC BY 4.0"
         },
         {
           "id": "掛川市（桜木、居尻、倉真、東山、粟本線、市街地循環線南回り、市街地循環線北回り）",
@@ -2703,7 +2960,8 @@
           "pole_count": 302,
           "rt": false,
           "valid_from": "20261019",
-          "valid_to": "20271018"
+          "valid_to": "20271018",
+          "license": "CC-BY (掛川市オープンデータ)"
         },
         {
           "id": "藤枝市（藤枝市自主運行バス（駅南循環+アクセスバス））",
@@ -2711,7 +2969,8 @@
           "pole_count": 197,
           "rt": false,
           "valid_from": "20261025",
-          "valid_to": "20270327"
+          "valid_to": "20270327",
+          "license": "CC BY 4.0"
         },
         {
           "id": "浜松バス株式会社（磐田市生活バス路線）",
@@ -2719,7 +2978,8 @@
           "pole_count": 99,
           "rt": false,
           "valid_from": "20250401",
-          "valid_to": "20261231"
+          "valid_to": "20261231",
+          "license": "CC BY 4.0"
         },
         {
           "id": "静岡市（清水区由比地区：ゆいばす）",
@@ -2727,7 +2987,8 @@
           "pole_count": 48,
           "rt": false,
           "valid_from": "20260401",
-          "valid_to": "20270630"
+          "valid_to": "20270630",
+          "license": "CC BY 4.0"
         },
         {
           "id": "静岡市（清水区由比・蒲原地区：由比・蒲原病院線）",
@@ -2735,7 +2996,8 @@
           "pole_count": 42,
           "rt": false,
           "valid_from": "20260401",
-          "valid_to": "20270630"
+          "valid_to": "20270630",
+          "license": "CC BY 4.0"
         },
         {
           "id": "静岡市（清水区両河内地区：両河内線但沼系統、大平系統、板井沢系統（ココバス））",
@@ -2743,7 +3005,8 @@
           "pole_count": 39,
           "rt": false,
           "valid_from": "20260401",
-          "valid_to": "20270630"
+          "valid_to": "20270630",
+          "license": "CC BY 4.0"
         },
         {
           "id": "掛川市（掛川大須賀線）",
@@ -2751,7 +3014,8 @@
           "pole_count": 26,
           "rt": false,
           "valid_from": "20261001",
-          "valid_to": "20270331"
+          "valid_to": "20270331",
+          "license": "CC-BY (掛川市オープンデータ)"
         },
         {
           "id": "静岡市（葵区井川地区：井川地区自主運行バス）",
@@ -2759,7 +3023,8 @@
           "pole_count": 20,
           "rt": false,
           "valid_from": "20260401",
-          "valid_to": "20270630"
+          "valid_to": "20270630",
+          "license": "CC BY 4.0"
         }
       ]
     },
@@ -2782,7 +3047,8 @@
           "pole_count": 497,
           "rt": false,
           "valid_from": "20260401",
-          "valid_to": "20270331"
+          "valid_to": "20270331",
+          "license": "CC BY 4.0"
         },
         {
           "id": "豊田市（とよたおいでんバス）",
@@ -2790,7 +3056,8 @@
           "pole_count": 495,
           "rt": false,
           "valid_from": "20261102",
-          "valid_to": "20270331"
+          "valid_to": "20270331",
+          "license": "CC BY 4.0"
         },
         {
           "id": "知多乗合（知多バス）",
@@ -2798,7 +3065,8 @@
           "pole_count": 288,
           "rt": false,
           "valid_from": "20261001",
-          "valid_to": "20270930"
+          "valid_to": "20270930",
+          "license": "CC BY 4.0"
         },
         {
           "id": "安城市（あんくるバス）",
@@ -2806,7 +3074,8 @@
           "pole_count": 282,
           "rt": false,
           "valid_from": "20260601",
-          "valid_to": "20270531"
+          "valid_to": "20270531",
+          "license": "CC BY 4.0"
         },
         {
           "id": "春日井市（かすがいシティバス）",
@@ -2814,7 +3083,8 @@
           "pole_count": 263,
           "rt": false,
           "valid_from": "20261001",
-          "valid_to": "20270930"
+          "valid_to": "20270930",
+          "license": "CC0 1.0"
         },
         {
           "id": "日進市（くるりんばす（日進市巡回バス））",
@@ -2822,7 +3092,8 @@
           "pole_count": 256,
           "rt": false,
           "valid_from": "20251008",
-          "valid_to": "20270110"
+          "valid_to": "20270110",
+          "license": "CC BY 4.0"
         },
         {
           "id": "東海市（東海市らんらんバス）",
@@ -2830,7 +3101,8 @@
           "pole_count": 251,
           "rt": false,
           "valid_from": "20261001",
-          "valid_to": "20270331"
+          "valid_to": "20270331",
+          "license": "CC BY 4.0"
         },
         {
           "id": "瀬戸市（瀬戸市コミュニティバス）",
@@ -2838,7 +3110,8 @@
           "pole_count": 230,
           "rt": false,
           "valid_from": "20260401",
-          "valid_to": "20270331"
+          "valid_to": "20270331",
+          "license": "CC BY 4.0"
         },
         {
           "id": "蒲郡市（蒲郡市コミュニティバス）",
@@ -2846,7 +3119,8 @@
           "pole_count": 228,
           "rt": false,
           "valid_from": "20261124",
-          "valid_to": "20271123"
+          "valid_to": "20271123",
+          "license": "CC BY 4.0"
         },
         {
           "id": "碧南市（くるくるバス）",
@@ -2854,7 +3128,8 @@
           "pole_count": 227,
           "rt": false,
           "valid_from": "20260930",
-          "valid_to": "20270930"
+          "valid_to": "20270930",
+          "license": "CC BY 4.0"
         },
         {
           "id": "西尾市（六万石くるりんバス）",
@@ -2862,7 +3137,8 @@
           "pole_count": 227,
           "rt": false,
           "valid_from": "20260401",
-          "valid_to": "20270331"
+          "valid_to": "20270331",
+          "license": "CC0 1.0"
         },
         {
           "id": "刈谷市（刈谷市コミュニティバス「かりまる」）",
@@ -2870,7 +3146,8 @@
           "pole_count": 226,
           "rt": false,
           "valid_from": "20260616",
-          "valid_to": "20270615"
+          "valid_to": "20270615",
+          "license": "CC BY 4.0"
         },
         {
           "id": "北設楽郡公共交通活性化協議会（おでかけ北設（設楽町・東栄町・豊根村））",
@@ -2878,7 +3155,8 @@
           "pole_count": 179,
           "rt": false,
           "valid_from": "20261001",
-          "valid_to": "20271031"
+          "valid_to": "20271031",
+          "license": "CC BY 4.0"
         },
         {
           "id": "尾張旭市（尾張旭市あさぴー号）",
@@ -2886,7 +3164,8 @@
           "pole_count": 169,
           "rt": false,
           "valid_from": "20261111",
-          "valid_to": "20271130"
+          "valid_to": "20271130",
+          "license": "CC BY 4.0"
         },
         {
           "id": "長久手市（長久手市N-バス）",
@@ -2894,7 +3173,8 @@
           "pole_count": 164,
           "rt": false,
           "valid_from": "20260305",
-          "valid_to": "20270331"
+          "valid_to": "20270331",
+          "license": "CC BY 4.0"
         },
         {
           "id": "新城市（新城市Ｓバス）",
@@ -2902,7 +3182,8 @@
           "pole_count": 156,
           "rt": false,
           "valid_from": "20260901",
-          "valid_to": "20270331"
+          "valid_to": "20270331",
+          "license": "CC BY 4.0"
         },
         {
           "id": "東浦町（東浦町運行バス　う・ら・ら）",
@@ -2910,7 +3191,8 @@
           "pole_count": 156,
           "rt": false,
           "valid_from": "20261001",
-          "valid_to": "20270331"
+          "valid_to": "20270331",
+          "license": "CC BY 4.0"
         },
         {
           "id": "あま市（あま市巡回バス）",
@@ -2918,7 +3200,8 @@
           "pole_count": 154,
           "rt": false,
           "valid_from": "20230506",
-          "valid_to": "20270331"
+          "valid_to": "20270331",
+          "license": "CC BY 4.0"
         },
         {
           "id": "大口町（大口町コミュニティバス）",
@@ -2926,7 +3209,8 @@
           "pole_count": 148,
           "rt": false,
           "valid_from": "20260605",
-          "valid_to": "20270531"
+          "valid_to": "20270531",
+          "license": "CC BY 4.0"
         },
         {
           "id": "北名古屋市（北名古屋市　市内循環バス「きたバス」）",
@@ -2934,7 +3218,8 @@
           "pole_count": 145,
           "rt": false,
           "valid_from": "20260727",
-          "valid_to": "20270331"
+          "valid_to": "20270331",
+          "license": "CC BY 4.0"
         },
         {
           "id": "西尾市（名鉄東部交通バス）",
@@ -2942,7 +3227,8 @@
           "pole_count": 144,
           "rt": false,
           "valid_from": "20260917",
-          "valid_to": "20270930"
+          "valid_to": "20270930",
+          "license": "CC0 1.0"
         },
         {
           "id": "みよし市（みよし市さんさんバス）",
@@ -2950,7 +3236,8 @@
           "pole_count": 137,
           "rt": false,
           "valid_from": "20260401",
-          "valid_to": "20270331"
+          "valid_to": "20270331",
+          "license": "CC0 1.0"
         },
         {
           "id": "知多市（知多市コミュニティバス「あいあいバス」）",
@@ -2958,7 +3245,8 @@
           "pole_count": 118,
           "rt": false,
           "valid_from": "20260303",
-          "valid_to": "20270331"
+          "valid_to": "20270331",
+          "license": "CC BY 4.0"
         },
         {
           "id": "南知多町（南知多町海っ子バス）",
@@ -2966,7 +3254,8 @@
           "pole_count": 109,
           "rt": false,
           "valid_from": "20261001",
-          "valid_to": "20270930"
+          "valid_to": "20270930",
+          "license": "CC BY 4.0"
         },
         {
           "id": "知立市（知立市「ミニバス」（コミュニティバス））",
@@ -2974,7 +3263,8 @@
           "pole_count": 106,
           "rt": false,
           "valid_from": "20251223",
-          "valid_to": "20261231"
+          "valid_to": "20261231",
+          "license": "CC BY 2.1 JP"
         },
         {
           "id": "常滑市（コミュニティバスグルーン）",
@@ -2982,7 +3272,8 @@
           "pole_count": 89,
           "rt": false,
           "valid_from": "20260101",
-          "valid_to": "20261231"
+          "valid_to": "20261231",
+          "license": "CC0 1.0"
         },
         {
           "id": "あおい交通",
@@ -2990,7 +3281,8 @@
           "pole_count": 87,
           "rt": false,
           "valid_from": "20261025",
-          "valid_to": "20270930"
+          "valid_to": "20270930",
+          "license": "CC BY 4.0"
         },
         {
           "id": "豊明市（豊明市ひまわりバス）",
@@ -2998,7 +3290,8 @@
           "pole_count": 78,
           "rt": false,
           "valid_from": "20260401",
-          "valid_to": "20270331"
+          "valid_to": "20270331",
+          "license": "CC0 1.0"
         },
         {
           "id": "豊山町（とよやまタウンバス）",
@@ -3006,7 +3299,8 @@
           "pole_count": 48,
           "rt": false,
           "valid_from": "20260208",
-          "valid_to": "20270331"
+          "valid_to": "20270331",
+          "license": "CC BY 4.0"
         },
         {
           "id": "武豊町（武豊町コミュニティバス「ゆめころん」）",
@@ -3014,7 +3308,8 @@
           "pole_count": 47,
           "rt": false,
           "valid_from": "20260328",
-          "valid_to": "20270331"
+          "valid_to": "20270331",
+          "license": "CC BY 4.0"
         },
         {
           "id": "nagoya_srt",
@@ -3034,7 +3329,8 @@
           "pole_count": 6,
           "rt": false,
           "valid_from": "20260220",
-          "valid_to": "20270331"
+          "valid_to": "20270331",
+          "license": "CC BY 4.0"
         },
         {
           "id": "西尾市（佐久島渡船）",
@@ -3042,7 +3338,8 @@
           "pole_count": 3,
           "rt": false,
           "valid_from": "20261001",
-          "valid_to": "20270930"
+          "valid_to": "20270930",
+          "license": "CC0 1.0"
         }
       ]
     },
@@ -3065,7 +3362,8 @@
           "pole_count": 921,
           "rt": false,
           "valid_from": "20261007",
-          "valid_to": "20270227"
+          "valid_to": "20270228",
+          "license": "CC BY 4.0"
         },
         {
           "id": "三重交通（四日市営業所）",
@@ -3073,7 +3371,8 @@
           "pole_count": 602,
           "rt": false,
           "valid_from": "20260908",
-          "valid_to": "20270227"
+          "valid_to": "20270228",
+          "license": "CC BY 4.0"
         },
         {
           "id": "三重交通（伊賀営業所）",
@@ -3081,7 +3380,8 @@
           "pole_count": 577,
           "rt": false,
           "valid_from": "20261001",
-          "valid_to": "20270227"
+          "valid_to": "20270228",
+          "license": "CC BY 4.0"
         },
         {
           "id": "三重交通（伊勢営業所）",
@@ -3089,7 +3389,8 @@
           "pole_count": 444,
           "rt": false,
           "valid_from": "20261001",
-          "valid_to": "20270227"
+          "valid_to": "20270228",
+          "license": "CC BY 4.0"
         },
         {
           "id": "いなべ市（いなべ市福祉バス）",
@@ -3097,7 +3398,8 @@
           "pole_count": 434,
           "rt": false,
           "valid_from": "20260401",
-          "valid_to": "20270331"
+          "valid_to": "20270331",
+          "license": "CC BY 4.0"
         },
         {
           "id": "三重交通（桑名営業所）",
@@ -3105,7 +3407,8 @@
           "pole_count": 432,
           "rt": false,
           "valid_from": "20261017",
-          "valid_to": "20270227"
+          "valid_to": "20270228",
+          "license": "CC BY 4.0"
         },
         {
           "id": "津市（津市コミュニティバス）",
@@ -3113,7 +3416,8 @@
           "pole_count": 371,
           "rt": false,
           "valid_from": "20261010",
-          "valid_to": "20270331"
+          "valid_to": "20270331",
+          "license": "CC BY 4.0"
         },
         {
           "id": "三重交通（松阪営業所）",
@@ -3121,7 +3425,8 @@
           "pole_count": 369,
           "rt": false,
           "valid_from": "20261001",
-          "valid_to": "20270227"
+          "valid_to": "20270228",
+          "license": "CC BY 4.0"
         },
         {
           "id": "三重交通（志摩営業所）",
@@ -3129,7 +3434,8 @@
           "pole_count": 365,
           "rt": false,
           "valid_from": "20261001",
-          "valid_to": "20270227"
+          "valid_to": "20270228",
+          "license": "CC BY 4.0"
         },
         {
           "id": "伊賀市（伊賀市行政バス・コミュニティバス）",
@@ -3137,7 +3443,8 @@
           "pole_count": 354,
           "rt": false,
           "valid_from": "20260401",
-          "valid_to": "20270331"
+          "valid_to": "20270331",
+          "license": "CC BY 4.0"
         },
         {
           "id": "桑名市（桑名市コミュニティバス「Ｋ－バス」）",
@@ -3145,7 +3452,8 @@
           "pole_count": 312,
           "rt": false,
           "valid_from": "20260603",
-          "valid_to": "20270630"
+          "valid_to": "20270630",
+          "license": "CC BY 4.0"
         },
         {
           "id": "三重交通（南紀営業所）",
@@ -3153,7 +3461,8 @@
           "pole_count": 252,
           "rt": false,
           "valid_from": "20260401",
-          "valid_to": "20270227"
+          "valid_to": "20270228",
+          "license": "CC BY 4.0"
         },
         {
           "id": "鈴鹿市（鈴鹿市コミュニティバスC-BUS）",
@@ -3161,7 +3470,8 @@
           "pole_count": 248,
           "rt": false,
           "valid_from": "20261110",
-          "valid_to": "20270331"
+          "valid_to": "20270331",
+          "license": "CC BY 4.0"
         },
         {
           "id": "熊野市（熊野市バス、御浜町自主運行バス）",
@@ -3169,7 +3479,8 @@
           "pole_count": 235,
           "rt": false,
           "valid_from": "20260925",
-          "valid_to": "20270930"
+          "valid_to": "20270930",
+          "license": "CC BY 4.0"
         },
         {
           "id": "松阪市（松阪市コミュニティ交通）",
@@ -3177,7 +3488,8 @@
           "pole_count": 229,
           "rt": false,
           "valid_from": "20261001",
-          "valid_to": "20270331"
+          "valid_to": "20270331",
+          "license": "CC BY 4.0"
         },
         {
           "id": "伊勢市（伊勢市コミュニティバス「おかげバス」）",
@@ -3185,7 +3497,8 @@
           "pole_count": 205,
           "rt": false,
           "valid_from": "20260401",
-          "valid_to": "20270131"
+          "valid_to": "20270131",
+          "license": "CC BY 4.0"
         },
         {
           "id": "亀山市（亀山市コミュニティバス）",
@@ -3193,7 +3506,8 @@
           "pole_count": 200,
           "rt": false,
           "valid_from": "20251224",
-          "valid_to": "20270131"
+          "valid_to": "20270131",
+          "license": "CC BY 4.0"
         },
         {
           "id": "名張市（名張市コミュニティバス）",
@@ -3201,7 +3515,8 @@
           "pole_count": 175,
           "rt": false,
           "valid_from": "20261001",
-          "valid_to": "20270331"
+          "valid_to": "20270331",
+          "license": "CC BY 4.0"
         },
         {
           "id": "南伊勢町（南伊勢町営バス）",
@@ -3209,7 +3524,8 @@
           "pole_count": 163,
           "rt": false,
           "valid_from": "20260920",
-          "valid_to": "20270930"
+          "valid_to": "20270930",
+          "license": "CC BY 4.0"
         },
         {
           "id": "紀宝町（紀宝町民バス）",
@@ -3217,7 +3533,8 @@
           "pole_count": 163,
           "rt": false,
           "valid_from": "20260115",
-          "valid_to": "20270131"
+          "valid_to": "20270131",
+          "license": "CC BY 4.0"
         },
         {
           "id": "東員町（東員町「オレンジバス」）",
@@ -3225,7 +3542,8 @@
           "pole_count": 159,
           "rt": false,
           "valid_from": "20260714",
-          "valid_to": "20270930"
+          "valid_to": "20270930",
+          "license": "CC BY 4.0"
         },
         {
           "id": "尾鷲市（尾鷲市ふれあいバス）",
@@ -3233,7 +3551,8 @@
           "pole_count": 145,
           "rt": false,
           "valid_from": "20260202",
-          "valid_to": "20270131"
+          "valid_to": "20270131",
+          "license": "CC BY 4.0"
         },
         {
           "id": "鳥羽市（鳥羽市　かもめバス）",
@@ -3241,7 +3560,8 @@
           "pole_count": 134,
           "rt": false,
           "valid_from": "20260901",
-          "valid_to": "20270331"
+          "valid_to": "20270331",
+          "license": "CC BY 4.0"
         },
         {
           "id": "大台町（大台町営バス）",
@@ -3249,7 +3569,8 @@
           "pole_count": 103,
           "rt": false,
           "valid_from": "20260811",
-          "valid_to": "20270930"
+          "valid_to": "20270930",
+          "license": "CC BY 4.0"
         },
         {
           "id": "菰野町（菰野町「かもしか号」）",
@@ -3257,7 +3578,8 @@
           "pole_count": 97,
           "rt": false,
           "valid_from": "20260401",
-          "valid_to": "20270131"
+          "valid_to": "20270131",
+          "license": "CC BY 4.0"
         },
         {
           "id": "度会町（度会町営バス）",
@@ -3265,7 +3587,8 @@
           "pole_count": 90,
           "rt": false,
           "valid_from": "20260401",
-          "valid_to": "20270331"
+          "valid_to": "20270331",
+          "license": "CC BY 4.0"
         },
         {
           "id": "木曽岬町（木曽岬町自主運行バス）",
@@ -3273,7 +3596,8 @@
           "pole_count": 69,
           "rt": false,
           "valid_from": "20251001",
-          "valid_to": "20270331"
+          "valid_to": "20270331",
+          "license": "CC BY 4.0"
         },
         {
           "id": "多気町（多気町営バス）",
@@ -3281,7 +3605,8 @@
           "pole_count": 51,
           "rt": false,
           "valid_from": "20251210",
-          "valid_to": "20270131"
+          "valid_to": "20270131",
+          "license": "CC BY 4.0"
         },
         {
           "id": "伊勢市（伊勢市沼木地区自主運行バス「沼木バス」）",
@@ -3289,7 +3614,8 @@
           "pole_count": 41,
           "rt": false,
           "valid_from": "20250819",
-          "valid_to": "20270110"
+          "valid_to": "20270110",
+          "license": "CC BY 4.0"
         },
         {
           "id": "生活バス四日市（生活バスよっかいち）",
@@ -3297,7 +3623,8 @@
           "pole_count": 40,
           "rt": false,
           "valid_from": "20260401",
-          "valid_to": "20270930"
+          "valid_to": "20270930",
+          "license": "CC BY 4.0"
         },
         {
           "id": "四日市市（四日市市自主運行バス）",
@@ -3305,7 +3632,8 @@
           "pole_count": 37,
           "rt": false,
           "valid_from": "20251201",
-          "valid_to": "20261231"
+          "valid_to": "20261231",
+          "license": "CC BY 4.0"
         },
         {
           "id": "明和町（明和町町民バス）",
@@ -3313,7 +3641,8 @@
           "pole_count": 36,
           "rt": false,
           "valid_from": "20260401",
-          "valid_to": "20270331"
+          "valid_to": "20270331",
+          "license": "CC BY 4.0"
         },
         {
           "id": "川越町（川越町ふれあいバス）",
@@ -3321,7 +3650,8 @@
           "pole_count": 32,
           "rt": false,
           "valid_from": "20260401",
-          "valid_to": "20270331"
+          "valid_to": "20270331",
+          "license": "CC BY 4.0"
         },
         {
           "id": "志摩市（安乗線代替バス）",
@@ -3329,7 +3659,8 @@
           "pole_count": 27,
           "rt": false,
           "valid_from": "20260607",
-          "valid_to": "20270328"
+          "valid_to": "20270328",
+          "license": "CC BY 4.0"
         },
         {
           "id": "バスネット津（ぐるっと・つーバス）",
@@ -3337,7 +3668,8 @@
           "pole_count": 25,
           "rt": false,
           "valid_from": "20250507",
-          "valid_to": "20270105"
+          "valid_to": "20270105",
+          "license": "CC BY 4.0"
         },
         {
           "id": "伊勢鉄道",
@@ -3345,7 +3677,8 @@
           "pole_count": 16,
           "rt": false,
           "valid_from": "20260314",
-          "valid_to": "20270331"
+          "valid_to": "20270331",
+          "license": "CC BY 4.0"
         },
         {
           "id": "熊野市（熊野市市街地周遊バス）",
@@ -3353,7 +3686,8 @@
           "pole_count": 10,
           "rt": false,
           "valid_from": "20251204",
-          "valid_to": "20270131"
+          "valid_to": "20270131",
+          "license": "CC BY 4.0"
         },
         {
           "id": "鳥羽市（鳥羽市営定期船）",
@@ -3361,7 +3695,8 @@
           "pole_count": 7,
           "rt": false,
           "valid_from": "20261001",
-          "valid_to": "20280131"
+          "valid_to": "20280131",
+          "license": "CC BY 4.0"
         },
         {
           "id": "志摩市（あご湾定期船）",
@@ -3369,7 +3704,8 @@
           "pole_count": 3,
           "rt": false,
           "valid_from": "20261001",
-          "valid_to": "20270930"
+          "valid_to": "20270930",
+          "license": "CC BY 4.0"
         },
         {
           "id": "津エアポートライン（津ベルライン・津エアポートライン）",
@@ -3377,7 +3713,8 @@
           "pole_count": 2,
           "rt": false,
           "valid_from": "20260816",
-          "valid_to": "20270331"
+          "valid_to": "20270331",
+          "license": "CC BY 4.0"
         }
       ]
     },
@@ -3400,7 +3737,8 @@
           "pole_count": 449,
           "rt": false,
           "valid_from": "20250828",
-          "valid_to": "20270531"
+          "valid_to": "20270531",
+          "license": "CC BY 4.0"
         },
         {
           "id": "甲賀市（甲賀市コミュニティバス）",
@@ -3408,7 +3746,8 @@
           "pole_count": 433,
           "rt": false,
           "valid_from": "20260401",
-          "valid_to": "20270331"
+          "valid_to": "20270331",
+          "license": "CC BY 4.0"
         },
         {
           "id": "高島市（高島市コミュニティバス）",
@@ -3416,7 +3755,8 @@
           "pole_count": 305,
           "rt": false,
           "valid_from": "20260330",
-          "valid_to": "20270331"
+          "valid_to": "20270331",
+          "license": "CC BY 4.0"
         },
         {
           "id": "湖南市（湖南市コミバスめぐるくん）",
@@ -3424,7 +3764,8 @@
           "pole_count": 189,
           "rt": false,
           "valid_from": "20261101",
-          "valid_to": "20270331"
+          "valid_to": "20270331",
+          "license": "CC BY 4.0"
         },
         {
           "id": "野洲市（野洲市コミバスおのりやす）",
@@ -3432,7 +3773,8 @@
           "pole_count": 160,
           "rt": false,
           "valid_from": "20260401",
-          "valid_to": "20270331"
+          "valid_to": "20270331",
+          "license": "CC BY 4.0"
         },
         {
           "id": "草津市（草津市コミュニティバス　まめバス）",
@@ -3440,7 +3782,8 @@
           "pole_count": 138,
           "rt": false,
           "valid_from": "20260301",
-          "valid_to": "20270331"
+          "valid_to": "20270331",
+          "license": "CC BY 4.0"
         },
         {
           "id": "守山市（草津市、守山市、栗東市　くるっとバス）",
@@ -3448,7 +3791,8 @@
           "pole_count": 135,
           "rt": false,
           "valid_from": "20260604",
-          "valid_to": "20270331"
+          "valid_to": "20270331",
+          "license": "CC BY 4.0"
         },
         {
           "id": "栗東市（栗東市　くりちゃんバス）",
@@ -3456,7 +3800,8 @@
           "pole_count": 135,
           "rt": false,
           "valid_from": "20260604",
-          "valid_to": "20270331"
+          "valid_to": "20270331",
+          "license": "CC BY 4.0"
         },
         {
           "id": "日野町（日野町営バス）",
@@ -3464,7 +3809,8 @@
           "pole_count": 106,
           "rt": false,
           "valid_from": "20260401",
-          "valid_to": "20270331"
+          "valid_to": "20270331",
+          "license": "CC BY 4.0"
         },
         {
           "id": "長浜市（長浜市コミュニティバス　西浅井おでかけワゴン）",
@@ -3472,7 +3818,8 @@
           "pole_count": 35,
           "rt": false,
           "valid_from": "20260521",
-          "valid_to": "20270331"
+          "valid_to": "20270331",
+          "license": "CC BY 4.0"
         }
       ]
     },
@@ -3495,7 +3842,8 @@
           "pole_count": 11,
           "rt": false,
           "valid_from": "20260401",
-          "valid_to": "20270331"
+          "valid_to": "20270331",
+          "license": "CC BY 4.0"
         }
       ]
     },
@@ -3518,7 +3866,8 @@
           "pole_count": 436,
           "rt": false,
           "valid_from": "20260401",
-          "valid_to": "20270331"
+          "valid_to": "20270331",
+          "license": "CC BY 2.1 JP"
         },
         {
           "id": "加古川市（かこバス/かこバスミニ）",
@@ -3526,7 +3875,8 @@
           "pole_count": 403,
           "rt": false,
           "valid_from": "20260915",
-          "valid_to": "20270930"
+          "valid_to": "20270930",
+          "license": "CC BY 2.1 JP"
         },
         {
           "id": "小野市（らんらんバス）",
@@ -3534,7 +3884,8 @@
           "pole_count": 307,
           "rt": false,
           "valid_from": "20260401",
-          "valid_to": "20270331"
+          "valid_to": "20270331",
+          "license": "CC BY 2.1 JP"
         },
         {
           "id": "南あわじ市（らん・らんバス）",
@@ -3542,7 +3893,8 @@
           "pole_count": 274,
           "rt": false,
           "valid_from": "20250401",
-          "valid_to": "20270331"
+          "valid_to": "20270331",
+          "license": "CC BY 2.1 JP"
         },
         {
           "id": "明石市（たこバス/たこバスミニ）",
@@ -3550,7 +3902,8 @@
           "pole_count": 258,
           "rt": false,
           "valid_from": "20261101",
-          "valid_to": "20271130"
+          "valid_to": "20271130",
+          "license": "CC BY 4.0"
         },
         {
           "id": "赤穂市（ゆらのすけ）",
@@ -3558,7 +3911,8 @@
           "pole_count": 254,
           "rt": false,
           "valid_from": "20260401",
-          "valid_to": "20270430"
+          "valid_to": "20270430",
+          "license": "CC BY 2.1 JP"
         },
         {
           "id": "神河町（コミュニティバス）",
@@ -3566,7 +3920,8 @@
           "pole_count": 241,
           "rt": false,
           "valid_from": "20260701",
-          "valid_to": "20270331"
+          "valid_to": "20270331",
+          "license": "CC BY 2.1 JP"
         },
         {
           "id": "淡路市（あわ神あわ姫バス）",
@@ -3574,7 +3929,8 @@
           "pole_count": 221,
           "rt": false,
           "valid_from": "20260312",
-          "valid_to": "20270311"
+          "valid_to": "20270311",
+          "license": "CC BY 2.1 JP"
         },
         {
           "id": "加西市（KASAIねっぴー号/はっぴーバス）",
@@ -3582,7 +3938,8 @@
           "pole_count": 196,
           "rt": false,
           "valid_from": "20260401",
-          "valid_to": "20270331"
+          "valid_to": "20270331",
+          "license": "CC BY 2.1 JP"
         },
         {
           "id": "福崎町（巡回バス/ふくひめ号/福崎町・加西市連携コミュニティバス）",
@@ -3590,7 +3947,8 @@
           "pole_count": 195,
           "rt": false,
           "valid_from": "20260401",
-          "valid_to": "20270331"
+          "valid_to": "20270331",
+          "license": "CC BY 2.1 JP"
         },
         {
           "id": "豊岡市（イナカー）",
@@ -3598,7 +3956,8 @@
           "pole_count": 169,
           "rt": false,
           "valid_from": "20260401",
-          "valid_to": "20270331"
+          "valid_to": "20270331",
+          "license": "CC BY 2.1 JP"
         },
         {
           "id": "赤穂市（ていじゅうろう）",
@@ -3606,7 +3965,8 @@
           "pole_count": 154,
           "rt": false,
           "valid_from": "20260401",
-          "valid_to": "20270430"
+          "valid_to": "20270430",
+          "license": "CC BY 2.1 JP"
         },
         {
           "id": "たつの市（コミュニティバス）",
@@ -3614,7 +3974,8 @@
           "pole_count": 138,
           "rt": false,
           "valid_from": "20260401",
-          "valid_to": "20270430"
+          "valid_to": "20270430",
+          "license": "CC BY 2.1 JP"
         },
         {
           "id": "猪名川町（ふれあいバス）",
@@ -3622,7 +3983,8 @@
           "pole_count": 136,
           "rt": false,
           "valid_from": "20261001",
-          "valid_to": "20270930"
+          "valid_to": "20270930",
+          "license": "CC BY 2.1 JP"
         },
         {
           "id": "上郡町（愛のり号）",
@@ -3630,7 +3992,8 @@
           "pole_count": 133,
           "rt": false,
           "valid_from": "20261101",
-          "valid_to": "20271031"
+          "valid_to": "20271031",
+          "license": "CC BY 2.1 JP"
         },
         {
           "id": "加西市（宇仁ふれあいバス/とみバス）",
@@ -3638,7 +4001,8 @@
           "pole_count": 124,
           "rt": false,
           "valid_from": "20261001",
-          "valid_to": "20270331"
+          "valid_to": "20270331",
+          "license": "CC BY 2.1 JP"
         },
         {
           "id": "神戸市（神戸市コミュニティバス）",
@@ -3646,7 +4010,8 @@
           "pole_count": 124,
           "rt": false,
           "valid_from": "20261001",
-          "valid_to": "20270930"
+          "valid_to": "20270930",
+          "license": "CC BY 2.1 JP"
         },
         {
           "id": "西脇市（ループバス/おりひめバス）",
@@ -3654,7 +4019,8 @@
           "pole_count": 119,
           "rt": false,
           "valid_from": "20250401",
-          "valid_to": "20260331"
+          "valid_to": "20260331",
+          "license": "CC BY 2.1 JP"
         },
         {
           "id": "高砂市（じょうとんバス）",
@@ -3662,7 +4028,8 @@
           "pole_count": 118,
           "rt": false,
           "valid_from": "20261001",
-          "valid_to": "20270930"
+          "valid_to": "20270930",
+          "license": "CC BY 2.1 JP"
         },
         {
           "id": "市川町（コミュニティバス）",
@@ -3670,7 +4037,8 @@
           "pole_count": 114,
           "rt": false,
           "valid_from": "20260501",
-          "valid_to": "20270430"
+          "valid_to": "20270430",
+          "license": "CC BY 2.1 JP"
         },
         {
           "id": "姫路市（家島コミュニティバス/坊勢コミュニティバス/コミュニティバス雪彦）",
@@ -3678,7 +4046,8 @@
           "pole_count": 110,
           "rt": false,
           "valid_from": "20261001",
-          "valid_to": "20270930"
+          "valid_to": "20270930",
+          "license": "CC BY 2.1 JP"
         },
         {
           "id": "宍粟市（しーたんバス（蔦沢線・大谷線））",
@@ -3686,7 +4055,8 @@
           "pole_count": 103,
           "rt": false,
           "valid_from": "20260401",
-          "valid_to": "20270331"
+          "valid_to": "20270331",
+          "license": "CC BY 2.1 JP"
         },
         {
           "id": "西宮市（さくらやまなみバス）",
@@ -3694,7 +4064,8 @@
           "pole_count": 74,
           "rt": false,
           "valid_from": "20261101",
-          "valid_to": "20271031"
+          "valid_to": "20271031",
+          "license": "CC BY 2.1 JP"
         },
         {
           "id": "佐用町（コミュニティバス）",
@@ -3702,7 +4073,8 @@
           "pole_count": 72,
           "rt": false,
           "valid_from": "20260501",
-          "valid_to": "20270430"
+          "valid_to": "20270430",
+          "license": "CC BY 2.1 JP"
         },
         {
           "id": "洲本市（コミュニティバス）",
@@ -3710,7 +4082,8 @@
           "pole_count": 62,
           "rt": false,
           "valid_from": "20261001",
-          "valid_to": "20270331"
+          "valid_to": "20270331",
+          "license": "CC BY 2.1 JP"
         },
         {
           "id": "西宮市（ぐるっと生瀬）",
@@ -3718,7 +4091,8 @@
           "pole_count": 54,
           "rt": false,
           "valid_from": "20260401",
-          "valid_to": "20270531"
+          "valid_to": "20270531",
+          "license": "CC BY 2.1 JP"
         },
         {
           "id": "豊岡市（コバス）",
@@ -3726,7 +4100,8 @@
           "pole_count": 45,
           "rt": false,
           "valid_from": "20260401",
-          "valid_to": "20270331"
+          "valid_to": "20270331",
+          "license": "CC BY 2.1 JP"
         },
         {
           "id": "西宮市（名塩・生野高原ふれあいバス）",
@@ -3734,7 +4109,8 @@
           "pole_count": 31,
           "rt": false,
           "valid_from": "20260401",
-          "valid_to": "20270430"
+          "valid_to": "20270430",
+          "license": "CC BY 4.0"
         },
         {
           "id": "西宮市（甲陽地区コミュニティバス（こよたんバス））",
@@ -3742,7 +4118,8 @@
           "pole_count": 29,
           "rt": false,
           "valid_from": "20260302",
-          "valid_to": "20270331"
+          "valid_to": "20270331",
+          "license": "CC BY 4.0"
         },
         {
           "id": "神戸市（北区青葉台・柏尾台地区「さとやま」）",
@@ -3750,7 +4127,8 @@
           "pole_count": 14,
           "rt": false,
           "valid_from": "20260302",
-          "valid_to": "20270331"
+          "valid_to": "20270331",
+          "license": "CC BY 4.0"
         },
         {
           "id": "宝塚市（ランランバス）",
@@ -3758,7 +4136,8 @@
           "pole_count": 10,
           "rt": false,
           "valid_from": "20260501",
-          "valid_to": "20270930"
+          "valid_to": "20270930",
+          "license": "CC BY 2.1 JP"
         },
         {
           "id": "淡路市（淡路ジェノバライン明石岩屋航路）",
@@ -3766,7 +4145,8 @@
           "pole_count": 2,
           "rt": false,
           "valid_from": "20260201",
-          "valid_to": "20270331"
+          "valid_to": "20270331",
+          "license": "CC BY 2.1 JP"
         }
       ]
     },
@@ -3789,7 +4169,8 @@
           "pole_count": 75,
           "rt": false,
           "valid_from": "20260401",
-          "valid_to": "20270331"
+          "valid_to": "20270331",
+          "license": "CC BY 4.0"
         },
         {
           "id": "大和高田市（コミュニティバスきぼう号）",
@@ -3797,7 +4178,8 @@
           "pole_count": 62,
           "rt": false,
           "valid_from": "20261001",
-          "valid_to": "20270331"
+          "valid_to": "20270331",
+          "license": "CC BY 4.0"
         }
       ]
     },
@@ -3820,7 +4202,8 @@
           "pole_count": 446,
           "rt": false,
           "valid_from": "20260919",
-          "valid_to": "20270331"
+          "valid_to": "20270331",
+          "license": "CC BY 4.0"
         },
         {
           "id": "明光バス株式会社",
@@ -3828,7 +4211,8 @@
           "pole_count": 429,
           "rt": false,
           "valid_from": "20261014",
-          "valid_to": "20270430"
+          "valid_to": "20270430",
+          "license": "CC BY 4.0"
         },
         {
           "id": "紀の川市（紀の川市地域巡回バス・紀の川コミュニティバス）",
@@ -3836,7 +4220,8 @@
           "pole_count": 367,
           "rt": false,
           "valid_from": "20260703",
-          "valid_to": "20280331"
+          "valid_to": "20280331",
+          "license": "CC BY 4.0"
         },
         {
           "id": "熊野御坊南海バス株式会社（熊野御坊南海バス 御坊エリア）",
@@ -3844,7 +4229,8 @@
           "pole_count": 360,
           "rt": false,
           "valid_from": "20261028",
-          "valid_to": "20271231"
+          "valid_to": "20271231",
+          "license": "CC BY 4.0"
         },
         {
           "id": "熊野御坊南海バス株式会社（熊野御坊南海バス 熊野エリア）",
@@ -3852,7 +4238,8 @@
           "pole_count": 320,
           "rt": false,
           "valid_from": "20261028",
-          "valid_to": "20271231"
+          "valid_to": "20271231",
+          "license": "CC BY 4.0"
         },
         {
           "id": "田辺市（田辺市住民バス）",
@@ -3860,7 +4247,8 @@
           "pole_count": 247,
           "rt": false,
           "valid_from": "20261025",
-          "valid_to": "20270930"
+          "valid_to": "20270930",
+          "license": "CC BY 4.0"
         },
         {
           "id": "岩出市（岩出市巡回バス）",
@@ -3868,7 +4256,8 @@
           "pole_count": 177,
           "rt": false,
           "valid_from": "20260707",
-          "valid_to": "20270331"
+          "valid_to": "20270331",
+          "license": "CC BY 4.0"
         },
         {
           "id": "有田川町（有田川町コミュニティバス）",
@@ -3876,7 +4265,8 @@
           "pole_count": 164,
           "rt": false,
           "valid_from": "20260328",
-          "valid_to": "20270331"
+          "valid_to": "20270331",
+          "license": "CC BY 4.0"
         },
         {
           "id": "中紀バス",
@@ -3884,7 +4274,8 @@
           "pole_count": 148,
           "rt": false,
           "valid_from": "20260920",
-          "valid_to": "20270331"
+          "valid_to": "20270331",
+          "license": "CC BY 4.0"
         },
         {
           "id": "かつらぎ町（かつらぎ町コミュニティバス）",
@@ -3892,7 +4283,8 @@
           "pole_count": 77,
           "rt": false,
           "valid_from": "20260518",
-          "valid_to": "20270517"
+          "valid_to": "20270517",
+          "license": "CC0 1.0"
         },
         {
           "id": "南海りんかんバス株式会社（南海りんかんバス橋本・林間田園都市エリア）",
@@ -3900,7 +4292,8 @@
           "pole_count": 75,
           "rt": false,
           "valid_from": "20260328",
-          "valid_to": "20270331"
+          "valid_to": "20270331",
+          "license": "CC BY 4.0"
         },
         {
           "id": "南海りんかんバス株式会社（南海りんかんバス高野山エリア）",
@@ -3908,7 +4301,8 @@
           "pole_count": 65,
           "rt": false,
           "valid_from": "20260423",
-          "valid_to": "20270331"
+          "valid_to": "20270331",
+          "license": "CC BY 4.0"
         },
         {
           "id": "くしもと観光周遊バス推進協議会（事務局：和歌山県立南紀熊野ジオパークセンター））（くしもと観光周遊バス　まぐトル号）",
@@ -3916,14 +4310,15 @@
           "pole_count": 7,
           "rt": false,
           "valid_from": "20260928",
-          "valid_to": "20270331"
+          "valid_to": "20270331",
+          "license": "CC BY 4.0"
         }
       ]
     },
     {
       "pref": 31,
       "name": "鳥取県",
-      "pole_count": 4324,
+      "pole_count": 4318,
       "index_url": "data/index/pref_31.json",
       "timetable_base": "data/timetables/pref_31",
       "bounds": {
@@ -4032,18 +4427,6 @@
           "official_url": "https://odp-pref-tottori.tori-info.co.jp/bus.html"
         },
         {
-          "id": "ext_tottori_kofu",
-          "name": "江府町営バス",
-          "pole_count": 137,
-          "rt": false,
-          "valid_from": "20260901",
-          "valid_to": "20270226",
-          "area": "鳥取県江府町",
-          "license": "CC BY 2.1 JP",
-          "attribution": "鳥取県「鳥取県バス情報」・江府町（CC BY 2.1 日本）",
-          "official_url": "https://odp-pref-tottori.tori-info.co.jp/bus.html"
-        },
-        {
           "id": "ext_tottori_hino",
           "name": "日野町営バス",
           "pole_count": 132,
@@ -4053,6 +4436,18 @@
           "area": "鳥取県日野町",
           "license": "CC BY 2.1 JP",
           "attribution": "鳥取県「鳥取県バス情報」・日野町（CC BY 2.1 日本）",
+          "official_url": "https://odp-pref-tottori.tori-info.co.jp/bus.html"
+        },
+        {
+          "id": "ext_tottori_kofu",
+          "name": "江府町営バス",
+          "pole_count": 131,
+          "rt": false,
+          "valid_from": "20260901",
+          "valid_to": "20270226",
+          "area": "鳥取県江府町",
+          "license": "CC BY 2.1 JP",
+          "attribution": "鳥取県「鳥取県バス情報」・江府町（CC BY 2.1 日本）",
           "official_url": "https://odp-pref-tottori.tori-info.co.jp/bus.html"
         },
         {
@@ -4112,7 +4507,8 @@
           "pole_count": 104,
           "rt": false,
           "valid_from": "20260101",
-          "valid_to": "20270331"
+          "valid_to": "20270331",
+          "license": "CC BY 4.0"
         }
       ]
     },
@@ -4159,7 +4555,8 @@
           "pole_count": 333,
           "rt": false,
           "valid_from": "20260401",
-          "valid_to": "20270331"
+          "valid_to": "20270331",
+          "license": "CC0 1.0"
         },
         {
           "id": "新見市（新見市営バス）",
@@ -4167,7 +4564,8 @@
           "pole_count": 292,
           "rt": false,
           "valid_from": "20260630",
-          "valid_to": "20270629"
+          "valid_to": "20270629",
+          "license": "CC BY 4.0"
         },
         {
           "id": "鏡野町（鏡野町営バス）",
@@ -4175,7 +4573,8 @@
           "pole_count": 247,
           "rt": false,
           "valid_from": "20260401",
-          "valid_to": "20270331"
+          "valid_to": "20270331",
+          "license": "CC BY 4.0"
         },
         {
           "id": "瀬戸内市（瀬戸内市営バス）",
@@ -4183,7 +4582,8 @@
           "pole_count": 244,
           "rt": false,
           "valid_from": "20260401",
-          "valid_to": "20270331"
+          "valid_to": "20270331",
+          "license": "CC BY 4.0"
         },
         {
           "id": "北振バス株式会社",
@@ -4191,7 +4591,8 @@
           "pole_count": 213,
           "rt": false,
           "valid_from": "20261125",
-          "valid_to": "20271124"
+          "valid_to": "20271124",
+          "license": "CC0 1.0"
         },
         {
           "id": "北振バス株式会社（井原あいあいバス）",
@@ -4199,7 +4600,8 @@
           "pole_count": 135,
           "rt": false,
           "valid_from": "20261027",
-          "valid_to": "20271026"
+          "valid_to": "20271026",
+          "license": "CC0 1.0"
         },
         {
           "id": "勝央町（勝央町ふれあいバス）",
@@ -4207,7 +4609,8 @@
           "pole_count": 96,
           "rt": false,
           "valid_from": "20261124",
-          "valid_to": "20270331"
+          "valid_to": "20270331",
+          "license": "CC0 1.0"
         },
         {
           "id": "早島町（早島町コミュニティバス）",
@@ -4215,7 +4618,8 @@
           "pole_count": 76,
           "rt": false,
           "valid_from": "20260401",
-          "valid_to": "20270331"
+          "valid_to": "20270331",
+          "license": "CC BY 4.0"
         },
         {
           "id": "奈義町（なぎバス）",
@@ -4223,7 +4627,8 @@
           "pole_count": 52,
           "rt": false,
           "valid_from": "20260302",
-          "valid_to": "20270301"
+          "valid_to": "20270301",
+          "license": "CC BY 4.0"
         },
         {
           "id": "ext_okayama_tram",
@@ -4244,7 +4649,8 @@
           "pole_count": 6,
           "rt": false,
           "valid_from": "20260801",
-          "valid_to": "20270131"
+          "valid_to": "20270131",
+          "license": "CC0 1.0"
         }
       ]
     },
@@ -4304,7 +4710,7 @@
           "pole_count": 1318,
           "rt": true,
           "valid_from": "20261102",
-          "valid_to": "20270228",
+          "valid_to": "20270301",
           "area": "福山・尾道・府中",
           "license": "CC0 1.0",
           "attribution": "広島県バス協会・中国バス（CC0）",
@@ -4352,7 +4758,7 @@
           "pole_count": 665,
           "rt": true,
           "valid_from": "20261102",
-          "valid_to": "20270228",
+          "valid_to": "20270301",
           "area": "福山・笠岡・井原",
           "license": "CC0 1.0",
           "attribution": "広島県バス協会・井笠バスカンパニー（CC0）",
@@ -4376,7 +4782,7 @@
           "pole_count": 544,
           "rt": true,
           "valid_from": "20261102",
-          "valid_to": "20270228",
+          "valid_to": "20270301",
           "area": "広島県福山市",
           "license": "CC0 1.0",
           "attribution": "広島県バス協会・鞆鉄道（CC0）",
@@ -4487,7 +4893,8 @@
           "pole_count": 1607,
           "rt": false,
           "valid_from": "20261014",
-          "valid_to": "20271231"
+          "valid_to": "20271231",
+          "license": "CC BY 4.0"
         },
         {
           "id": "三好市（三好市営バス）",
@@ -4495,7 +4902,8 @@
           "pole_count": 546,
           "rt": false,
           "valid_from": "20260401",
-          "valid_to": "20270331"
+          "valid_to": "20270331",
+          "license": "CC BY 4.0"
         },
         {
           "id": "徳島バス南部株式会社",
@@ -4503,7 +4911,8 @@
           "pole_count": 375,
           "rt": false,
           "valid_from": "20251001",
-          "valid_to": "20261231"
+          "valid_to": "20261231",
+          "license": "CC BY 4.0"
         },
         {
           "id": "つるぎ町（つるぎ町コミュニティーバス）",
@@ -4511,7 +4920,8 @@
           "pole_count": 118,
           "rt": false,
           "valid_from": "20260401",
-          "valid_to": "20270331"
+          "valid_to": "20270331",
+          "license": "CC BY 4.0"
         },
         {
           "id": "徳島市交通局（徳島市営バス）",
@@ -4519,7 +4929,8 @@
           "pole_count": 105,
           "rt": false,
           "valid_from": "20260401",
-          "valid_to": "20270331"
+          "valid_to": "20270331",
+          "license": "CC BY 4.0"
         },
         {
           "id": "那賀町（那賀町営バス）",
@@ -4527,7 +4938,8 @@
           "pole_count": 99,
           "rt": false,
           "valid_from": "20260430",
-          "valid_to": "20270331"
+          "valid_to": "20270331",
+          "license": "CC BY 4.0"
         },
         {
           "id": "北島町（北島町福祉バス）",
@@ -4535,7 +4947,8 @@
           "pole_count": 80,
           "rt": false,
           "valid_from": "20260219",
-          "valid_to": "20270218"
+          "valid_to": "20270218",
+          "license": "CC BY 4.0"
         },
         {
           "id": "海陽町（海陽町営バス）",
@@ -4543,7 +4956,8 @@
           "pole_count": 68,
           "rt": false,
           "valid_from": "20260401",
-          "valid_to": "20270331"
+          "valid_to": "20270331",
+          "license": "CC BY 4.0"
         },
         {
           "id": "鳴門市（鳴門市地域バス）",
@@ -4551,7 +4965,8 @@
           "pole_count": 68,
           "rt": false,
           "valid_from": "20260407",
-          "valid_to": "20270406"
+          "valid_to": "20270406",
+          "license": "CC BY 4.0"
         },
         {
           "id": "東みよし町（東みよし町営バス）",
@@ -4559,7 +4974,8 @@
           "pole_count": 63,
           "rt": false,
           "valid_from": "20260311",
-          "valid_to": "20270331"
+          "valid_to": "20270331",
+          "license": "CC BY 4.0"
         },
         {
           "id": "松茂町（松茂町地域コミュニティバス）",
@@ -4567,7 +4983,8 @@
           "pole_count": 59,
           "rt": false,
           "valid_from": "20260601",
-          "valid_to": "20271231"
+          "valid_to": "20271231",
+          "license": "CC BY 4.0"
         },
         {
           "id": "徳島市（上八万コミュニティバス）",
@@ -4575,7 +4992,8 @@
           "pole_count": 31,
           "rt": false,
           "valid_from": "20260401",
-          "valid_to": "20270331"
+          "valid_to": "20270331",
+          "license": "CC BY 4.0"
         },
         {
           "id": "吉野川市（吉野川市代替バス）",
@@ -4583,7 +5001,8 @@
           "pole_count": 29,
           "rt": false,
           "valid_from": "20260401",
-          "valid_to": "20270331"
+          "valid_to": "20270331",
+          "license": "CC BY 4.0"
         },
         {
           "id": "阿佐海岸鉄道株式会社（阿佐海岸鉄道株式会社【DMV】）",
@@ -4591,7 +5010,8 @@
           "pole_count": 16,
           "rt": false,
           "valid_from": "20260611",
-          "valid_to": "20270610"
+          "valid_to": "20270610",
+          "license": "CC BY 4.0"
         },
         {
           "id": "鳴門市（鳴門市営渡船）",
@@ -4599,7 +5019,8 @@
           "pole_count": 6,
           "rt": false,
           "valid_from": "20260407",
-          "valid_to": "20270406"
+          "valid_to": "20270406",
+          "license": "CC BY 4.0"
         }
       ]
     },
@@ -4622,7 +5043,8 @@
           "pole_count": 372,
           "rt": false,
           "valid_from": "20260401",
-          "valid_to": "20270331"
+          "valid_to": "20270331",
+          "license": "CC BY 4.0"
         },
         {
           "id": "琴参バス株式会社（丸亀コミュニティバス）",
@@ -4630,7 +5052,8 @@
           "pole_count": 310,
           "rt": false,
           "valid_from": "20260906",
-          "valid_to": "20270905"
+          "valid_to": "20270905",
+          "license": "CC BY 4.0"
         },
         {
           "id": "琴参バス株式会社（坂出路線）",
@@ -4638,7 +5061,8 @@
           "pole_count": 294,
           "rt": false,
           "valid_from": "20261001",
-          "valid_to": "20270930"
+          "valid_to": "20270930",
+          "license": "CC BY 4.0"
         },
         {
           "id": "shodoshima_olive",
@@ -4658,7 +5082,8 @@
           "pole_count": 77,
           "rt": false,
           "valid_from": "20260401",
-          "valid_to": "20270331"
+          "valid_to": "20270331",
+          "license": "CC0 1.0"
         },
         {
           "id": "直島町",
@@ -4666,7 +5091,8 @@
           "pole_count": 38,
           "rt": false,
           "valid_from": "20260823",
-          "valid_to": "20270531"
+          "valid_to": "20270531",
+          "license": "CC BY 4.0"
         },
         {
           "id": "shodoshima_town",
@@ -4686,7 +5112,8 @@
           "pole_count": 9,
           "rt": false,
           "valid_from": "20260827",
-          "valid_to": "20270331"
+          "valid_to": "20270331",
+          "license": "CC BY 4.0"
         }
       ]
     },
@@ -4709,7 +5136,8 @@
           "pole_count": 1007,
           "rt": true,
           "valid_from": "20261101",
-          "valid_to": "20270331"
+          "valid_to": "20270331",
+          "license": "CC BY 4.0"
         },
         {
           "id": "とさでん交通株式会社（路線バス）",
@@ -4717,7 +5145,8 @@
           "pole_count": 816,
           "rt": true,
           "valid_from": "20261001",
-          "valid_to": "20270930"
+          "valid_to": "20270930",
+          "license": "CC BY 4.0"
         },
         {
           "id": "高知東部交通株式会社（路線バス）",
@@ -4725,7 +5154,8 @@
           "pole_count": 601,
           "rt": false,
           "valid_from": "20261001",
-          "valid_to": "20270930"
+          "valid_to": "20270930",
+          "license": "CC BY 4.0"
         },
         {
           "id": "高知高陵交通株式会社（路線バス）",
@@ -4733,7 +5163,8 @@
           "pole_count": 582,
           "rt": true,
           "valid_from": "20261001",
-          "valid_to": "20261230"
+          "valid_to": "20261230",
+          "license": "CC BY 4.0"
         },
         {
           "id": "株式会社四万十交通（路線バス）",
@@ -4741,7 +5172,8 @@
           "pole_count": 504,
           "rt": false,
           "valid_from": "20261001",
-          "valid_to": "20270930"
+          "valid_to": "20270930",
+          "license": "CC BY 4.0"
         },
         {
           "id": "四万十町（四万十町コミュニティバス）",
@@ -4749,7 +5181,8 @@
           "pole_count": 484,
           "rt": false,
           "valid_from": "20260302",
-          "valid_to": "20270401"
+          "valid_to": "20270401",
+          "license": "CC BY 4.0"
         },
         {
           "id": "有限会社嶺北観光自動車（路線バス）",
@@ -4757,7 +5190,8 @@
           "pole_count": 468,
           "rt": false,
           "valid_from": "20261001",
-          "valid_to": "20261227"
+          "valid_to": "20261227",
+          "license": "CC BY 4.0"
         },
         {
           "id": "株式会社県交北部交通（路線バス）",
@@ -4765,7 +5199,8 @@
           "pole_count": 434,
           "rt": true,
           "valid_from": "20261001",
-          "valid_to": "20270930"
+          "valid_to": "20270930",
+          "license": "CC BY 4.0"
         },
         {
           "id": "香美市（香美市営バス）",
@@ -4773,7 +5208,8 @@
           "pole_count": 313,
           "rt": false,
           "valid_from": "20261001",
-          "valid_to": "20271001"
+          "valid_to": "20271001",
+          "license": "CC BY 4.0"
         },
         {
           "id": "津野町（津野町コミュニティバス「つのバス」）",
@@ -4781,7 +5217,8 @@
           "pole_count": 283,
           "rt": false,
           "valid_from": "20261014",
-          "valid_to": "20270228"
+          "valid_to": "20270228",
+          "license": "CC BY 4.0"
         },
         {
           "id": "南国市（南国市コミュニティバス「NACOバス」）",
@@ -4789,7 +5226,8 @@
           "pole_count": 241,
           "rt": false,
           "valid_from": "20261001",
-          "valid_to": "20270220"
+          "valid_to": "20270220",
+          "license": "CC BY 4.0"
         },
         {
           "id": "仁淀川町（仁淀川町町民バス）",
@@ -4797,7 +5235,8 @@
           "pole_count": 207,
           "rt": false,
           "valid_from": "20260701",
-          "valid_to": "20261227"
+          "valid_to": "20261227",
+          "license": "CC BY 4.0"
         },
         {
           "id": "香南市（香南市営バス）",
@@ -4805,7 +5244,8 @@
           "pole_count": 202,
           "rt": false,
           "valid_from": "20261101",
-          "valid_to": "20271001"
+          "valid_to": "20271001",
+          "license": "CC BY 4.0"
         },
         {
           "id": "室戸市（室戸市コミュニティバス「むろはぴ号」）",
@@ -4813,7 +5253,8 @@
           "pole_count": 193,
           "rt": false,
           "valid_from": "20261001",
-          "valid_to": "20270930"
+          "valid_to": "20270930",
+          "license": "CC BY 4.0"
         },
         {
           "id": "有限会社黒岩観光（路線バス）",
@@ -4821,7 +5262,8 @@
           "pole_count": 180,
           "rt": false,
           "valid_from": "20260901",
-          "valid_to": "20261225"
+          "valid_to": "20261225",
+          "license": "CC BY 4.0"
         },
         {
           "id": "土佐市（土佐市コミュニティバス「ドラゴンバス」）",
@@ -4829,7 +5271,8 @@
           "pole_count": 177,
           "rt": true,
           "valid_from": "20261001",
-          "valid_to": "20270930"
+          "valid_to": "20270930",
+          "license": "CC BY 4.0"
         },
         {
           "id": "佐川町（佐川町コミュニティバス「さかわぐるぐるバス」）",
@@ -4837,7 +5280,8 @@
           "pole_count": 166,
           "rt": false,
           "valid_from": "20260316",
-          "valid_to": "20270331"
+          "valid_to": "20270331",
+          "license": "CC BY 4.0"
         },
         {
           "id": "とさでん交通株式会社（路面電車）",
@@ -4845,7 +5289,8 @@
           "pole_count": 150,
           "rt": false,
           "valid_from": "20260801",
-          "valid_to": "20270430"
+          "valid_to": "20270430",
+          "license": "CC BY 4.0"
         },
         {
           "id": "四万十市（四万十市営バス）",
@@ -4853,7 +5298,8 @@
           "pole_count": 149,
           "rt": false,
           "valid_from": "20260515",
-          "valid_to": "20270401"
+          "valid_to": "20270401",
+          "license": "CC BY 4.0"
         },
         {
           "id": "中土佐町（中土佐町コミュニティバス）",
@@ -4861,7 +5307,8 @@
           "pole_count": 124,
           "rt": false,
           "valid_from": "20260401",
-          "valid_to": "20270401"
+          "valid_to": "20270401",
+          "license": "CC BY 4.0"
         },
         {
           "id": "安芸市（安芸市「元気バス」）",
@@ -4869,7 +5316,8 @@
           "pole_count": 100,
           "rt": false,
           "valid_from": "20261001",
-          "valid_to": "20270331"
+          "valid_to": "20270331",
+          "license": "CC BY 4.0"
         },
         {
           "id": "本山町（本山町コミュニティバス「さくらバス」）",
@@ -4877,7 +5325,8 @@
           "pole_count": 93,
           "rt": false,
           "valid_from": "20261001",
-          "valid_to": "20271001"
+          "valid_to": "20271001",
+          "license": "CC BY 4.0"
         },
         {
           "id": "四万十市（四万十市デマンド交通）",
@@ -4885,7 +5334,8 @@
           "pole_count": 79,
           "rt": false,
           "valid_from": "20260105",
-          "valid_to": "20260331"
+          "valid_to": "20260331",
+          "license": "CC BY 4.0"
         },
         {
           "id": "いの町（いの町営バス「伊野循環線」）",
@@ -4893,7 +5343,8 @@
           "pole_count": 67,
           "rt": false,
           "valid_from": "20260301",
-          "valid_to": "20261231"
+          "valid_to": "20261231",
+          "license": "CC BY 4.0"
         },
         {
           "id": "ジェイアール四国バス株式会社 高知支店（路線バス）",
@@ -4901,7 +5352,8 @@
           "pole_count": 57,
           "rt": false,
           "valid_from": "20261001",
-          "valid_to": "20270331"
+          "valid_to": "20270331",
+          "license": "CC BY 4.0"
         },
         {
           "id": "宿毛市（宿毛市コミュニティバス「はなちゃんバス」）",
@@ -4909,7 +5361,8 @@
           "pole_count": 56,
           "rt": false,
           "valid_from": "20261001",
-          "valid_to": "20270410"
+          "valid_to": "20270410",
+          "license": "CC BY 4.0"
         },
         {
           "id": "香美市（香美市営バス デマンド）",
@@ -4917,7 +5370,8 @@
           "pole_count": 49,
           "rt": false,
           "valid_from": "20261001",
-          "valid_to": "20271001"
+          "valid_to": "20271001",
+          "license": "CC BY 4.0"
         },
         {
           "id": "須崎市（須崎市営バス）",
@@ -4925,7 +5379,8 @@
           "pole_count": 47,
           "rt": true,
           "valid_from": "20261001",
-          "valid_to": "20270104"
+          "valid_to": "20270104",
+          "license": "CC BY 4.0"
         },
         {
           "id": "安田町（安田町コミュニティバス「やすら号」）",
@@ -4933,7 +5388,8 @@
           "pole_count": 44,
           "rt": false,
           "valid_from": "20260901",
-          "valid_to": "20271002"
+          "valid_to": "20271002",
+          "license": "CC BY 4.0"
         },
         {
           "id": "芸西村（芸西村「おでかけバス」）",
@@ -4941,7 +5397,8 @@
           "pole_count": 43,
           "rt": false,
           "valid_from": "20260301",
-          "valid_to": "20270401"
+          "valid_to": "20270401",
+          "license": "CC BY 4.0"
         },
         {
           "id": "北川村（北川村営バス）",
@@ -4949,7 +5406,8 @@
           "pole_count": 42,
           "rt": false,
           "valid_from": "20261101",
-          "valid_to": "20270930"
+          "valid_to": "20270930",
+          "license": "CC BY 4.0"
         },
         {
           "id": "三原村（三原村「三原バス」）",
@@ -4957,7 +5415,8 @@
           "pole_count": 40,
           "rt": false,
           "valid_from": "20261102",
-          "valid_to": "20271101"
+          "valid_to": "20271101",
+          "license": "CC BY 4.0"
         },
         {
           "id": "株式会社四万十交通（路線バス フィーダー線）",
@@ -4965,7 +5424,8 @@
           "pole_count": 40,
           "rt": false,
           "valid_from": "20261001",
-          "valid_to": "20271001"
+          "valid_to": "20271001",
+          "license": "CC BY 4.0"
         },
         {
           "id": "田野町（田野町コミュニティーバス「たのくるバス」）",
@@ -4973,7 +5433,8 @@
           "pole_count": 37,
           "rt": false,
           "valid_from": "20260901",
-          "valid_to": "20271001"
+          "valid_to": "20271001",
+          "license": "CC BY 4.0"
         },
         {
           "id": "土佐清水市（土佐清水市デマンド交通「おでかけ号」）",
@@ -4981,7 +5442,8 @@
           "pole_count": 33,
           "rt": false,
           "valid_from": "20261001",
-          "valid_to": "20270930"
+          "valid_to": "20270930",
+          "license": "CC BY 4.0"
         },
         {
           "id": "大月町（大月町「まちなか循環線」）",
@@ -4989,7 +5451,8 @@
           "pole_count": 22,
           "rt": false,
           "valid_from": "20260220",
-          "valid_to": "20270401"
+          "valid_to": "20270401",
+          "license": "CC BY 4.0"
         },
         {
           "id": "いの町（いの町営バス「本川地区」）",
@@ -4997,7 +5460,8 @@
           "pole_count": 19,
           "rt": false,
           "valid_from": "20250701",
-          "valid_to": "20270105"
+          "valid_to": "20270105",
+          "license": "CC BY 4.0"
         },
         {
           "id": "とさでん交通株式会社（空港連絡バス）",
@@ -5005,13 +5469,15 @@
           "pole_count": 17,
           "rt": true,
           "valid_from": "20261101",
-          "valid_to": "20261231"
+          "valid_to": "20261231",
+          "license": "CC BY 4.0"
         },
         {
           "id": "高知西南交通株式会社（四万十川バス）",
           "name": "高知西南交通株式会社（四万十川バス）",
           "pole_count": 16,
-          "rt": false
+          "rt": false,
+          "license": "CC BY 4.0"
         },
         {
           "id": "公益財団法人高知県観光コンベンション協会（MY遊バス）",
@@ -5019,7 +5485,8 @@
           "pole_count": 15,
           "rt": false,
           "valid_from": "20261101",
-          "valid_to": "20270331"
+          "valid_to": "20270331",
+          "license": "CC BY 4.0"
         },
         {
           "id": "高知西南交通株式会社（高速バス）",
@@ -5027,7 +5494,8 @@
           "pole_count": 14,
           "rt": false,
           "valid_from": "20261001",
-          "valid_to": "20270930"
+          "valid_to": "20270930",
+          "license": "CC BY 4.0"
         },
         {
           "id": "株式会社高知駅前観光（空港連絡バス）",
@@ -5035,13 +5503,15 @@
           "pole_count": 11,
           "rt": false,
           "valid_from": "20261101",
-          "valid_to": "20261231"
+          "valid_to": "20261231",
+          "license": "CC BY 4.0"
         },
         {
           "id": "高知西南交通株式会社（まちなかぐるっと循環周遊バス）",
           "name": "高知西南交通株式会社（まちなかぐるっと循環周遊バス）",
           "pole_count": 11,
-          "rt": false
+          "rt": false,
+          "license": "CC BY 4.0"
         },
         {
           "id": "日高村（日高村「周遊バス」）",
@@ -5049,7 +5519,8 @@
           "pole_count": 10,
           "rt": false,
           "valid_from": "20261001",
-          "valid_to": "20270331"
+          "valid_to": "20270331",
+          "license": "CC BY 4.0"
         },
         {
           "id": "株式会社高知駅前観光（高速バス）",
@@ -5057,7 +5528,8 @@
           "pole_count": 9,
           "rt": false,
           "valid_from": "20261001",
-          "valid_to": "20261231"
+          "valid_to": "20261231",
+          "license": "CC BY 4.0"
         },
         {
           "id": "須崎市（須崎市営巡航船）",
@@ -5065,7 +5537,8 @@
           "pole_count": 9,
           "rt": false,
           "valid_from": "20251201",
-          "valid_to": "20270104"
+          "valid_to": "20270104",
+          "license": "CC BY 4.0"
         },
         {
           "id": "宿毛市（宿毛市「ゆるりんバス」）",
@@ -5073,13 +5546,15 @@
           "pole_count": 8,
           "rt": false,
           "valid_from": "20260401",
-          "valid_to": "20270430"
+          "valid_to": "20270430",
+          "license": "CC BY 4.0"
         },
         {
           "id": "高知西南交通株式会社（しまんと・あしずり号）",
           "name": "高知西南交通株式会社（しまんと・あしずり号）",
           "pole_count": 5,
-          "rt": false
+          "rt": false,
+          "license": "CC BY 4.0"
         },
         {
           "id": "南国市（南国市「空港乗合タクシー」）",
@@ -5087,7 +5562,8 @@
           "pole_count": 4,
           "rt": false,
           "valid_from": "20251001",
-          "valid_to": "20270331"
+          "valid_to": "20270331",
+          "license": "CC BY 4.0"
         },
         {
           "id": "宿毛市（宿毛市営定期船航路「沖の島航路」）",
@@ -5095,7 +5571,8 @@
           "pole_count": 4,
           "rt": false,
           "valid_from": "20260801",
-          "valid_to": "20270810"
+          "valid_to": "20270810",
+          "license": "CC BY 4.0"
         },
         {
           "id": "高知県航空利用促進協議会（高知県航空利用促進協議会「空港乗合タクシー」）",
@@ -5103,7 +5580,8 @@
           "pole_count": 2,
           "rt": false,
           "valid_from": "20260401",
-          "valid_to": "20270331"
+          "valid_to": "20270331",
+          "license": "CC BY 4.0"
         },
         {
           "id": "高知県（高知県営渡船）",
@@ -5111,7 +5589,8 @@
           "pole_count": 2,
           "rt": false,
           "valid_from": "20260201",
-          "valid_to": "20270401"
+          "valid_to": "20270401",
+          "license": "CC BY 4.0"
         }
       ]
     },
@@ -5134,7 +5613,8 @@
           "pole_count": 320,
           "rt": false,
           "valid_from": "20260401",
-          "valid_to": "20270331"
+          "valid_to": "20270331",
+          "license": "CC BY 4.0"
         },
         {
           "id": "春日市（春日市コミュニティバスやよい）",
@@ -5142,7 +5622,8 @@
           "pole_count": 271,
           "rt": false,
           "valid_from": "20260414",
-          "valid_to": "20270331"
+          "valid_to": "20270331",
+          "license": "CC BY 4.0"
         },
         {
           "id": "宗像市（宗像市コミュニティバス）",
@@ -5150,7 +5631,8 @@
           "pole_count": 261,
           "rt": false,
           "valid_from": "20220307",
-          "valid_to": "20270331"
+          "valid_to": "20270331",
+          "license": "CC BY 4.0"
         },
         {
           "id": "嘉麻市（嘉麻市バス）",
@@ -5158,7 +5640,8 @@
           "pole_count": 257,
           "rt": false,
           "valid_from": "20260401",
-          "valid_to": "20270331"
+          "valid_to": "20270331",
+          "license": "CC BY 4.0"
         },
         {
           "id": "福津市（ふくつミニバス・ふくつ乗合タクシー）",
@@ -5166,7 +5649,8 @@
           "pole_count": 240,
           "rt": false,
           "valid_from": "20260401",
-          "valid_to": "20270331"
+          "valid_to": "20270331",
+          "license": "CC BY 4.0"
         },
         {
           "id": "田川市（田川市コミュニティバス）",
@@ -5174,7 +5658,8 @@
           "pole_count": 199,
           "rt": false,
           "valid_from": "20261005",
-          "valid_to": "20270930"
+          "valid_to": "20270930",
+          "license": "CC BY 4.0"
         },
         {
           "id": "宗像市（宗像市ふれあいバス）",
@@ -5182,7 +5667,8 @@
           "pole_count": 180,
           "rt": false,
           "valid_from": "20261005",
-          "valid_to": "20270331"
+          "valid_to": "20270331",
+          "license": "CC BY 4.0"
         },
         {
           "id": "柳川市（柳川市コミュニティバス）",
@@ -5190,7 +5676,8 @@
           "pole_count": 175,
           "rt": false,
           "valid_from": "20261001",
-          "valid_to": "20270930"
+          "valid_to": "20270930",
+          "license": "CC BY 4.0"
         },
         {
           "id": "直方市（直方市コミュニティバス）",
@@ -5198,7 +5685,8 @@
           "pole_count": 152,
           "rt": false,
           "valid_from": "20261001",
-          "valid_to": "20270331"
+          "valid_to": "20270331",
+          "license": "CC BY 4.0"
         },
         {
           "id": "苅田町（苅田町コミュニティバス）",
@@ -5206,7 +5694,8 @@
           "pole_count": 150,
           "rt": false,
           "valid_from": "20260401",
-          "valid_to": "20270331"
+          "valid_to": "20270331",
+          "license": "CC BY 4.0"
         },
         {
           "id": "豊前市（豊前市バス）",
@@ -5214,7 +5703,8 @@
           "pole_count": 128,
           "rt": false,
           "valid_from": "20260401",
-          "valid_to": "20270331"
+          "valid_to": "20270331",
+          "license": "CC BY 4.0"
         },
         {
           "id": "水巻町（町内巡回バス・通勤通学バス）",
@@ -5222,7 +5712,8 @@
           "pole_count": 114,
           "rt": false,
           "valid_from": "20260401",
-          "valid_to": "20270331"
+          "valid_to": "20270331",
+          "license": "CC BY 4.0"
         },
         {
           "id": "須恵町（須恵町コミュニティバス）",
@@ -5230,7 +5721,8 @@
           "pole_count": 107,
           "rt": false,
           "valid_from": "20260401",
-          "valid_to": "20270331"
+          "valid_to": "20270331",
+          "license": "CC BY 4.0"
         },
         {
           "id": "川崎町（川崎町ふれあいバス）",
@@ -5238,7 +5730,8 @@
           "pole_count": 106,
           "rt": false,
           "valid_from": "20251001",
-          "valid_to": "20270331"
+          "valid_to": "20270331",
+          "license": "CC BY 4.0"
         },
         {
           "id": "新宮町（新宮町コミュニティバス マリンクス）",
@@ -5246,7 +5739,8 @@
           "pole_count": 90,
           "rt": false,
           "valid_from": "20261101",
-          "valid_to": "20271031"
+          "valid_to": "20271031",
+          "license": "CC BY 4.0"
         },
         {
           "id": "久山町（久山町コミュニティバス イコバス）",
@@ -5254,7 +5748,8 @@
           "pole_count": 87,
           "rt": false,
           "valid_from": "20260321",
-          "valid_to": "20270331"
+          "valid_to": "20270331",
+          "license": "CC BY 4.0"
         },
         {
           "id": "遠賀町（遠賀町コミュニティバス）",
@@ -5262,7 +5757,8 @@
           "pole_count": 80,
           "rt": false,
           "valid_from": "20260314",
-          "valid_to": "20270331"
+          "valid_to": "20270331",
+          "license": "CC BY 4.0"
         },
         {
           "id": "みやま市（みやま市コミュニティバス）",
@@ -5270,7 +5766,8 @@
           "pole_count": 75,
           "rt": false,
           "valid_from": "20260302",
-          "valid_to": "20270331"
+          "valid_to": "20270331",
+          "license": "CC BY 4.0"
         },
         {
           "id": "築上町（築上町コミュニティバス）",
@@ -5278,7 +5775,8 @@
           "pole_count": 75,
           "rt": false,
           "valid_from": "20260401",
-          "valid_to": "20270331"
+          "valid_to": "20270331",
+          "license": "CC BY 4.0"
         },
         {
           "id": "添田町（添田町バス）",
@@ -5286,7 +5784,8 @@
           "pole_count": 70,
           "rt": false,
           "valid_from": "20260401",
-          "valid_to": "20270331"
+          "valid_to": "20270331",
+          "license": "CC BY 4.0"
         },
         {
           "id": "北九州市（八幡東区枝光地区）",
@@ -5294,7 +5793,8 @@
           "pole_count": 63,
           "rt": false,
           "valid_from": "20260806",
-          "valid_to": "20270331"
+          "valid_to": "20270331",
+          "license": "CC BY 4.0"
         },
         {
           "id": "株式会社甘木観光バス",
@@ -5302,7 +5802,8 @@
           "pole_count": 62,
           "rt": false,
           "valid_from": "20260401",
-          "valid_to": "20270331"
+          "valid_to": "20270331",
+          "license": "CC BY 4.0"
         },
         {
           "id": "芦屋町（芦屋町コミュニティバス 芦屋タウンバス）",
@@ -5310,7 +5811,8 @@
           "pole_count": 59,
           "rt": false,
           "valid_from": "20260328",
-          "valid_to": "20270331"
+          "valid_to": "20270331",
+          "license": "CC BY 4.0"
         },
         {
           "id": "鞍手町（すまいるバスみやわか線）",
@@ -5318,7 +5820,8 @@
           "pole_count": 58,
           "rt": false,
           "valid_from": "20260401",
-          "valid_to": "20270331"
+          "valid_to": "20270331",
+          "license": "CC BY 4.0"
         },
         {
           "id": "宮若市（宮田・百合野線）",
@@ -5326,7 +5829,8 @@
           "pole_count": 51,
           "rt": false,
           "valid_from": "20250401",
-          "valid_to": "20270331"
+          "valid_to": "20270331",
+          "license": "CC BY 4.0"
         },
         {
           "id": "筑後市（羽犬塚駅周辺循環バス（はねバス））",
@@ -5334,7 +5838,8 @@
           "pole_count": 47,
           "rt": false,
           "valid_from": "20260401",
-          "valid_to": "20270331"
+          "valid_to": "20270331",
+          "license": "CC BY 4.0"
         },
         {
           "id": "太宰府市（太宰府市コミュニティバスまほろば号）",
@@ -5342,7 +5847,8 @@
           "pole_count": 46,
           "rt": false,
           "valid_from": "20250929",
-          "valid_to": "20270331"
+          "valid_to": "20270331",
+          "license": "CC BY 4.0"
         },
         {
           "id": "北九州市（八幡西区木屋瀬・楠橋・星ヶ丘地区）",
@@ -5350,7 +5856,8 @@
           "pole_count": 42,
           "rt": false,
           "valid_from": "20260321",
-          "valid_to": "20270331"
+          "valid_to": "20270331",
+          "license": "CC BY 4.0"
         },
         {
           "id": "北九州市（小倉南区合馬・道原地区）",
@@ -5358,7 +5865,8 @@
           "pole_count": 42,
           "rt": false,
           "valid_from": "20260401",
-          "valid_to": "20270331"
+          "valid_to": "20270331",
+          "license": "CC BY 4.0"
         },
         {
           "id": "福岡市（今宿姪浜線乗合バス）",
@@ -5366,7 +5874,8 @@
           "pole_count": 38,
           "rt": false,
           "valid_from": "20250401",
-          "valid_to": "20270331"
+          "valid_to": "20270331",
+          "license": "CC BY 4.0"
         },
         {
           "id": "北九州市（小倉南区東谷地区）",
@@ -5374,7 +5883,8 @@
           "pole_count": 33,
           "rt": false,
           "valid_from": "20260401",
-          "valid_to": "20270331"
+          "valid_to": "20270331",
+          "license": "CC BY 4.0"
         },
         {
           "id": "宗像市（宮若・宗像線）",
@@ -5382,7 +5892,8 @@
           "pole_count": 33,
           "rt": false,
           "valid_from": "20260401",
-          "valid_to": "20270331"
+          "valid_to": "20270331",
+          "license": "CC BY 4.0"
         },
         {
           "id": "古賀市（コガバス）",
@@ -5390,7 +5901,8 @@
           "pole_count": 26,
           "rt": false,
           "valid_from": "20260601",
-          "valid_to": "20270331"
+          "valid_to": "20270331",
+          "license": "CC BY 4.0"
         },
         {
           "id": "北九州市（八幡東区大蔵地区）",
@@ -5398,7 +5910,8 @@
           "pole_count": 25,
           "rt": false,
           "valid_from": "20260401",
-          "valid_to": "20270331"
+          "valid_to": "20270331",
+          "license": "CC BY 4.0"
         },
         {
           "id": "北九州市（門司区恒見・喜多久地区）",
@@ -5406,7 +5919,8 @@
           "pole_count": 22,
           "rt": false,
           "valid_from": "20260401",
-          "valid_to": "20270331"
+          "valid_to": "20270331",
+          "license": "CC BY 4.0"
         },
         {
           "id": "北九州市（小倉南区平尾台地区）",
@@ -5414,7 +5928,8 @@
           "pole_count": 13,
           "rt": false,
           "valid_from": "20260320",
-          "valid_to": "20270331"
+          "valid_to": "20270331",
+          "license": "CC BY 4.0"
         },
         {
           "id": "北九州市（八幡東区田代・河内地区）",
@@ -5422,7 +5937,8 @@
           "pole_count": 11,
           "rt": false,
           "valid_from": "20260401",
-          "valid_to": "20270331"
+          "valid_to": "20270331",
+          "license": "CC BY 4.0"
         },
         {
           "id": "宗像市（宗像市営渡船地島航路）",
@@ -5430,7 +5946,8 @@
           "pole_count": 3,
           "rt": false,
           "valid_from": "20220401",
-          "valid_to": "20270331"
+          "valid_to": "20270331",
+          "license": "CC BY 4.0"
         },
         {
           "id": "宗像市（宗像市営渡船大島航路）",
@@ -5438,7 +5955,8 @@
           "pole_count": 2,
           "rt": false,
           "valid_from": "20220401",
-          "valid_to": "20270331"
+          "valid_to": "20270331",
+          "license": "CC BY 4.0"
         },
         {
           "id": "新宮町（町営渡船しんぐう）",
@@ -5446,7 +5964,8 @@
           "pole_count": 2,
           "rt": false,
           "valid_from": "20261101",
-          "valid_to": "20271031"
+          "valid_to": "20271031",
+          "license": "CC BY 4.0"
         }
       ]
     },
@@ -5469,7 +5988,8 @@
           "pole_count": 148,
           "rt": false,
           "valid_from": "20260401",
-          "valid_to": "20270331"
+          "valid_to": "20270331",
+          "license": "CC0 1.0"
         }
       ]
     },
@@ -5492,7 +6012,8 @@
           "pole_count": 1739,
           "rt": false,
           "valid_from": "20261124",
-          "valid_to": "20261130"
+          "valid_to": "20261130",
+          "license": "CC BY 4.0"
         },
         {
           "id": "平戸市（ふれあいバス）",
@@ -5500,14 +6021,15 @@
           "pole_count": 155,
           "rt": false,
           "valid_from": "20261001",
-          "valid_to": "20270930"
+          "valid_to": "20270930",
+          "license": "CC BY 4.0"
         }
       ]
     },
     {
       "pref": 43,
       "name": "熊本県",
-      "pole_count": 6430,
+      "pole_count": 6431,
       "index_url": "data/index/pref_43.json",
       "timetable_base": "data/timetables/pref_43",
       "bounds": {
@@ -5523,7 +6045,8 @@
           "pole_count": 4621,
           "rt": true,
           "valid_from": "20261104",
-          "valid_to": "20270228"
+          "valid_to": "20270301",
+          "license": "CC BY 4.0"
         },
         {
           "id": "熊本都市バス",
@@ -5531,7 +6054,8 @@
           "pole_count": 628,
           "rt": true,
           "valid_from": "20260606",
-          "valid_to": "20261230"
+          "valid_to": "20261230",
+          "license": "CC BY 4.0"
         },
         {
           "id": "熊本電鉄（熊本電鉄バス）",
@@ -5539,15 +6063,17 @@
           "pole_count": 561,
           "rt": true,
           "valid_from": "20261123",
-          "valid_to": "20270302"
+          "valid_to": "20270302",
+          "license": "CC BY 4.0"
         },
         {
           "id": "熊本バス",
           "name": "熊本バス",
-          "pole_count": 532,
+          "pole_count": 533,
           "rt": true,
           "valid_from": "20261001",
-          "valid_to": "20270228"
+          "valid_to": "20270304",
+          "license": "CC BY 4.0"
         },
         {
           "id": "熊本市交通局（熊本市電）",
@@ -5555,7 +6081,8 @@
           "pole_count": 67,
           "rt": false,
           "valid_from": "20250601",
-          "valid_to": "20270331"
+          "valid_to": "20270331",
+          "license": "CC BY 2.1 JP"
         },
         {
           "id": "熊本電鉄（熊本電鉄電車）",
@@ -5563,7 +6090,8 @@
           "pole_count": 18,
           "rt": false,
           "valid_from": "20260511",
-          "valid_to": "20261228"
+          "valid_to": "20261228",
+          "license": "CC0 1.0"
         },
         {
           "id": "株式会社神園交通（すーぱーばんぺいゆ）",
@@ -5571,7 +6099,8 @@
           "pole_count": 3,
           "rt": false,
           "valid_from": "20260918",
-          "valid_to": "20270917"
+          "valid_to": "20270917",
+          "license": "CC0 1.0"
         }
       ]
     },
@@ -5594,7 +6123,8 @@
           "pole_count": 196,
           "rt": false,
           "valid_from": "20260703",
-          "valid_to": "20270331"
+          "valid_to": "20270331",
+          "license": "CC0 1.0"
         },
         {
           "id": "中津市（屋形線）",
@@ -5602,7 +6132,8 @@
           "pole_count": 78,
           "rt": false,
           "valid_from": "20261001",
-          "valid_to": "20270331"
+          "valid_to": "20270331",
+          "license": "CC BY 4.0"
         },
         {
           "id": "中津市（西谷線）",
@@ -5610,7 +6141,8 @@
           "pole_count": 64,
           "rt": false,
           "valid_from": "20261001",
-          "valid_to": "20270331"
+          "valid_to": "20270331",
+          "license": "CC BY 4.0"
         },
         {
           "id": "中津市（東谷線）",
@@ -5618,7 +6150,8 @@
           "pole_count": 62,
           "rt": false,
           "valid_from": "20261001",
-          "valid_to": "20270331"
+          "valid_to": "20270331",
+          "license": "CC BY 4.0"
         },
         {
           "id": "中津市（津民線）",
@@ -5626,7 +6159,8 @@
           "pole_count": 56,
           "rt": false,
           "valid_from": "20230401",
-          "valid_to": "20270331"
+          "valid_to": "20270331",
+          "license": "CC BY 4.0"
         },
         {
           "id": "中津市（豊前・中津線）",
@@ -5634,7 +6168,8 @@
           "pole_count": 45,
           "rt": false,
           "valid_from": "20230401",
-          "valid_to": "20270331"
+          "valid_to": "20270331",
+          "license": "CC BY 4.0"
         },
         {
           "id": "中津市（裏耶馬溪線）",
@@ -5642,7 +6177,8 @@
           "pole_count": 44,
           "rt": false,
           "valid_from": "20230401",
-          "valid_to": "20270331"
+          "valid_to": "20270331",
+          "license": "CC BY 4.0"
         },
         {
           "id": "中津市（西秣線）",
@@ -5650,7 +6186,8 @@
           "pole_count": 23,
           "rt": false,
           "valid_from": "20230401",
-          "valid_to": "20270331"
+          "valid_to": "20270331",
+          "license": "CC BY 4.0"
         },
         {
           "id": "中津市（三保線）",
@@ -5658,7 +6195,8 @@
           "pole_count": 17,
           "rt": false,
           "valid_from": "20230401",
-          "valid_to": "20270331"
+          "valid_to": "20270331",
+          "license": "CC BY 4.0"
         }
       ]
     },
@@ -5709,7 +6247,8 @@
           "pole_count": 931,
           "rt": false,
           "valid_from": "20260401",
-          "valid_to": "20270331"
+          "valid_to": "20270331",
+          "license": "CC BY 4.0"
         },
         {
           "id": "曽於市（曽於市思いやりバス・思いやりタクシー）",
@@ -5717,7 +6256,8 @@
           "pole_count": 388,
           "rt": false,
           "valid_from": "20261124",
-          "valid_to": "20270331"
+          "valid_to": "20270331",
+          "license": "CC BY 4.0"
         }
       ]
     },
@@ -5740,7 +6280,8 @@
           "pole_count": 104,
           "rt": false,
           "valid_from": "20260301",
-          "valid_to": "20270430"
+          "valid_to": "20270430",
+          "license": "CC BY 4.0"
         },
         {
           "id": "合同会社やんばる急行バス",
@@ -5748,12 +6289,13 @@
           "pole_count": 87,
           "rt": false,
           "valid_from": "20260421",
-          "valid_to": "20261231"
+          "valid_to": "20261231",
+          "license": "CC BY 4.0"
         }
       ]
     }
   ],
-  "generated_at": "2026-11-27T23:06:30+09:00",
+  "generated_at": "2026-11-28T11:40:44+09:00",
   "gtfs_sync": true,
   "public_license_only": true
 }
